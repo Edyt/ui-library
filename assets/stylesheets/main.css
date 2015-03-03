@@ -1,9 +1,15 @@
 @import url(../sass/base/normalize.css);
 @import url(../sass/base/icon-font.css);
-/* line 1, ../sass/pages/_demo.scss */
+@import url(../fonts/source-sans/source-sans.css);
+@import url(../fonts/source-sans/source-sans.css);
+body {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SourceSansProBlack-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
 .page-demo {
   width: 75%;
   margin: 0 auto;
   background: #fafafa;
-  padding: 20px;
-}
+  padding: 20px; }

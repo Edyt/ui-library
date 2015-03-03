@@ -1,7 +1,133 @@
-// Font Import
+@import '../fonts/source-sans/source-sans.css';
+
+// Weights
+
+// Type Weights
+@mixin font-extralight {
+	font-family: 'BrixSansExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-extralight-italic {
+	font-family: 'SourceSansProExtraLight-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-light {
+	font-family: 'SourceSansProLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@mixin font-light-italic {
+	font-family: 'SourceSansProLight-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-regular {
+	font-family: 'SourceSansProRegular',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-regular-italic {
+	font-family: 'SourceSansProRegular-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-medium {
+	font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-medium-italic {
+	font-family: 'SourceSansProSemibold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-bold {
+	font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-bold-italic {
+	font-family: 'SourceSansProBold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-black {
+	font-family: 'SourceSansProBlack','Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-black-italic {
+	font-family: 'SourceSansProBlack-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
 
-// Font Scale
+// Scale
+body {
+	font-size: 16px;
+}
 
+@mixin type-micro {
+	font-size: 0.51em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+
+@mixin type-smallest {
+	font-size: 0.64em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+@mixin type-smaller {
+	font-size: 0.8em;
+	line-height: 1.4em;
+}
+
+@mixin type-small {
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+@mixin type-base {
+	font-size: 1.25em;
+	line-height: 1.6em;
+}
+
+@mixin type-large {
+	font-size: 1.563em;
+	line-height: 1.4em;
+}
+
+@mixin type-larger {
+	font-size: 1.593em;
+	line-height: 1.3em;
+}
+
+@mixin type-largest {
+	font-size: 2.441em;
+	line-height: 1.2em;
+}
+
+@mixin type-jumbo {
+	font-size: 3.051em;
+	line-height: 1.2em;
+}
 
 // Foundational Typography
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-black-italic;
+}
