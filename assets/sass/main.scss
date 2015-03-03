@@ -4,9 +4,13 @@
 
 @import 'components/buttons';
 @import 'components/dropdowns';
-@import 'components/forms';
 @import 'components/modals';
 
 @import 'helpers/color-scale';
 @import 'helpers/type-scale';
 @import 'helpers/z-scale';
+
+@import 'layout/forms';
+
+@import 'pages/demo';
+
