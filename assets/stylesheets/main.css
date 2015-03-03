@@ -1,5 +1,5 @@
-@import url(base/normalize.css);
-@import url(base/icon-font.css);
+@import url(../sass/base/normalize.css);
+@import url(../sass/base/icon-font.css);
 /* line 1, ../sass/pages/_demo.scss */
 .page-demo {
   width: 75%;

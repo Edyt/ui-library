@@ -1,6 +1,6 @@
-@import 'base/normalize.css';
-@import 'base/icon-font.css';
-@import 'base/_typography.scss';
+@import '../sass/base/normalize.css';
+@import '../sass/base/icon-font.css';
+@import 'base/typography';
 
 @import 'components/buttons';
 @import 'components/dropdowns';
