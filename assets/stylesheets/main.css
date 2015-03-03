@@ -1,12 +1,13 @@
 @import url(../sass/base/normalize.css);
 @import url(../sass/base/icon-font.css);
 @import url(../fonts/source-sans/source-sans.css);
-@import url(../fonts/source-sans/source-sans.css);
 body {
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'SourceSansProBlack-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: 'SourceSansProBlack','Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 900; }
 
 .page-demo {
   width: 75%;
