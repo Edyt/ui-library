@@ -117,7 +117,6 @@ html {
 }
 
 // Foundational Typography
-<<<<<<< HEAD
 
 h1 {
 	@include font-extralight;
@@ -125,7 +124,7 @@ h1 {
 }
 
 h2 {
-	@include font-bold;
+	@include font-extralight;
 	@include type-larger;
 }
 
@@ -151,62 +150,4 @@ h6 {
 	@include type-smaller;
 	text-transform: uppercase;
 	letter-spacing: .5px;
-=======
-.typescale-smallest,.typescale-smaller,.typescale-small,.typescale-base,.typescale-large,.typescale-larger,.typescale-largest,.typescale-jumbo {
-	display: block;
-	width: 60%;
-	margin: 3%;
-	@include font-light;
-}
-hr {
-	border: 0;
-	border-top: 1px Gainsboro solid;
-}
-
-.typescale-smallest {
-	@include type-smallest;
-}
-.typescale-smaller {
-	@include type-smaller;
-}
-.typescale-small {
-	@include type-small;
-}
-.typescale-base {
-	@include type-base;
->>>>>>> FETCH_HEAD
-}
-
-.typescale-base a {
-	text-decoration: none;
-	color: black;
-	padding: 1px 2px;
-	margin: 0 -2px;
-	background-image: linear-gradient(to top,
-    rgba(180, 231, 248, 1) 11%,
-    rgba(180, 231, 248, 1) 11%,
-    rgba(180, 231, 248, 1) 30%,
-    rgba(180, 231, 248, 0) 11%
-    );
-	transition: all .08s ease-in-out;
-}
-
-.typescale-base a:hover {
-	background-color: #b4e7f8;
-}
-
-.typescale-large {
-	@include type-large;
-}
-<<<<<<< HEAD
- 
-a {
-	
-=======
-.typescale-larger {
-	@include type-larger;
->>>>>>> FETCH_HEAD
-}
-.typescale-largest {
-	@include type-largest;
 }

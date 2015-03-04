@@ -2,7 +2,7 @@
 @import url(../sass/base/icon-font.css);
 @import url(../fonts/source-sans/source-sans.css);
 html {
-  font-size: 16px; }
+  font-size: 18px; }
 
 h1 {
   font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -12,9 +12,9 @@ h1 {
   line-height: 3.815rem; }
 
 h2 {
-  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 1.999rem;
   line-height: 2.698rem; }
 
@@ -30,8 +30,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: .125px; }
+  line-height: 1.35rem; }
 
 h5 {
   font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
