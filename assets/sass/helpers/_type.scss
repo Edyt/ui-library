@@ -76,7 +76,7 @@
 
 // Scale
 html {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 @mixin type-smallest {
@@ -98,7 +98,9 @@ html {
 
 @mixin type-base {
 	font-size: 1rem;
-	line-height: 1.35rem;
+	line-height: 1.5rem;
+	letter-spacing: .125px;
+	
 }
 
 @mixin type-large {
@@ -117,54 +119,82 @@ html {
 }
 
 // Foundational Typography
-.typescale-smallest,.typescale-smaller,.typescale-small,.typescale-base,.typescale-large,.typescale-larger,.typescale-largest,.typescale-jumbo {
-	display: block;
-	width: 60%;
-	margin: 3%;
-	@include font-light;
-}
-hr {
-	border: 0;
-	border-top: 1px Gainsboro solid;
+
+h1 {
+	
 }
 
-.typescale-smallest {
-	@include type-smallest;
-}
-.typescale-smaller {
-	@include type-smaller;
-}
-.typescale-small {
-	@include type-small;
-}
-.typescale-base {
-	@include type-base;
+h2 {
+	
 }
 
-.typescale-base a {
-	text-decoration: none;
-	color: black;
-	padding: 1px 2px;
-	margin: 0 -2px;
-	background-image: linear-gradient(to top,
-    rgba(180, 231, 248, 1) 11%,
-    rgba(180, 231, 248, 1) 11%,
-    rgba(180, 231, 248, 1) 30%,
-    rgba(180, 231, 248, 0) 11%
-    );
-	transition: all .08s ease-in-out;
+h3 {
+	
 }
 
-.typescale-base a:hover {
-	background-color: #b4e7f8;
+h4 {
+	
 }
 
-.typescale-large {
-	@include type-large;
+h5 {
+	
 }
-.typescale-larger {
-	@include type-larger;
+
+h6 {
+	
 }
-.typescale-largest {
-	@include type-largest;
+
+p {
+	
 }
+
+strong {
+	
+}
+
+em {
+	
+}
+
+a {
+	
+}
+
+u {
+	
+}
+
+a.button {
+	
+}
+
+button {
+	
+}
+
+input[type="submit"] {
+	
+}
+
+input[type="button"] {
+
+}
+
+a.button button-primary {
+	
+}
+
+button.button-primary {
+	
+}
+
+input[type="submit"].button-primary {
+
+}
+
+input[type="button"].button-primary {
+
+}
+
+
+
