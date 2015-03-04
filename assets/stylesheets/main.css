@@ -5,32 +5,33 @@ html {
   font-size: 18px; }
 
 h1 {
-  font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 600;
   font-size: 2.826rem;
   line-height: 3.815rem; }
 
 h2 {
-  font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 700;
   font-size: 1.999rem;
   line-height: 2.698rem; }
 
 h3 {
-  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
+  font-family: 'SourceSansProBold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
   font-weight: 700;
   font-size: 1.414rem;
   line-height: 1.908rem; }
 
 h4 {
-  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'SourceSansProBlack-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-weight: 900;
   font-size: 1rem;
-  line-height: 1.35rem; }
+  line-height: 1.35rem;
+  letter-spacing: .5px; }
 
 h5 {
   font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -59,6 +60,48 @@ p {
   line-height: 1.35rem;
   line-height: 1.5rem;
   letter-spacing: 0.125px; }
+
+strong {
+  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.35rem; }
+
+em {
+  font-family: 'SourceSansProRegular-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.35rem; }
+
+strong em {
+  font-family: 'SourceSansProBold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.35rem; }
+
+a {
+  font-family: 'SourceSansProRegular',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  color: #3a72d9;
+  text-decoration: none;
+  background-image: linear-gradient(to top, rgba(58, 114, 217, 0) 10%, rgba(58, 114, 217, 0.3) 10%, rgba(58, 114, 217, 0.3) 15%, rgba(58, 114, 217, 0) 15%);
+  transition: all .1s ease-in;
+  padding: 0 1px;
+  margin: 0 -1px; }
+
+a:hover {
+  color: #35aff7;
+  background-image: linear-gradient(to top, rgba(58, 114, 217, 0) 10%, rgba(58, 114, 217, 0.6) 10%, rgba(58, 114, 217, 0.6) 15%, rgba(58, 114, 217, 0) 15%);
+  transition: all .08s ease-in-out; }
+
+a:active {
+  color: #0709A0; }
 
 .page-demo {
   width: 75%;
