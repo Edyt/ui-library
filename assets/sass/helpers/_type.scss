@@ -2,7 +2,7 @@
 
 // Type Weights
 @mixin font-extralight {
-	font-family: 'BrixSansExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 200;
 }
@@ -121,27 +121,37 @@ html {
 // Foundational Typography
 
 h1 {
-	
+	@include font-extralight;
+	@include type-largest;
 }
 
 h2 {
-	
+	@include font-bold;
+	@include type-larger;
 }
 
 h3 {
-	
+	@include font-bold;
+	@include type-large;
 }
 
 h4 {
-	
+	@include font-bold;
+	@include type-base;
 }
 
 h5 {
-	
+	@include font-medium;
+	@include type-small;
+	text-transform: uppercase;
+	letter-spacing: .25px;
 }
 
 h6 {
-	
+	@include font-medium;
+	@include type-smaller;
+	text-transform: uppercase;
+	letter-spacing: .5px;
 }
 
 p {
@@ -155,7 +165,7 @@ strong {
 em {
 	
 }
-
+ 
 a {
 	
 }

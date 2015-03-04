@@ -1,10 +1,8 @@
-// Font Import
-
 @font-face {
   font-family: 'SourceSansProExtraLight';
   font-style: normal;
   font-weight: 200;
-  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(SourceSansPro-ExtraLight.ttf) format('truetype');
+  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(SourceSansPro-ExtraLightIt.ttf) format('truetype');
 }
 @font-face {
   font-family: 'SourceSansProExtraLight-Italic';
@@ -72,3 +70,5 @@
   font-weight: 900;
   src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), url(SourceSansPro-BlackIt.ttf) format('truetype');
 }
+
+

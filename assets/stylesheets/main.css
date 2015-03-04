@@ -4,6 +4,54 @@
 html {
   font-size: 16px; }
 
+h1 {
+  font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.826rem;
+  line-height: 3.815rem; }
+
+h2 {
+  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.999rem;
+  line-height: 2.698rem; }
+
+h3 {
+  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.414rem;
+  line-height: 1.908rem; }
+
+h4 {
+  font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: .125px; }
+
+h5 {
+  font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.833rem;
+  line-height: 1.124rem;
+  text-transform: uppercase;
+  letter-spacing: .25px; }
+
+h6 {
+  font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.694rem;
+  line-height: 0.918rem;
+  letter-spacing: 0.125px;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+
 .page-demo {
   width: 75%;
   margin: 0 auto;
