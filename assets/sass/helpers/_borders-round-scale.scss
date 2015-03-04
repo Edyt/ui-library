@@ -16,3 +16,15 @@
 	border-radius: 20px;	
 }
 
+@mixin borders-tab {
+	-webkit-border-radius: 2px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius: 2px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-radius: 2px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
