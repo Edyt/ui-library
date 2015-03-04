@@ -5,10 +5,19 @@
 	padding: 20px;
 }
 
-strong, em, a, u {margin-right: 20px;}
-strong em {margin-right: 0;}
+strong,
+em,
+a,
+u {
+	margin: 40px 20px 40px 0;
+}
+
+strong em {
+	margin: 0;
+}
 
 hr {
+	margin: 20px 0;
 	border: none;
 	border-top: 1px rgba(0,0,0,.2) solid;
 }
