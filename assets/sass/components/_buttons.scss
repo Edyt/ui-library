@@ -2,7 +2,7 @@ button, .button {
 	@include borders-round;
 	@include font-regular;
 	@include type-smaller;
-	
+
 	background: #D5D8DD;
 	color: #4E5A6B;
 
@@ -11,4 +11,8 @@ button, .button {
 	text-decoration: none;
 
 	border: none;
+}
+
+.button, .button:hover {
+	background-image: none;
 }
