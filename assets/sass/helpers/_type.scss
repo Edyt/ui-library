@@ -151,3 +151,10 @@ h6 {
 	text-transform: uppercase;
 	letter-spacing: .5px;
 }
+
+p {
+	@include font-regular;
+	@include type-base;
+	line-height: 1.5rem;
+	letter-spacing: 0.125px;
+}
