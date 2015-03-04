@@ -168,7 +168,7 @@ strong {
 em {
 	@include font-regular-italic;
 	@include type-base;
-}
+} 
 
 strong em {
 	@include font-bold-italic;
