@@ -11,7 +11,7 @@
   font-style: italic;
   font-weight: 200;
   src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(SourceSansPro-ExtraLightIt.ttf) format('truetype');
-} 
+}
 @font-face {
   font-family: 'SourceSansProLight';
   font-style: normal;

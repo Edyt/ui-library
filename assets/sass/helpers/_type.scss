@@ -75,59 +75,96 @@
 
 
 // Scale
-body {
-	font-size: 16px;
-}
-
-@mixin type-micro {
-	font-size: 0.51em;
-	line-height: 1.4em;
-	text-transform: uppercase;
+html {
+	font-size: 18px;
 }
 
 @mixin type-smallest {
-	font-size: 0.64em;
-	line-height: 1.2em;
-	text-transform: uppercase;
+	font-size: 0.578rem;
+	line-height: 0.780rem;
+	letter-spacing: .25px;
 }
 
 @mixin type-smaller {
-	font-size: 0.8em;
-	line-height: 1.4em;
+	font-size: 0.694rem;
+	line-height: 0.918rem;
+	letter-spacing: 0.125px;
 }
 
 @mixin type-small {
-	font-size: 1em;
-	line-height: 1.6em;
+	font-size: 0.833rem;
+	line-height: 1.124rem;
 }
 
 @mixin type-base {
-	font-size: 1.25em;
-	line-height: 1.6em;
+	font-size: 1rem;
+	line-height: 1.35rem;
 }
 
 @mixin type-large {
-	font-size: 1.563em;
-	line-height: 1.4em;
+	font-size: 1.414rem;
+	line-height: 1.908rem;
 }
 
 @mixin type-larger {
-	font-size: 1.593em;
-	line-height: 1.3em;
+	font-size: 1.999rem;
+	line-height: 2.698rem;
 }
 
 @mixin type-largest {
-	font-size: 2.441em;
-	line-height: 1.2em;
-}
-
-@mixin type-jumbo {
-	font-size: 3.051em;
-	line-height: 1.2em;
+	font-size: 2.826rem;
+	line-height: 3.815rem;
 }
 
 // Foundational Typography
+.typescale-smallest,.typescale-smaller,.typescale-small,.typescale-base,.typescale-large,.typescale-larger,.typescale-largest,.typescale-jumbo {
+	display: block;
+	width: 60%;
+	margin: 3%;
+	@include font-light;
+}
+hr {
+	border: 0;
+	border-top: 1px Gainsboro solid;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  @include font-black;
+.typescale-smallest {
+	@include type-smallest;
+}
+.typescale-smaller {
+	@include type-smaller;
+}
+.typescale-small {
+	@include type-small;
+}
+.typescale-base {
+	@include type-base;
+}
+
+.typescale-base a {
+	text-decoration: none;
+	color: black;
+	padding: 1px 2px;
+	margin: 0 -2px;
+	background-image: linear-gradient(to top,
+    rgba(180, 231, 248, 1) 11%,
+    rgba(180, 231, 248, 1) 11%,
+    rgba(180, 231, 248, 1) 30%,
+    rgba(180, 231, 248, 0) 11%
+    );
+	transition: all .08s ease-in-out;
+}
+
+.typescale-base a:hover {
+	background-color: #b4e7f8;
+}
+
+.typescale-large {
+	@include type-large;
+}
+.typescale-larger {
+	@include type-larger;
+}
+.typescale-largest {
+	@include type-largest;
 }
