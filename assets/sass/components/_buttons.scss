@@ -5,7 +5,7 @@
 	@include font-regular;
 	@include type-smaller;
 	display: inline-block;
-	padding: 0.25rem .5rem;
+	padding: 0.25rem 0.5rem;
 	text-decoration: none;
 	border: none;
 
@@ -44,7 +44,7 @@
 	margin: 0 0.10rem
 }
 
-// hides label for icon-only buttons
+// Hides label for icon-only buttons
 
 .button-icon-only {
 	padding: 0.25rem;
@@ -83,6 +83,14 @@
 .button:active {
 	background: #4E5A6B;
 	color: #ffffff;
+}
+
+.is-disabled,
+.is-disabled:hover,
+.is-disabled:active {
+	cursor: not-allowed;
+	background: #D5D8DD;
+	color: #93A0B4;
 }
 
 

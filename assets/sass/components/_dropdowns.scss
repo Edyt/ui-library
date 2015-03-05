@@ -1,0 +1,15 @@
+.dropdown {
+	@include borders-round;
+	overflow: hidden;
+	width: 12%;
+}
+
+.dropdown .button {
+	display: block;
+	@include borders-square;
+	border-bottom: 1px solid #C8C8C8;
+}
+
+.dropdown .button:last-child {
+	border-bottom: none;
+}

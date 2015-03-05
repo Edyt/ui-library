@@ -1,0 +1,82 @@
+// Default Navigation / Work Manager Navigation
+
+.navigation {
+	@include borders-round;
+	background: #fff;
+}
+
+.navigation h2,
+.navigation h3 {
+	@include font-regular;
+	color: #5E90D8;
+	border-bottom: 1px solid #c8c8c8;
+	margin-bottom: 0;
+	padding: 0 0 0.25rem 0.75rem;
+}
+
+.navigation h2 {
+	padding: 1.25rem 0.75rem;
+}
+
+.navigation .button {
+	@include borders-square;
+	@include type-base;
+	display: block;	
+	border-bottom: 1px solid #c8c8c8;
+	background: #fff;
+	position: relative;
+}
+
+.navigation .button:active,
+.navigation .button.is-active,
+.navigation .button.is-active:hover {
+	background: #4E5A6B;
+	color: #ffffff;
+}
+
+.navigation .button:last-child {
+	border-bottom: none;
+}
+
+// Tray meta data
+
+.navigation em,
+.navigation u {
+	@include font-regular;
+	@include type-base;
+	position: absolute;
+	right: 0.75rem;
+	margin: 0;
+}
+
+.navigation u {
+	background-image: none;
+	text-decoration: none;
+	color: #f00;
+	position: static;
+	margin-right: 1.25rem;
+}
+
+
+// Primary Navigation
+
+.navigation-primary {
+	background: #D5D8DD;
+}
+
+.navigation-primary .button {
+	@include borders-square;
+	display: block;	
+	border-bottom: none;
+	background: #D5D8DD;
+	position: relative;
+	padding: 1rem;
+	text-align: center;
+}
+
+.navigation-primary .tpIcon {
+	position: relative;
+	top: 0.075rem;
+	@include type-large;
+	line-height: 1;
+}
