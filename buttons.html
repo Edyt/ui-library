@@ -10,39 +10,73 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="assets/js/vendors/prettify/run_prettify.js"></script>
+
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+        
     </head>
     <body>
         <div class="page-demo">
 
+            <h1>Buttons</h1>
+
             <h2>Standard Buttons</h2>
 
-            <!-- Standard buttons -->
+            <p>Buttons have a class of <code>.button</code> and are shown inline by default.</p>
+
+            <p>All button labels are wrapped in a <code>&lt;span&gt;</code> tag, for accessibility and tooltip functionality.</p>
+
+            <h3>Examples and Usage:</h3>
+
+            <pre class="prettyprint lang-html">
+&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+    &lt;span&gt;Button title&lt;/span&gt;
+&lt;/a&gt;</pre>
+
             <a class="button" href="#">
-                <span>Anchor button</span>
-                <i class="tpIcon tpIconStopwatch"></i>
+                <span>Button title</span>
             </a>
 
-            <button class="button">
-                <i class="tpIcon tpIconBullsEye"></i>
-                <span>Stop Time</span>
-            </button>
+            <pre class="prettyprint lang-html">
+&lt;a class=&quot;button button-primary button-large&quot; href=&quot;#&quot;&gt;
+    &lt;span&gt;Save&lt;/span&gt;
+&lt;/a&gt;</pre>
 
-            <input class="button" type="submit" value="submit input">
-            <input class="button" type="button" value="button input">
+            <a class="button button-primary button-large" href="#">
+                <span>Save</span>
+            </a>
 
-            <!-- Primary buttons -->
-            <a class="button button-primary" href="#">Anchor button</a>
+            <h3>List of variations</h3>
 
-            <button class="button button-primary">
-                <i class="tpIcon tpIconCheck"></i>
-                <span>Button element</span>
-            </button>
-
-            <input class="button button-primary" type="submit" value="submit input">
-            <input class="button button-primary" type="button" value="button input">
-
-            <hr />
+            <table>
+                <thead>
+                    <tr>
+                        <td>Button</td>
+                        <td>class=""</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="button">Default</a>
+                        </td>
+                        <td><code>button</code></td>
+                        <td>Standard grey button</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="button button-primary">Primary</a>
+                        </td>
+                        <td>
+                            <code>button button-primary</code>
+                        </td>
+                        <td>
+                            Used for primary actions or to denote importance in a list of buttons
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h2>Large Buttons</h2>
 
@@ -55,7 +89,6 @@
                 <span>Save</span>
             </button>
 
-            <hr />
 
             <h2>Button Groups</h2>
 
@@ -164,8 +197,6 @@
                     <em>8</em>
                 </a>
             </div>
-
-            <hr />
 
             <div class="navigation navigation-primary">
                 <a class="button button-icon-only" href="#">

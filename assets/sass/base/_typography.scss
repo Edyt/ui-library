@@ -47,15 +47,25 @@ strong {
 	@include type-base;
 }
 
-em {
+em,
+strong em {
 	@include font-regular-italic;
 	@include type-base;
 } 
 
-strong em {
-	@include font-bold-italic;
+u {
+	@include font-regular;
 	@include type-base;
+	text-decoration: none;
+	background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 10%,
+    rgba(0,0,0,.5) 18%,
+    rgba(0,0,0,.5) 14%,
+    rgba(0,0,0,0) 15%
+    );
 }
+
+// Base links
 
 a {
 	@include font-regular;
@@ -86,15 +96,20 @@ a:active {
 	color: #0709A0;
 }
 
-u {
-	@include font-regular;
-	@include type-base;
-	text-decoration: none;
-	background-image: linear-gradient(to top,
-    rgba(0,0,0,0) 10%,
-    rgba(0,0,0,.5) 18%,
-    rgba(0,0,0,.5) 14%,
-    rgba(0,0,0,0) 15%
-    );
+// Extra styles
+
+code,
+pre.prettyprint {
+	@include borders-round;
+	@include type-small;
+	padding: 0.15rem 0.25rem;
+	margin: 0 0.25rem;
+	color: $color-red-scale-1;
+	border: 1px solid #cecece;
+	background: #fff;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+pre.prettyprint {
+	margin: 2rem 0 1rem;
+}

@@ -1,0 +1,36 @@
+table {
+	@include font-regular;
+	@include type-base;
+	border: 1px solid #cecece;
+	background: #fff;
+	overflow: auto;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+tr {
+	border-bottom: 1px solid #cecece;
+}
+
+td {
+	padding: 0.5rem;
+	border-right: 1px solid #cecece;
+}
+
+thead td {
+	background: #eee;
+}
+
+// Hacky way to get rounded corners
+
+table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:2px;
+    -webkit-border-bottom-left-radius:2px;
+    border-bottom-left-radius:2px
+}
+
+table tr:last-child td:last-child {
+    -moz-border-radius-bottomright:2px;
+    -webkit-border-bottom-right-radius:2px;
+    border-bottom-right-radius:2px
+}
