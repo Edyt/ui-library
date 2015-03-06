@@ -110,6 +110,10 @@ pre.prettyprint {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+pre.prettyprint .atv {
+	color: $color-red-scale-1;
+}
+
 pre.prettyprint {
 	margin: 2rem 0 1rem;
 }

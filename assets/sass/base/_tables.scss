@@ -20,17 +20,3 @@ td {
 thead td {
 	background: #eee;
 }
-
-// Hacky way to get rounded corners
-
-table tr:last-child td:first-child {
-    -moz-border-radius-bottomleft:2px;
-    -webkit-border-bottom-left-radius:2px;
-    border-bottom-left-radius:2px
-}
-
-table tr:last-child td:last-child {
-    -moz-border-radius-bottomright:2px;
-    -webkit-border-bottom-right-radius:2px;
-    border-bottom-right-radius:2px
-}

@@ -59,10 +59,29 @@
 
 .button-group {
 	margin-bottom: 20px;
+	clear: both;
+	overflow: auto;
+}
+
+.button-group .button {
+	float: left;
+	@include borders-square;
+	border-right: 1px solid #C8C8C8;
+}
+
+.button-group .button:first-child {
+	@include borders-beginning-cap;
+}
+
+.button-group .button:last-child {
+	border-right: 0;
+	@include borders-end-cap;
 }
 
 .button-group-clear .button {
 	background: none;
+	border: none;
+	margin-right: 0.25rem;
 }
 
 .button-group-clear .button-primary {
@@ -73,8 +92,10 @@
 	border-bottom: 1px solid #D5D8DD;
 }
 
-.button-group-tabs .button {
+.button-group.button-group-tabs .button {
 	@include borders-tab;
+	margin-right: 0.25rem;
+	border-right: none;
 }
 
 // States 
