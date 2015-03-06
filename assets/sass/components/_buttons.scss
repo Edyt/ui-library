@@ -34,13 +34,14 @@
 
 .button .tpIcon {
 	position: relative;
-	top: 0.075rem;
+	top: 0.09rem;
 	@include type-small;
 	line-height: 1;
 }
 
 .button-large .tpIcon {
 	@include type-base;
+	line-height: 1;
 	margin: 0 0.10rem
 }
 
