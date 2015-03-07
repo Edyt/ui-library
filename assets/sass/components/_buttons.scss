@@ -2,17 +2,15 @@
 
 .button {
 	@include borders-round;
+	@include shadow-base;
 	@include font-regular;
 	@include type-smaller;
 	display: inline-block;
 	padding: 0.25rem 0.5rem;
 	text-decoration: none;
 	border: none;
-
 	background: #D5D8DD;
 	color: #4E5A6B;
-
-	background-image: none !important;
 }
 
 .button:hover {
@@ -63,9 +61,15 @@
 // Button groups
 
 .button-group {
+	@include shadow-base;
+	width: auto;
 	margin-bottom: 20px;
 	clear: both;
-	overflow: auto;
+}
+
+.button-group:after {
+	display: block;
+	clear: both;
 }
 
 .button-group .button {
@@ -81,6 +85,11 @@
 .button-group .button:last-child {
 	border-right: 0;
 	@include borders-end-cap;
+}
+
+.button-group-clear, .button-group-tabs {
+	@include shadow-none;
+	overflow: auto;
 }
 
 .button-group-clear .button {
