@@ -21,6 +21,7 @@
 .navigation .button {
 	@include borders-square;
 	@include type-base;
+	@include shadow-none;
 	display: block;	
 	border-bottom: 1px solid #c8c8c8;
 	background: #fff;
