@@ -1,18 +1,18 @@
 body {
-	background: $color-white;
+	background: $color-bright;
 }
 
 .page-demo {
-	background: $color-white;
+	background: $color-bright;
 	width: 75%;
 	margin: 0 auto;
 	padding: 20px;
 }
 
-strong,
-em,
-a,
-u {
+span strong,
+span em,
+span a,
+span u {
 	margin: 40px 20px 40px 0;
 }
 
