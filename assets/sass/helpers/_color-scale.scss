@@ -1,41 +1,64 @@
 // Purple Scale
-$color-purple-base: rgba(154,93,180,1);
-$color-purple-scale-1: rgba(174,111,195,1);
-$color-purple-scale-2: rgba(194,129,209,1);
-$color-purple-scale-3: rgba(214,146,224,1);
+$hue-default-purple-darkest: hsla(282,27%,22%,1);
+$hue-default-purple-darker: hsla(280,28%,33%,1);
+$hue-default-purple-dark: hsla(281,28%,43%,1);
+$hue-default-purple-base: hsla(281,33%,54%,1);
+$hue-default-purple-light: hsla(285,37%,61%,1);
+$hue-default-purple-lighter: hsla(290,42%,67%,1);
+$hue-default-purple-lightest: hsla(294,50%,73%,1);
+
 
 // blue Scale
-$color-blue-base: rgba(58,153,216,1);
-$color-blue-scale-1: rgba(69,174,224,1);
-$color-blue-scale-2: rgba(80,194,231,1);
-$color-blue-scale-3: rgba(90,214,239,1);
+$hue-default-blue-darkest: hsla(200,66%,20%,1);
+$hue-default-blue-darker: hsla(200,66%,30%,1);
+$hue-default-blue-dark: hsla(200,66%,40%,1);
+$hue-default-blue-base: hsla(200,66%,50%,1);
+$hue-default-blue-light: hsla(197,70%,54%,1);
+$hue-default-blue-lighter: hsla(193,75%,57%,1);
+$hue-default-blue-lightest: hsla(188,80%,62%,1);
 
 // cyan Scale
-$color-cyan-base: rgba(41,187,156,1);
-$color-cyan-scale-1: rgba(46,200,176,1);
-$color-cyan-scale-2: rgba(52,214,196,1);
-$color-cyan-scale-3: rgba(58,227,214,1);
+$hue-default-cyan-darkest: hsla(168,72%,17%,1);
+$hue-default-cyan-darker: hsla(169,72%,25%,1);
+$hue-default-cyan-dark: hsla(169,72%,34%,1);
+$hue-default-cyan-base: hsla(169,72%,42%,1);
+$hue-default-cyan-light: hsla(172,71%,45%,1);
+$hue-default-cyan-lighter: hsla(174,70%,49%,1);
+$hue-default-cyan-lightest: hsla(176,75%,53%,1);
 
 // green Scale
-$color-green-base: rgba(57,202,116,1);
-$color-green-scale-1: rgba(65,213,138,1);
-$color-green-scale-2: rgba(74,223,160,1);
-$color-green-scale-3: rgba(83,234,182,1);
+$hue-default-green-darkest: hsla(148,57%,20%,1);
+$hue-default-green-darker: hsla(149,56%,28%,1);
+$hue-default-green-dark: hsla(148,56%,39%,1);
+$hue-default-green-base: hsla(148,56%,49%,1);
+$hue-default-green-light: hsla(153,62%,53%,1);
+$hue-default-green-lighter: hsla(158,68%,56%,1);
+$hue-default-green-lightest: hsla(162,76%,61%,1);
 
 // yellow Scale
-$color-yellow-base: rgba(240,195,48,1);
-$color-yellow-scale-1: rgba(243,207,51,1);
-$color-yellow-scale-2: rgba(246,218,54,1);
-$color-yellow-scale-3: rgba(248,229,57,1);
+$hue-default-yellow-darkest: hsla(41,54%,25%,1);
+$hue-default-yellow-darker: hsla(42,53%,37%,1);
+$hue-default-yellow-dark: hsla(42,53%,50%,1);
+$hue-default-yellow-base: hsla(42,88%,62%,1);
+$hue-default-yellow-light: hsla(45,90%,64%,1);
+$hue-default-yellow-lighter: hsla(48,93%,65%,1);
+$hue-default-yellow-lightest: hsla(51,95%,66%,1);
 
 // orange Scale
-$color-orange-base: rgba(228,126,49,1);
-$color-orange-scale-1: rgba(233,150,56,1);
-$color-orange-scale-2: rgba(238,175,64,1);
-$color-orange-scale-3: rgba(244,201,72,1);
+$hue-default-orange-darkest: hsla(22,56%,23%,1);
+$hue-default-orange-darker: hsla(22,56%,35%,1);
+$hue-default-orange-dark: hsla(22,56%,46%,1);
+$hue-default-orange-base: hsla(22,78%,57%,1);
+$hue-default-orange-light: hsla(28,81%,60%,1);
+$hue-default-orange-lighter: hsla(35,85%,63%,1);
+$hue-default-orange-lightest: hsla(42,91%,66%,1);
 
 // red Scale
-$color-red-base: rgba(229,77,66,1);
-$color-red-scale-1: rgba(234,92,77,1);
-$color-red-scale-2: rgba(239,107,89,1);
-$color-red-scale-3: rgba(243,122,100,1);
+$hue-default-red-darkest: hsla(3,52%,24%,1);
+$hue-default-red-darker: hsla(4,53%,36%,1);
+$hue-default-red-dark: hsla(3,52%,48%,1);
+$hue-default-red-base: hsla(3,78%,60%,1);
+$hue-default-red-light: hsla(5,81%,63%,1);
+$hue-default-red-lighter: hsla(6,85%,66%,1);
+$hue-default-red-lightest: hsla(8,89%,69%,1);
+
