@@ -50,7 +50,7 @@ em,
 strong em {
 	@include font-regular-italic;
 	@include type-base;
-} 
+}
 
 u {
 	@include font-regular;
@@ -106,8 +106,9 @@ pre.prettyprint {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+code,
 pre.prettyprint .atv {
-	color: red; // Placeholder
+	color: $color-red-base; // Placeholder
 }
 
 pre.prettyprint {
