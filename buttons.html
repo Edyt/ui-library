@@ -14,6 +14,11 @@
 
         <script type="text/javascript">
             $(document).ready(function(){
+                
+                $('a').click(function() {
+                    return false;
+                });
+
                 $('.ui-select').change(function(e) {
                     var title = $(this).children('option:selected').text();
                     $(this).attr('title', title ).next().children('.text-label').text(title);
@@ -142,18 +147,6 @@
                         </td>
                         <td>
                             An alternative black button
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <a href="#" class="button button-success">Success</a>
-                        </td>
-                        <td>
-                            <code>button button-success</code>
-                        </td>
-                        <td>
-                            For comunicating success or confirming an important action
                         </td>
                     </tr>
                     <tr>
