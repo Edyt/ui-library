@@ -69,25 +69,23 @@ u {
 a {
 	@include font-regular;
 	@include type-base;
-	color: $color-blue-light;
+	color: $color-blue-base;
 	text-decoration: none;
 	background-image: linear-gradient(to top,
-    rgba( $color-cyan-lightest, 0 ) 10%,
-    rgba( $color-cyan-lightest, 1) 10%,
-    rgba( $color-cyan-lightest, 1) 15%,
-    rgba( $color-cyan-lightest, 0) 15%
+    rgba( $color-blue-base, 0 ) 10%,
+    rgba( $color-blue-base, .4) 10%,
+    rgba( $color-blue-base, .4) 15%,
+    rgba( $color-blue-base, 0) 15%
     );
-    padding: 0 1px;
-    margin: 0 -1px;
 }
 
 a:hover {
-	color: $color-blue-base;
+	color: $color-blue-dark;
 	background-image: linear-gradient(to top,
-    rgba(58,114,217,0) 10%,
-    rgba( $color-cyan-light, 1) 10%,
-    rgba( $color-cyan-light, 1) 15%,
-    rgba( $color-cyan-light, 0) 15%
+    rgba( $color-blue-dark, 0) 10%,
+    rgba( $color-blue-dark, 1) 10%,
+    rgba( $color-blue-dark, 1) 15%,
+    rgba( $color-blue-dark, 0) 15%
     );
 }
 
