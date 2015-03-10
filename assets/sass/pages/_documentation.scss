@@ -1,0 +1,46 @@
+.documentation_page {
+	width: 100%;
+	max-width: 1080px;
+	position: absolute;
+	margin-left: -540px;
+	left: 50%;
+	padding-top: 2%;
+}
+
+nav {
+	outline: 1px solid red;
+	width: 30%;
+	text-align: right;
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	text-decoration: none;
+}
+
+nav ul li:a {
+	background: none;
+}
+
+
+.documentation_content {
+	width: 70%;
+	outline: 1px solid blue;
+	float: right;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+@media (max-width : 1100px) {
+	.documentation_page {
+		position: relative;
+		margin: 0;
+		left: 0;
+	}
+}
