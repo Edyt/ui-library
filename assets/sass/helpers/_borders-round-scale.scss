@@ -1,34 +1,26 @@
 @mixin borders-round {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
-	border-radius: 2px;	
+	border-radius: 2px;
 }
 
 @mixin borders-rounder {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 
 @mixin borders-roundest {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
-	border-radius: 20px;	
+	border-radius: 20px;
 }
 
 @mixin borders-tab {
-	-webkit-border-radius: 2px;
-	-webkit-border-bottom-right-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius: 2px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-radius: 2px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-radius: 2px 2px 0 0;
 }
 
-// used for elements that are part of a larger 
+// used for elements that are part of a larger
 // element that needs to have round corners
 
 @mixin borders-end-cap {

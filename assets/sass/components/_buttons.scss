@@ -11,41 +11,67 @@
 	border: none;
 	background: #D5D8DD;
 	color: #4E5A6B;
+
+	&:focus,
+	&:hover {
+		background: #DCDEE3;
+		color: #4E5A6B;
+	}
+	&:active {
+		// bg and color
+		// maybe the shadow goes away in this state
+	}
 }
 
-.button:hover {
-	background: #DCDEE3;
-	color: #4E5A6B;
+// Style variations of .button
+.button {
+
+	// Primary button (blue)
+	// .button.button-primary
+	&.button-primary {
+		background: #5E90D8;
+		color: #fff;
+
+		&:focus,
+		&:hover {
+			background: #72A0E4;
+			color: #fff;
+		}
+		&:active {
+			// bg and color
+			// maybe the shadow goes away in this state
+		}
+	}
 }
 
-.button-primary {
-	background: #5E90D8;
-	color: #fff;
+// Size variations of .button
+.button {
+
+	// .button.button-large
+	&.button-large {
+		@include type-base;
+		padding: 0.25rem 0.75rem;
+	}
+
 }
 
-.button-primary:hover {
-	background: #72A0E4;
-	color: #fff;
-}
-
-.button-large {
-	@include type-base;
-	padding: 0.25rem 0.75rem;
-}
 
 // Button icons
 
-.button .tpIcon {
-	position: relative;
-	top: 0.09rem;
-	@include type-small;
-	line-height: 1;
-}
+.icon {
+	// icomoon default .icon properties
 
-.button-large .tpIcon {
-	@include type-base;
-	line-height: 1;
-	margin: 0 0.10rem
+	.button & {
+		position: relative;
+		top: 0.09rem;
+		@include type-small;
+		line-height: 1;
+	}
+	.button-large & {
+		@include type-base;
+		line-height: 1;
+		margin: 0 0.10rem
+	}
 }
 
 // Hides label for icon-only buttons
@@ -55,7 +81,7 @@
 }
 
 .button-icon-only span {
-	display: none; 
+	display: none;
 }
 
 // Button groups
@@ -112,7 +138,7 @@
 	border-right: none;
 }
 
-// States 
+// States
 
 .is-active,
 .is-active:hover,
@@ -121,12 +147,14 @@
 	color: #ffffff;
 }
 
-.is-disabled,
-.is-disabled:hover,
-.is-disabled:active {
-	cursor: not-allowed;
-	background: #D5D8DD;
-	color: #93A0B4;
+.is-disabled {
+
+	&:hover,
+	&:active {
+		cursor: not-allowed;
+		background: #D5D8DD;
+		color: #93A0B4;
+	}
 }
 
 
