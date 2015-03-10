@@ -6,7 +6,7 @@
 	@include type-smaller;
 	@include shadow-base($color-gray-lightest);
 	display: inline-block;
-	padding: 0.25rem 0.5rem;
+	padding: 5px 9px;
 	text-decoration: none;
 	border: none;
 	background: $color-gray-lightest;
@@ -29,7 +29,6 @@
 
 .button {
 	// Primary button (blue)
-	// .button.button-primary
 	&.button-primary {
 		@include shadow-base($color-blue-base);
 		background: $color-blue-base;
@@ -50,15 +49,138 @@
 			@extend .button.is-active;
 		}
 	}
+
+	// Success (green)
+
+	&.button-success {
+		@include shadow-base($color-green-base);
+		background: $color-green-base;
+		color: $color-white;
+
+		&:focus,
+		&:hover {
+			background: $color-green-light;
+			color: $color-white
+		}
+
+		&:active {
+			@extend .button:active;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			@extend .button.is-active;
+		}
+	}
+
+	// Warning (orange)
+
+	&.button-warning {
+		@include shadow-base($color-orange-base);
+		background: $color-orange-base;
+		color: $color-white;
+
+		&:focus,
+		&:hover {
+			background: $color-orange-light;
+			color: $color-white
+		}
+
+		&:active {
+			@extend .button:active;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			@extend .button.is-active;
+		}
+	}
+
+	// Danger (red)
+
+	&.button-danger {
+		@include shadow-base($color-red-base);
+		background: $color-red-base;
+		color: $color-white;
+
+		&:focus,
+		&:hover {
+			background: $color-red-light;
+			color: $color-white
+		}
+
+		&:active {
+			@extend .button:active;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			@extend .button.is-active;
+		}
+	}
+
+	// Info (cyan)
+
+	&.button-info {
+		@include shadow-base($color-cyan-base);
+		background: $color-cyan-base;
+		color: $color-white;
+
+		&:focus,
+		&:hover {
+			background: $color-cyan-light;
+			color: $color-white
+		}
+
+		&:active {
+			@extend .button:active;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			@extend .button.is-active;
+		}
+	}
+
+	// Inverse (black)
+
+	&.button-inverse {
+		@include shadow-base($color-night);
+		background: $color-night;
+		color: $color-white;
+
+		&:focus,
+		&:hover {
+			background: $color-night;
+			color: $color-white
+		}
+
+		&:active {
+			@extend .button:active;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			@extend .button.is-active;
+		}
+	}
 }
 
 // Size variations of .button
 .button {
-
-	// .button.button-large
 	&.button-large {
-		@include type-base;
-		padding: 0.25rem 0.75rem;
+		@include type-large;
+		padding: 5px 15px;
+	}
+
+	&.button-small {
+		@include type-smallest;
+		box-shadow: none;
+		padding: 2px 6px;
+
+		&:active {
+			position: static;
+		}
 	}
 
 }
