@@ -10,6 +10,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="assets/js/vendors/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.ui-select').change(function(e) {
+                    var title = $(this).children('option:selected').text();
+                    $(this).attr('title', title ).next().children('.text-label').text(title);
+                });
+            });
+        </script>
+
         <script src="assets/js/vendors/prettify/run_prettify.js"></script>
 
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
@@ -108,7 +119,7 @@
                     <i class="tpIcon tpIconCheck"></i>
                 </a>
             </div>
-            
+
             <div class="button-group button-group-clear">
                 <a class="button button-icon-only" href="#">
                     <span>Stop time</span>
@@ -150,21 +161,11 @@
 
             <h2>Dropdowns</h2>
 
-            <div class="dropdown">
-                <a class="button" href="#">
-                    <span>Stop time</span>
-                    <i class="tpIcon tpIconStopwatch"></i>
-                </a>
-
-                <a class="button" href="#">
-                    <span>Options</span>
-                    <i class="tpIcon tpIconEllipses"></i>
-                </a>
-
-                <a class="button button-primary" href="#">
-                    <span>Save Dossier</span>
-                </a>
-            </div>
+            <select id="" class="ui-select">
+                <option value="">&mdash;</option>
+                <option value="">Label</option>
+            </select>
+            <label for="" class="ui-select-label" tabindex="auto"><span class="text-label">Set language</span> <i class="icon icon-sort"></i></label>
 
             <h2>Navigation</h2>
 
