@@ -1,40 +1,70 @@
+body {
+	background-color: $color-white;
+}
+
 .documentation_page {
 	width: 100%;
 	max-width: 1080px;
 	position: absolute;
 	margin-left: -540px;
 	left: 50%;
-	padding-top: 2%;
+	padding-top: 4%;
 }
 
 nav {
-	outline: 1px solid red;
 	width: 30%;
 	text-align: right;
 	float: left;
-	padding-right: 20px;
 	box-sizing: border-box;
+	border-right: 2px solid $color-bright;
+}
+
+nav h5 {
+	@include type-large;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	padding-right: 20px;
 }
 
 nav ul {
 	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
 }
-
+ 
 nav ul li {
 	text-decoration: none;
+	margin-right: -2px;
 }
 
-nav ul li:a {
+nav ul li a {
+	padding: 5px 20px 5px 0;
+	display: inline-block;
+	background: none;
+	border-right: 2px solid $color-bright;
+	color: rgba( $color-gray-base, .6 );
+	text-decoration: none;
+	text-transform: uppercase;
+	@include font-regular;
+	@include type-small;
+}
+
+nav ul li a:hover {
+	color: $color-blue-base;
+	border-right-color: $color-blue-base;
 	background: none;
 }
 
 
 .documentation_content {
 	width: 70%;
-	outline: 1px solid blue;
 	float: right;
-	padding-left: 10px;
+	padding-left: 80px;
 	box-sizing: border-box;
+}
+
+.documentation_content h5 {
+	margin-top: 10px;
 }
 
 @media (max-width : 1100px) {
