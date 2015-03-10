@@ -24,7 +24,6 @@
         <script src="assets/js/vendors/prettify/run_prettify.js"></script>
 
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-        
     </head>
     <body>
         <div class="page-demo">
@@ -161,11 +160,17 @@
 
             <h2>Dropdowns</h2>
 
-            <select id="" class="ui-select">
-                <option value="">&mdash;</option>
-                <option value="">Label</option>
-            </select>
-            <label for="" class="ui-select-label" tabindex="auto"><span class="text-label">Set language</span> <i class="icon icon-sort"></i></label>
+            <div class="dropdown">
+                <select id="" class="ui-select">
+                    <option value="">&mdash;</option>
+                    <option value="">Label</option>
+                </select>
+                <label for="" class="button ui-select-label" tabindex="auto">
+                    <span class="text-label">Set language</span>
+                    <i class="tpIcon tpIconDropdownArrow"></i>
+                </label>
+            </div>
+
 
             <h2>Navigation</h2>
 
