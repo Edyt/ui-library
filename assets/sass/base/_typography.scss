@@ -108,9 +108,10 @@ pre.prettyprint {
 
 code,
 pre.prettyprint .atv {
-	color: $color-red-base; // Placeholder
+	color: $color-red-base;
 }
 
 pre.prettyprint {
 	margin: 2rem 0 1rem;
+	line-height: 1.6;
 }

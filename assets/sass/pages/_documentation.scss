@@ -205,9 +205,10 @@ nav ul li {
 	margin-top: 0;
 }
 
-em.code-snippet {
+code.var-mention {
 	@include font-medium;
 	@include borders-round;
+	font-size: inherit;
 	border: 1px solid $color-purple-light;
 	background-color: rgba($color-purple-lightest, .2);
 	color: $color-purple-dark;
