@@ -208,11 +208,11 @@ nav ul li {
 em.code-snippet {
 	@include font-medium;
 	@include borders-round;
-	border: 1px solid $color-blue-dark;
-	background-color: rgba($color-blue-base, .2);
-	color: $color-blue-base;
+	border: 1px solid $color-purple-light;
+	background-color: rgba($color-purple-lightest, .2);
+	color: $color-purple-dark;
 	display: inline-block;
-	padding: 0 2px;
+	padding: 0 3px;
 	margin: 0 1px;
 }
 
