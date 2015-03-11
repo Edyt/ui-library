@@ -11,8 +11,6 @@ body {
 	padding-top: 4%;
 }
 
-.test {}
-
 nav {
 	width: 30%;
 	text-align: right;
@@ -175,6 +173,12 @@ nav ul li {
 		text-transform: none;
 	}
 }
+
+
+.list-submenu .active-tab {
+	@include font-medium;
+}
+
 
 .documentation-content {
 	width: 70%;
