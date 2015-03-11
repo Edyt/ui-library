@@ -39,7 +39,7 @@
 			background: $color-blue-light;
 			color: $color-white;
 		}
-		
+
 		&:active {
 			@extend .button:active;
 		}
@@ -145,13 +145,13 @@
 	// Inverse (black)
 
 	&.button-inverse {
-		@include shadow-base($color-night);
-		background: $color-night;
+		@include shadow-base($color-black);
+		background: $color-black;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-night;
+			background: $color-black;
 			color: $color-white
 		}
 
@@ -199,7 +199,7 @@
 			@extend .button:active;
 		}
 	}
-	
+
 	// disabled state
 	&.is-disabled,
 	&.is-disabled:hover,
@@ -213,7 +213,7 @@
 			position: static;
 		}
 	}
-} 
+}
 
 
 // Button icons

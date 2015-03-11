@@ -2,7 +2,7 @@ body {
 	background-color: $color-white;
 }
 
-.documentation_page {
+.documentation-page {
 	width: 100%;
 	max-width: 1080px;
 	position: absolute;
@@ -28,7 +28,7 @@ nav h5 {
 
 nav h5 a {
 	text-decoration: none;
-	color: $color-night;
+	color: $color-black;
 	transition: color .125s ease-in;
 }
 
@@ -45,7 +45,7 @@ nav ul {
 	padding: 0;
 	margin-top: 0;
 }
- 
+
 nav ul li {
 	text-decoration: none;
 	margin-right: -2px;
@@ -65,16 +65,24 @@ nav ul li a {
 	transition: color .125s ease-in, border-right-color .125s ease-in;
 }
 
-nav ul li:nth-of-type(1) a:hover {
-	color: $color-blue-base;
-	border-right-color: $color-blue-lighter;
-}
+.list-menu {
+	.active-tab {
+		@include font-bold;
+		color: $color-black;
+	}
+	.color-blue {
+		&:focus,
+		&:hover {
+			color: $color-blue-base;
+			border-right-color: $color-blue-base;
+		}
+		&:active {
+			color: $color-blue-darker;
+			border-right-color: $color-blue-darker;
+		}
+	}
 
-nav ul li:nth-of-type(1) a:active {
-	color: $color-blue-darker;
-	border-right-color: $color-blue-darker;
 }
-
 nav ul li:nth-of-type(2) a:hover {
 	color: $color-cyan-base;
 	border-right-color: $color-cyan-lighter;
@@ -125,30 +133,30 @@ nav ul li:nth-of-type(6) a:active {
 	border-right-color: $color-red-darker;
 }
 
- 
-nav ul li a.active_tab {
-	@include font-bold;
-	color: $color-night !important;
-}
 
-nav ul li a.active_tab:hover {
-	color: $color-blue-base !important;
-}
+// nav ul li a.active-tab {
+// 	@include font-bold;
+// 	color: $color-black !important;
+// }
+
+// nav ul li a.active-tab:hover {
+// 	color: $color-blue-base !important;
+// }
 
 
-.documentation_content {
+.documentation-content {
 	width: 70%;
 	float: right;
 	padding-left: 80px;
 	box-sizing: border-box;
 }
 
-.documentation_content h3 {
+.documentation-content h3 {
 	margin-top: 10px;
 }
 
 @media (max-width : 1100px) {
-	.documentation_page {
+	.documentation-page {
 		position: relative;
 		margin: 0;
 		left: 0;
