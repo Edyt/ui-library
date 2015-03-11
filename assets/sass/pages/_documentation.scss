@@ -205,6 +205,110 @@ nav ul li {
 	margin-top: 0;
 }
 
+em.code-snippet {
+	@include font-medium;
+	@include borders-round;
+	border: 1px solid $color-blue-dark;
+	background-color: rgba($color-blue-base, .2);
+	color: $color-blue-base;
+	display: inline-block;
+	padding: 0 2px;
+	margin: 0 1px;
+}
+
+/* Color */
+
+ul.color-mixins {
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.color-mixins li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+ul.color-mixins li h3 {
+	margin: 20px 0 4px 0;
+}
+
+ul.color-mixins li ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.color-mixins li ul li {
+	@include font-regular;
+	@include type-base;
+	display: block;
+	margin: 0;
+}
+
+li.purple-example ul li:nth-of-type(1) {color: $color-purple-darkest;}
+li.purple-example ul li:nth-of-type(2) {color: $color-purple-darker;}
+li.purple-example ul li:nth-of-type(3) {color: $color-purple-dark;}
+li.purple-example ul li:nth-of-type(4) {color: $color-purple-base;}
+li.purple-example ul li:nth-of-type(5) {color: $color-purple-light;}
+li.purple-example ul li:nth-of-type(6) {color: $color-purple-lighter;}
+li.purple-example ul li:nth-of-type(7) {color: $color-purple-lightest;}
+
+li.blue-example ul li:nth-of-type(1) {color: $color-blue-darkest;}
+li.blue-example ul li:nth-of-type(2) {color: $color-blue-darker;}
+li.blue-example ul li:nth-of-type(3) {color: $color-blue-dark;}
+li.blue-example ul li:nth-of-type(4) {color: $color-blue-base;}
+li.blue-example ul li:nth-of-type(5) {color: $color-blue-light;}
+li.blue-example ul li:nth-of-type(6) {color: $color-blue-lighter;}
+li.blue-example ul li:nth-of-type(7) {color: $color-blue-lightest;}
+
+li.cyan-example ul li:nth-of-type(1) {color: $color-cyan-darkest;}
+li.cyan-example ul li:nth-of-type(2) {color: $color-cyan-darker;}
+li.cyan-example ul li:nth-of-type(3) {color: $color-cyan-dark;}
+li.cyan-example ul li:nth-of-type(4) {color: $color-cyan-base;}
+li.cyan-example ul li:nth-of-type(5) {color: $color-cyan-light;}
+li.cyan-example ul li:nth-of-type(6) {color: $color-cyan-lighter;}
+li.cyan-example ul li:nth-of-type(7) {color: $color-cyan-lightest;}
+
+li.green-example ul li:nth-of-type(1) {color: $color-green-darkest;}
+li.green-example ul li:nth-of-type(2) {color: $color-green-darker;}
+li.green-example ul li:nth-of-type(3) {color: $color-green-dark;}
+li.green-example ul li:nth-of-type(4) {color: $color-green-base;}
+li.green-example ul li:nth-of-type(5) {color: $color-green-light;}
+li.green-example ul li:nth-of-type(6) {color: $color-green-lighter;}
+li.green-example ul li:nth-of-type(7) {color: $color-green-lightest;}
+
+li.yellow-example ul li:nth-of-type(1) {color: $color-yellow-darkest;}
+li.yellow-example ul li:nth-of-type(2) {color: $color-yellow-darker;}
+li.yellow-example ul li:nth-of-type(3) {color: $color-yellow-dark;}
+li.yellow-example ul li:nth-of-type(4) {color: $color-yellow-base;}
+li.yellow-example ul li:nth-of-type(5) {color: $color-yellow-light;}
+li.yellow-example ul li:nth-of-type(6) {color: $color-yellow-lighter;}
+li.yellow-example ul li:nth-of-type(7) {color: $color-yellow-lightest;}
+
+li.orange-example ul li:nth-of-type(1) {color: $color-orange-darkest;}
+li.orange-example ul li:nth-of-type(2) {color: $color-orange-darker;}
+li.orange-example ul li:nth-of-type(3) {color: $color-orange-dark;}
+li.orange-example ul li:nth-of-type(4) {color: $color-orange-base;}
+li.orange-example ul li:nth-of-type(5) {color: $color-orange-light;}
+li.orange-example ul li:nth-of-type(6) {color: $color-orange-lighter;}
+li.orange-example ul li:nth-of-type(7) {color: $color-orange-lightest;}
+
+li.red-example ul li:nth-of-type(1) {color: $color-red-darkest;}
+li.red-example ul li:nth-of-type(2) {color: $color-red-darker;}
+li.red-example ul li:nth-of-type(3) {color: $color-red-dark;}
+li.red-example ul li:nth-of-type(4) {color: $color-red-base;}
+li.red-example ul li:nth-of-type(5) {color: $color-red-light;}
+li.red-example ul li:nth-of-type(6) {color: $color-red-lighter;}
+li.red-example ul li:nth-of-type(7) {color: $color-red-lightest;}
+
+li.gray-example ul li:nth-of-type(1) {color: $color-gray-darkest;}
+li.gray-example ul li:nth-of-type(2) {color: $color-gray-darker;}
+li.gray-example ul li:nth-of-type(3) {color: $color-gray-dark;}
+li.gray-example ul li:nth-of-type(4) {color: $color-gray-base;}
+li.gray-example ul li:nth-of-type(5) {color: $color-gray-light;}
+li.gray-example ul li:nth-of-type(6) {color: $color-gray-lighter;}
+li.gray-example ul li:nth-of-type(7) {color: $color-gray-lightest;}
+
+
 @media (max-width : 1100px) {
 	.documentation-page {
 		position: relative;
