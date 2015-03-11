@@ -74,6 +74,17 @@ nav ul li a {
 		margin: 10px 20px 10px auto;
 		width: 150px;
 	}
+	a {
+		&:focus,
+		&:hover {
+			color: $color-blue-base;
+			border-right-color: $color-blue-base;
+		}
+		&:active {
+			color: $color-blue-darker;
+			border-right-color: $color-blue-darker;
+		}
+	}
 	.active-tab {
 		@include font-bold;
 		color: $color-black;
@@ -114,12 +125,12 @@ nav ul li a {
 	.color-yellow {
 		&:focus,
 		&:hover {
-			color: $color-yellow-base;
-			border-right-color: $color-yellow-base;
+			color: $color-yellow-dark;
+			border-right-color: $color-yellow-dark;
 		}
 		&:active {
-			color: $color-yellow-darker;
-			border-right-color: $color-yellow-darker;
+			color: $color-yellow-darkest;
+			border-right-color: $color-yellow-darkest;
 		}
 	}
 	.color-orange {
