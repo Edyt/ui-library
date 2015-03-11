@@ -3,6 +3,7 @@
 .navigation {
 	@include borders-round;
 	background: #fff;
+	overflow: auto;
 }
 
 .navigation h2,
