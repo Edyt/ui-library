@@ -26,6 +26,20 @@ nav h5 {
 	padding-right: 20px;
 }
 
+nav h5 a {
+	text-decoration: none;
+	color: $color-night;
+	transition: color .125s ease-in;
+}
+
+nav h5 a:hover {
+	color: $color-gray-base;
+}
+
+nav h5 a:active {
+	color: $color-gray-dark;
+}
+
 nav ul {
 	list-style-type: none;
 	padding: 0;
@@ -37,6 +51,7 @@ nav ul li {
 	margin-right: -2px;
 }
 
+
 nav ul li a {
 	padding: 5px 20px 5px 0;
 	display: inline-block;
@@ -47,14 +62,80 @@ nav ul li a {
 	text-transform: uppercase;
 	@include font-regular;
 	@include type-small;
+	transition: color .125s ease-in, border-right-color .125s ease-in;
 }
 
-nav ul li a:hover {
+nav ul li:nth-of-type(1) a:hover {
 	color: $color-blue-base;
-	border-right-color: $color-blue-base;
-	background: none;
+	border-right-color: $color-blue-lighter;
 }
 
+nav ul li:nth-of-type(1) a:active {
+	color: $color-blue-darker;
+	border-right-color: $color-blue-darker;
+}
+
+nav ul li:nth-of-type(2) a:hover {
+	color: $color-cyan-base;
+	border-right-color: $color-cyan-lighter;
+}
+
+nav ul li:nth-of-type(2) a:active {
+	color: $color-cyan-darker;
+	border-right-color: $color-cyan-darker;
+}
+
+nav ul li:nth-of-type(3) a:hover {
+	color: $color-green-base;
+	border-right-color: $color-green-lighter;
+}
+
+nav ul li:nth-of-type(3) a:active {
+	color: $color-green-darker;
+	border-right-color: $color-green-darker;
+}
+
+nav ul li:nth-of-type(4) a:hover {
+	color: $color-yellow-base;
+	border-right-color: $color-yellow-lighter;
+}
+
+nav ul li:nth-of-type(4) a:active {
+	color: $color-yellow-darker;
+	border-right-color: $color-yellow-darker;
+}
+
+nav ul li:nth-of-type(5) a:hover {
+	color: $color-orange-base;
+	border-right-color: $color-orange-lighter;
+}
+
+nav ul li:nth-of-type(5) a:active {
+	color: $color-orange-darker;
+	border-right-color: $color-orange-darker;
+}
+
+nav ul li:nth-of-type(6) a:hover {
+	color: $color-red-lighter;
+	border-right-color: $color-red-lighter;
+}
+
+nav ul li:nth-of-type(6) a:active {
+	color: $color-red-darker;
+	border-right-color: $color-red-darker;
+}
+
+ 
+/*
+nav ul li a.active_tab {
+	@include font-bold;
+	color: $color-night !important;
+}
+
+nav ul li a.active_tab:hover {
+	color: $color-blue-base !important;
+}
+*/
 
 .documentation_content {
 	width: 70%;

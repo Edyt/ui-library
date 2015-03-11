@@ -66,7 +66,7 @@ u {
 
 // Base links
 
-a {
+p a {
 	@include font-regular;
 	@include type-base;
 	color: $color-blue-base;
@@ -79,7 +79,7 @@ a {
     );
 }
 
-a:hover {
+p a:hover {
 	color: $color-blue-dark;
 	background-image: linear-gradient(to top,
     rgba( $color-blue-dark, 0) 10%,
