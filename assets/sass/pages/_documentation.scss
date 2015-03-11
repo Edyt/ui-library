@@ -8,13 +8,14 @@ body {
 	position: absolute;
 	margin-left: -540px;
 	left: 50%;
-	padding-top: 4%;
+	padding-top: 2%;
 }
 
 nav {
-	width: 30%;
+	width: 25%;
 	text-align: right;
 	float: left;
+	margin-top: 16px;
 	box-sizing: border-box;
 	border-right: 2px solid $color-gray-lightest;
 }
@@ -181,12 +182,13 @@ nav ul li {
 
 
 .documentation-content {
-	width: 65%;
+	@include borders-rounder;
+	width: 70%;
 	float: right;
 	margin-right: 40px;
 	padding: 20px 40px;
 	box-sizing: border-box;
-	background-color: white;
+	background-color: $color-white;
 }
 
 .documentation-content h2 {
