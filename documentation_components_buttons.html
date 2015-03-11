@@ -10,6 +10,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="assets/js/vendors/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.documentation-content a').click(function() {
+                    return false;
+                });
+
+                $('.ui-select').change(function(e) {
+                    var title = $(this).children('option:selected').text();
+                    $(this).attr('title', title ).next().children('.text-label').text(title);
+                });
+            });
+        </script>
+
+        <script src="assets/js/vendors/prettify/run_prettify.js"></script>
+
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     </head>
     <body>
@@ -20,17 +38,17 @@
             <li>
                 <a class="color-blue " href="documentation_index.html">Getting Started</a>
             </li>
-            <li><a class="color-cyan" href="documentation_foundations_colors.html">Foundations</a></li>
+            <li><a class="color-cyan" href="documentation_foundations.html">Foundations</a></li>
             <li>
-                <a class="active-tab color-green" href="documentation_components_buttons.html">Components</a>
+                <a class="active-tab color-green" href="documentation_components.html">Components</a>
                 <ul class="list-submenu">
-                    <li><a href="documentation_components_buttons.html" class="active-tab">Buttons</a></li>
+                    <li><a href="documentation_components.html" class="active-tab">Buttons</a></li>
                     <li><a href="documentation_component_forms.html">Forms</a></li>
                     <li><a href="#">Labels</a></li>
                 </ul>
             </li>
-            <li><a class="color-yellow" href="documentation_collections_tasksnippets.html">Collections</a></li>
-            <li><a class="color-orange" href="documentation_pages_workspace.html">Pages</a></li>
+            <li><a class="color-yellow" href="documentation_collections.html">Collections</a></li>
+            <li><a class="color-orange" href="documentation_pages.html">Pages</a></li>
             <li class="divider"></li>
             <li><a class="color-red" href="#">Prototype</a></li>
             <li class="divider"></li>
@@ -38,15 +56,16 @@
         </ul>
     </nav>
     <div class="documentation-content">
-        <h2>Forms</h2>
+        <h2>Buttons</h2>
 
-        <h2>Standard Buttons</h2>
+        <div class="container">
+            <h3>Standard Buttons</h3>
 
             <p>Buttons have a class of <code>.button</code> and are shown inline by default.</p>
 
             <p>All button labels are wrapped in a <code>&lt;span&gt;</code> tag, for accessibility and tooltip functionality.</p>
 
-            <h3>Examples and Usage:</h3>
+            <h4>Examples and Usage:</h4>
 
             <pre class="prettyprint lang-html">
 &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
@@ -66,7 +85,7 @@
                 <span>Save</span>
             </a>
 
-            <h3>List of variations</h3>
+            <h4>List of variations</h4>
 
             <table>
                 <thead>
@@ -201,7 +220,7 @@
                 </tbody>
             </table>
 
-            <h2>Large Buttons</h2>
+            <h3>Large Buttons</h3>
 
             <button class="button button-large">
                 <i class="tpIcon tpIconPhotoStacked"></i>
@@ -213,7 +232,24 @@
             </button>
 
 
-            <h2>Button Groups</h2>
+            <h3>Button Groups</h3>
+
+            <div class="button-group">
+                <a class="button button-icon-only" href="#">
+                    <span>Stop time</span>
+                    <i class="tpIcon tpIconStopwatch"></i>
+                </a>
+
+                <a class="button button-icon-only" href="#">
+                    <span>Options</span>
+                    <i class="tpIcon tpIconEllipses"></i>
+                </a>
+
+                <a class="button button-icon-only" href="#">
+                    <span>Save</span>
+                    <i class="tpIcon tpIconCheck"></i>
+                </a>
+            </div>
 
             <div class="button-group">
                 <a class="button" href="#">
@@ -232,20 +268,47 @@
                 </a>
             </div>
 
-            <div class="button-group button-group-clear">
-                <a class="button button-icon-only" href="#">
+            <div class="button-group">
+                <a class="button" href="#">
                     <span>Stop time</span>
-                    <i class="tpIcon tpIconStopwatch"></i>
                 </a>
 
-                <a class="button button-icon-only button-primary" href="#">
+                <a class="button" href="#">
                     <span>Options</span>
-                    <i class="tpIcon tpIconEllipses"></i>
                 </a>
 
-                <a class="button is-disabled button-icon-only" href="#">
+                <a class="button" href="#">
                     <span>Save</span>
-                    <i class="tpIcon tpIconCheck"></i>
+                </a>
+            </div>
+
+            <div class="button-group">
+                <a class="button" href="#">
+                    <span>&lt;&lt;</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>&lt;</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>1</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>2</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>3</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>&gt;&gt;</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span>&gt;</span>
                 </a>
             </div>
 
@@ -271,7 +334,7 @@
                 </a>
             </div>
 
-            <h2>Dropdowns</h2>
+            <h3>Dropdowns</h3>
 
             <div class="dropdown">
                 <select id="" class="ui-select">
@@ -285,7 +348,7 @@
             </div>
 
 
-            <h2>Navigation</h2>
+            <h3>Navigation</h3>
 
             <div class="navigation">
                 <h2>Work Manager</h2>
@@ -300,7 +363,7 @@
                 </a>
 
 
-                <h3>Role</h3>
+                <h4>Role</h4>
                 <a class="button" href="#">
                     <span>1st Examiner</span>
                     <em><b>2</b>/8</em>
