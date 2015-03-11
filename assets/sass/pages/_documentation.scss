@@ -18,7 +18,7 @@ nav {
 	box-sizing: border-box;
 	border-right: 2px solid $color-gray-lightest;
 }
-
+ 
 nav h5 {
 	@include type-large;
 	margin-top: 6px;
@@ -187,8 +187,8 @@ nav ul li {
 	box-sizing: border-box;
 }
 
-.documentation-content h3 {
-	margin-top: 10px;
+.documentation-content h2 {
+	margin-top: 0;
 }
 
 @media (max-width : 1100px) {
