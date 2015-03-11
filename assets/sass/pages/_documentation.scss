@@ -181,10 +181,12 @@ nav ul li {
 
 
 .documentation-content {
-	width: 70%;
+	width: 65%;
 	float: right;
-	padding-left: 80px;
+	margin-right: 40px;
+	padding: 20px 40px;
 	box-sizing: border-box;
+	background-color: white;
 }
 
 .documentation-content h2 {
