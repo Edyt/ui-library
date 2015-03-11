@@ -205,6 +205,10 @@ nav ul li {
 	margin-top: 0;
 }
 
+.documentation-content h3 {
+	margin: 10px 0 10px 0;
+}
+
 code.var-mention {
 	@include font-medium;
 	@include borders-round;
@@ -229,8 +233,9 @@ ul.color-mixins li {
 	margin-right: 20px;
 }
 
-ul.color-mixins li h3 {
+ul.color-mixins li h4 {
 	margin: 20px 0 4px 0;
+	color: $color-gray-darker;
 }
 
 ul.color-mixins li ul {

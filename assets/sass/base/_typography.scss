@@ -115,3 +115,7 @@ pre.prettyprint {
 	margin: 2rem 0 1rem;
 	line-height: 1.6;
 }
+
+pre.prettyprint:first-of-type {
+	margin-top: 10px;
+}
