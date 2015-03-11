@@ -63,27 +63,27 @@
 
             <p>Buttons have a class of <code>.button</code> and are shown inline by default.</p>
 
-            <p>All button labels are wrapped in a <code>&lt;span&gt;</code> tag, for accessibility and tooltip functionality.</p>
+            <p>All button labels are wrapped in a <code>&lt;span class="button-label"&gt;</code> tag, for accessibility and tooltip functionality.</p>
 
             <h4>Examples and Usage:</h4>
 
             <pre class="prettyprint lang-html">
-&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
-    &lt;span&gt;Button title&lt;/span&gt;
-&lt;/a&gt;</pre>
+&lt;button class=&quot;button&quot; href=&quot;#&quot;&gt;
+    &lt;span class="button-label"&gt;Button title&lt;/span&gt;
+&lt;/button&gt;</pre>
 
-            <a class="button" href="#">
-                <span>Button title</span>
-            </a>
+            <button class="button" href="#">
+                <span class="button-label">Button title</span>
+            </button>
 
             <pre class="prettyprint lang-html">
-&lt;a class=&quot;button button-primary button-large&quot; href=&quot;#&quot;&gt;
-    &lt;span&gt;Save&lt;/span&gt;
-&lt;/a&gt;</pre>
+&lt;button class=&quot;button button-primary button-large&quot; href=&quot;#&quot;&gt;
+    &lt;span class="button-label"&gt;Save&lt;/span&gt;
+&lt;/button&gt;</pre>
 
-            <a class="button button-primary button-large" href="#">
-                <span>Save</span>
-            </a>
+            <button class="button button-primary button-large" href="#">
+                <span class="button-label">Save</span>
+            </button>
 
             <h4>List of variations</h4>
 
@@ -224,11 +224,11 @@
 
             <button class="button button-large">
                 <i class="tpIcon tpIconPhotoStacked"></i>
-                <span>Figures</span>
+                <span class="button-label">Figures</span>
             </button>
 
             <button class="button button-large button-primary">
-                <span>Save</span>
+                <span class="button-label">Save</span>
             </button>
 
 
@@ -236,100 +236,100 @@
 
             <div class="button-group">
                 <a class="button button-icon-only" href="#">
-                    <span>Stop time</span>
+                    <span class="button-label">Stop time</span>
                     <i class="tpIcon tpIconStopwatch"></i>
                 </a>
 
                 <a class="button button-icon-only" href="#">
-                    <span>Options</span>
+                    <span class="button-label">Options</span>
                     <i class="tpIcon tpIconEllipses"></i>
                 </a>
 
                 <a class="button button-icon-only" href="#">
-                    <span>Save</span>
+                    <span class="button-label">Save</span>
                     <i class="tpIcon tpIconCheck"></i>
                 </a>
             </div>
 
             <div class="button-group">
                 <a class="button" href="#">
-                    <span>Stop time</span>
+                    <span class="button-label">Stop time</span>
                     <i class="tpIcon tpIconStopwatch"></i>
                 </a>
 
                 <a class="button" href="#">
-                    <span>Options</span>
+                    <span class="button-label">Options</span>
                     <i class="tpIcon tpIconEllipses"></i>
                 </a>
 
                 <a class="button" href="#">
-                    <span>Save</span>
+                    <span class="button-label">Save</span>
                     <i class="tpIcon tpIconCheck"></i>
                 </a>
             </div>
 
             <div class="button-group">
                 <a class="button" href="#">
-                    <span>Stop time</span>
+                    <span class="button-label">Stop time</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>Options</span>
+                    <span class="button-label">Options</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>Save</span>
+                    <span class="button-label">Save</span>
                 </a>
             </div>
 
             <div class="button-group">
                 <a class="button" href="#">
-                    <span>&lt;&lt;</span>
+                    <span class="button-label">&lt;&lt;</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>&lt;</span>
+                    <span class="button-label">&lt;</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>1</span>
+                    <span class="button-label">1</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>2</span>
+                    <span class="button-label">2</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>3</span>
+                    <span class="button-label">3</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>&gt;&gt;</span>
+                    <span class="button-label">&gt;&gt;</span>
                 </a>
 
                 <a class="button" href="#">
-                    <span>&gt;</span>
+                    <span class="button-label">&gt;</span>
                 </a>
             </div>
 
             <div class="button-group button-group-tabs">
                 <a class="button is-active button-large" href="#">
-                    <span>Stop time</span>
+                    <span class="button-label">Stop time</span>
                     <i class="tpIcon tpIconStopwatch"></i>
                 </a>
 
                 <a class="button button-large" href="#">
-                    <span>Options</span>
+                    <span class="button-label">Options</span>
                     <i class="tpIcon tpIconEllipses"></i>
                 </a>
 
                 <a class="button button-large" href="#">
-                    <span>Save</span>
+                    <span class="button-label">Save</span>
                     <i class="tpIcon tpIconCheck"></i>
                 </a>
 
                 <a class="button is-disabled button-large" href="#">
-                    <span>Options</span>
+                    <span class="button-label">Options</span>
                     <i class="tpIcon tpIconEllipses"></i>
                 </a>
             </div>
@@ -353,51 +353,51 @@
             <div class="navigation">
                 <h2>Work Manager</h2>
                 <a class="button" href="#">
-                    <span>In Tray</span>
+                    <span class="button-label">In Tray</span>
                     <em><u>3</u><b>20</b>/64</em>
                 </a>
 
                 <a class="button" href="#">
-                    <span>All Stock</span>
+                    <span class="button-label">All Stock</span>
                     <em><b>23</b>/72</em>
                 </a>
 
 
                 <h4>Role</h4>
                 <a class="button" href="#">
-                    <span>1st Examiner</span>
+                    <span class="button-label">1st Examiner</span>
                     <em><b>2</b>/8</em>
                 </a>
 
                 <a class="button" href="#">
-                    <span>2nd Examiner</span>
+                    <span class="button-label">2nd Examiner</span>
                     <em><u>1</u><b>2</b>/2</em>
                 </a>
 
                 <a class="button" href="#">
-                    <span>Chairman</span>
+                    <span class="button-label">Chairman</span>
                     <em>8</em>
                 </a>
             </div>
 
             <div class="navigation navigation-primary">
                 <a class="button button-icon-only" href="#">
-                    <span>Analyze</span>
+                    <span class="button-label">Analyze</span>
                     <i class="tpIcon tpIconAnalyze"></i>
                 </a>
 
                 <a class="button is-active button-icon-only" href="#">
-                    <span>Search</span>
+                    <span class="button-label">Search</span>
                     <i class="tpIcon tpIconSearch"></i>
                 </a>
 
                 <a class="button button-icon-only" href="#">
-                    <span>Research</span>
+                    <span class="button-label">Research</span>
                     <i class="tpIcon tpIconResearch"></i>
                 </a>
 
                 <a class="button button-icon-only" href="#">
-                    <span>Communication</span>
+                    <span class="button-label">Communication</span>
                     <i class="tpIcon tpIconCommunication"></i>
                 </a>
             </div>
