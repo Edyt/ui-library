@@ -189,6 +189,16 @@ nav ul li {
 	padding: 20px 40px;
 	box-sizing: border-box;
 	background-color: $color-white;
+
+	// Page specific styles 
+	
+	.navigation, .dropdown {
+		width: 25%;
+	}
+
+	.navigation-primary {
+		width: 6%;
+	}
 }
 
 .documentation-content h2 {
