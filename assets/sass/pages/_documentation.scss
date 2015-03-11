@@ -53,28 +53,19 @@ nav ul li {
 	margin-right: -2px;
 }
 
-
-nav ul li a {
-	padding: 5px 20px 5px 0;
-	display: inline-block;
-	background: none;
-	border-right: 2px solid $color-gray-lightest;
-	color: rgba( $color-gray-base, .6 );
-	text-decoration: none;
-	text-transform: uppercase;
-	@include font-regular;
-	@include type-small;
-	transition: color .125s ease-in, border-right-color .125s ease-in;
-}
-
 .list-menu {
-	.divider {
-		background: $color-gray-lightest;
-		height: 1px;
-		margin: 10px 20px 10px auto;
-		width: 150px;
-	}
 	a {
+		padding: 5px 20px 5px 0;
+		display: inline-block;
+		background: none;
+		border-right: 2px solid $color-gray-lightest;
+		color: rgba( $color-gray-base, .6 );
+		text-decoration: none;
+		text-transform: uppercase;
+		@include font-regular;
+		@include type-base;
+		transition: color .125s ease-in, border-right-color .125s ease-in;
+
 		&:focus,
 		&:hover {
 			color: $color-blue-base;
@@ -84,6 +75,12 @@ nav ul li a {
 			color: $color-blue-darker;
 			border-right-color: $color-blue-darker;
 		}
+	}
+	.divider {
+		background: $color-gray-lightest;
+		height: 1px;
+		margin: 10px 20px 10px auto;
+		width: 150px;
 	}
 	.active-tab {
 		@include font-bold;
@@ -168,6 +165,16 @@ nav ul li a {
 	}
 }
 
+.list-submenu {
+	margin-right: 2px;
+	margin-bottom: 8px;
+
+	a {
+		@include type-small;
+		padding: 2px 20px 2px 0;
+		text-transform: none;
+	}
+}
 
 .documentation-content {
 	width: 70%;
