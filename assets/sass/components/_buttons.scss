@@ -237,7 +237,7 @@
 // Hides label for icon-only buttons
 
 .button-icon-only {
-	padding: 0.25rem;
+	padding: 5px 11px;
 }
 
 .button-icon-only span {
@@ -247,21 +247,16 @@
 // Button groups
 
 .button-group {
-	@include shadow-base($color-gray-lightest);
 	width: auto;
+	overflow: auto;
 	margin-bottom: 20px;
-	clear: both;
-}
-
-.button-group:after {
-	display: block;
-	clear: both;
 }
 
 .button-group .button {
-	float: left;
 	@include borders-square;
-	border-right: 1px solid #C8C8C8;
+	float: left;
+	border-right: 1px solid $color-gray-light;
+	margin-bottom: 1px;
 }
 
 .button-group .button:first-child {
@@ -289,13 +284,23 @@
 }
 
 .button-group-tabs {
-	border-bottom: 1px solid #D5D8DD;
+	border-bottom: 1px solid $color-gray-light;
+	overflow: hidden;
 }
 
 .button-group.button-group-tabs .button {
 	@include borders-tab;
-	margin-right: 0.25rem;
+	@include shadow-none;
+	float: none;
+	display: inline-block;
+	margin-right: 8px;
 	border-right: none;
+
+	&.is-active,
+	&.is-active:hover {
+		background: $color-white;
+		color: $color-gray-darkest;
+	}
 }
 
 
