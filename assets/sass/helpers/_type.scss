@@ -1,84 +1,3 @@
-// Weights
-
-// Type Weights
-@mixin font-extralight {
-	font-family: 'SourceSansProExtraLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-}
-
-@mixin font-extralight-italic {
-	font-family: 'SourceSansProExtraLight-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 200;
-}
-
-@mixin font-light {
-	font-family: 'SourceSansProLight',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-@mixin font-light-italic {
-	font-family: 'SourceSansProLight-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-@mixin font-regular {
-	font-family: 'SourceSansProRegular',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@mixin font-regular-italic {
-	font-family: 'SourceSansProRegular-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
-@mixin font-medium {
-	font-family: 'SourceSansProSemibold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-
-@mixin font-medium-italic {
-	font-family: 'SourceSansProSemibold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 600;
-}
-
-@mixin font-bold {
-	font-family: 'SourceSansProBold',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@mixin font-bold-italic {
-	font-family: 'SourceSansProBold-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 700;
-}
-
-@mixin font-black {
-	font-family: 'SourceSansProBlack','Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-}
-
-@mixin font-black-italic {
-	font-family: 'SourceSansProBlack-Italic',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-style: italic;
-  font-weight: 900;
-}
-
-
-// Scale
-html {
-	font-size: 18px;
-}
-
 @mixin type-smallest {
 	font-size: 12px;
 	line-height: 1.25;
@@ -115,6 +34,9 @@ html {
 	font-size: 48px;
 	line-height: 1.291666667;
 }
+
+
+
 
 /*
 html {

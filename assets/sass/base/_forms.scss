@@ -6,7 +6,6 @@
 input,
 textarea,
 select {
-	@include font-regular;
 	@include type-smaller;
 	margin-bottom: .5rem;
 }

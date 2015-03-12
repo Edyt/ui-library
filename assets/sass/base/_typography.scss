@@ -1,59 +1,72 @@
 // Foundational Typography
 
+html,
+body {
+	font: 16px / 1.3125 'Source Sans Pro', 'Helvetica Neue', Verdana, sans-serif;
+}
+
+code,
+samp,
+kbd,
+var,
+pre {
+	font: 15px / 1.33333333333 'Source Code Pro', serif, Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
 h1 {
-	@include font-medium;
 	@include type-largest;
+	font-weight: 600;
 }
 
 h2 {
-	@include font-bold;
 	@include type-larger;
+	font-weight: 700;
 }
 
 h3 {
-	@include font-bold-italic;
 	@include type-large;
+	font-weight: 700;
+	font-style: italic;
 }
 
 h4 {
-	@include font-black-italic;
 	@include type-base;
+	font-weight: 700;
+	font-style: italic;
 	letter-spacing: .5px;
 }
 
 h5 {
-	@include font-medium;
 	@include type-small;
 	text-transform: uppercase;
+	font-weight: 600;
 	letter-spacing: .25px;
 }
 
 h6 {
-	@include font-medium;
 	@include type-smaller;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .5px;
 }
 
 p {
-	@include font-regular;
 	@include type-base;
 	letter-spacing: 0.125px;
 }
 
 strong {
-	@include font-bold;
 	@include type-base;
+	font-weight: 700;
 }
 
 em,
 strong em {
-	@include font-regular-italic;
 	@include type-base;
+	font-style: italic;
 }
 
 u {
-	@include font-regular;
 	@include type-base;
 	text-decoration: none;
 	background-image: linear-gradient(to top,
@@ -67,7 +80,6 @@ u {
 // Base links
 
 p a {
-	@include font-regular;
 	@include type-base;
 	color: $color-blue-base;
 	text-decoration: none;
@@ -103,8 +115,6 @@ pre.prettyprint {
 	line-height: 1.6;
 	border: 1px solid #cecece;
 	background: #fff;
-	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-
 	var,
 	var span {
 		@include type-base;
@@ -122,7 +132,6 @@ pre.prettyprint .atv {
 
 var,
 code {
-	@include font-medium;
 	@include borders-round;
 	font-size: inherit;
 	border: 1px solid $color-purple-light;

@@ -61,7 +61,6 @@ nav ul li {
 		color: rgba( $color-gray-base, .6 );
 		text-decoration: none;
 		text-transform: uppercase;
-		@include font-regular;
 		@include type-base;
 		transition: color .125s ease-in, border-right-color .125s ease-in;
 
@@ -82,7 +81,7 @@ nav ul li {
 		width: 150px;
 	}
 	.active-tab {
-		@include font-bold;
+		font-weight: 700;
 		color: $color-black;
 	}
 	.color-blue {
@@ -177,7 +176,7 @@ nav ul li {
 
 
 .list-submenu .active-tab {
-	@include font-medium;
+	font-weight: 600;
 }
 
 
@@ -221,6 +220,7 @@ ul.color-mixins li {
 	margin-right: 20px;
 }
 
+
 ul.color-mixins li h4 {
 	margin: 20px 0 4px 0;
 	color: $color-gray-darker;
@@ -232,7 +232,6 @@ ul.color-mixins li ul {
 }
 
 ul.color-mixins li ul li {
-	@include font-regular;
 	@include type-base;
 	display: block;
 	margin: 0;

@@ -2,7 +2,6 @@
 
 .button {
 	@include borders-round;
-	@include font-regular;
 	@include type-smaller;
 	@include shadow-base($color-gray-lightest);
 	display: inline-block;

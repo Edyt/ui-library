@@ -8,7 +8,6 @@
 
 .navigation h2,
 .navigation h3 {
-	@include font-regular;
 	color: #5E90D8;
 	border-bottom: 1px solid #c8c8c8;
 	margin-bottom: 0;
@@ -44,7 +43,6 @@
 
 .navigation em,
 .navigation u {
-	@include font-regular;
 	@include type-base;
 	position: absolute;
 	right: 0.75rem;

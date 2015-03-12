@@ -1,4 +1,5 @@
 @import '../sass/base/normalize.css';
+@import '../fonts/fonts';
 
 @import 'helpers/color-scale';
 @import 'helpers/type';
@@ -9,8 +10,7 @@
 @import 'base/typography';
 @import 'base/forms';
 @import 'base/tables';
-@import '../fonts/ico-moon/icon-font.css';
-@import '../fonts/source-sans/source-sans.css';
+@import '../fonts/icomoon/icon-font.css';
 
 @import 'components/buttons';
 @import 'components/dropdowns';
