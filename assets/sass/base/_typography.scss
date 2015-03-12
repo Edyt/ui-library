@@ -95,27 +95,46 @@ a:active {
 
 // Extra styles
 
-code,
 pre.prettyprint {
 	@include borders-round;
 	@include type-small;
 	padding: 0.15rem 0.25rem;
-	margin: 0 0.25rem;
+	margin: 2rem 0 1rem;
+	line-height: 1.6;
 	border: 1px solid #cecece;
 	background: #fff;
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+	var,
+	var span {
+		@include type-base;
+		color: $color-purple-dark;
+	}
+
+	&:first-of-type {
+		margin-top: 10px;
+	}
 }
 
-code,
 pre.prettyprint .atv {
 	color: $color-red-base;
 }
 
-pre.prettyprint {
-	margin: 2rem 0 1rem;
-	line-height: 1.6;
+var,
+code {
+	@include font-medium;
+	@include borders-round;
+	font-size: inherit;
+	border: 1px solid $color-purple-light;
+	background-color: rgba($color-purple-lightest, .2);
+	color: $color-purple-dark;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0 2px;
 }
 
-pre.prettyprint:first-of-type {
-	margin-top: 10px;
+code {
+	background-color: rgba($color-bright, 0.5);
+	border-color: $color-gray-base;
+	color: $color-red-base;
 }
