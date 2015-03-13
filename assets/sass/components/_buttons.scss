@@ -3,7 +3,7 @@
 .button {
 	@include borders-round;
 	@include type-smaller;
-	@include shadow-base($color-gray-lightest);
+	@include shadow-base($color-gray-light);
 	display: inline-block;
 	padding: 5px 9px;
 	text-decoration: none;
@@ -52,7 +52,7 @@
 	// Success (green)
 
 	&.button-success {
-		@include shadow-base($color-green-base);
+		@include shadow-base($color-green-dark);
 		background: $color-green-base;
 		color: $color-white;
 
@@ -75,7 +75,7 @@
 	// Warning (orange)
 
 	&.button-warning {
-		@include shadow-base($color-orange-base);
+		@include shadow-base($color-orange-dark);
 		background: $color-orange-base;
 		color: $color-white;
 
@@ -98,7 +98,7 @@
 	// Danger (red)
 
 	&.button-danger {
-		@include shadow-base($color-red-base);
+		@include shadow-base($color-red-dark);
 		background: $color-red-base;
 		color: $color-white;
 
@@ -121,7 +121,7 @@
 	// Info (cyan)
 
 	&.button-info {
-		@include shadow-base($color-cyan-base);
+		@include shadow-base($color-cyan-dark);
 		background: $color-cyan-base;
 		color: $color-white;
 

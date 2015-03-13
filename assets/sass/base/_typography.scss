@@ -113,7 +113,7 @@ pre.prettyprint {
 	padding: 0.15rem 0.25rem;
 	margin: 2rem 0 1rem;
 	line-height: 1.6;
-	border: 1px solid #cecece;
+	border: 1px solid $color-gray-lightest;
 	background: #fff;
 	var,
 	var span {
@@ -144,6 +144,6 @@ code {
 
 code {
 	background-color: rgba($color-bright, 0.5);
-	border-color: $color-gray-base;
+	border-color: $color-gray-lightest;
 	color: $color-red-base;
 }
