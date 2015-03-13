@@ -347,7 +347,18 @@ ul.font-weights li:nth-of-type(8) {
 }
 
 
+// Testing Ground
 
+.testing-container {
+	display: table;
+	background-color: $color-white;
+	margin: 20px auto;
+	border: 1px solid $color-gray-lightest;
+	@include borders-round;
+	min-width: 20px;
+	min-height: 40px;
+	padding: 20px 10px;
+}
 
 
 @media (max-width : 1100px) {
