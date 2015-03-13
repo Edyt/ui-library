@@ -264,8 +264,8 @@
 }
 
 .button-group .button:last-child {
-	border-right: 0;
 	@include borders-end-cap;
+	border-right: 0;
 }
 
 .button-group-clear, .button-group-tabs {
@@ -283,23 +283,42 @@
 	color: #5E90DB;
 }
 
-.button-group-tabs {
+.button-group.button-group-tabs {
 	border-bottom: 1px solid $color-gray-light;
-	overflow: hidden;
-}
+	overflow: visible;
+	display: table;
+	list-style: none;
+	padding: 0;
 
-.button-group.button-group-tabs .button {
-	@include borders-tab;
-	@include shadow-none;
-	float: none;
-	display: inline-block;
-	margin-right: 8px;
-	border-right: none;
+	li {
+		float: left;
+	}
 
-	&.is-active,
-	&.is-active:hover {
-		background: $color-white;
-		color: $color-gray-darkest;
+	li:last-child .button {
+		margin-right: 0;
+	}
+
+	.button {
+		@include borders-tab;
+		@include shadow-none;
+		float: none;
+		display: block;
+		margin-right: 8px;
+		margin-bottom: 0;
+		border: 0;
+
+		&:active {
+			position: static;
+		}
+
+		&.is-active,
+		&.is-active:hover {
+			background: $color-white;
+			color: $color-gray-darkest;
+			border: 1px solid $color-gray-base;
+			border-bottom: 0;
+			margin-bottom: -1px;
+		}
 	}
 }
 
