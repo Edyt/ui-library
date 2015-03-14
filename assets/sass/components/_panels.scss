@@ -1,0 +1,27 @@
+.panel {
+	@include borders-round;
+	border: 1px solid $color-gray-lightest;
+	background: $color-white;
+	padding: 15px;
+}
+
+.content {
+}
+
+.toolbar {
+	border-bottom: 1px solid $color-gray-lightest;
+	margin-bottom: 25px;
+	overflow: auto;
+
+	h2 {
+		float: left;
+		margin-bottom: 6px;
+	}
+}
+
+.tabs-content {
+	border-radius: 0 0 2px 2px;
+	padding: 15px;
+	border: 1px solid $color-gray-base;
+	border-top: 0;
+}

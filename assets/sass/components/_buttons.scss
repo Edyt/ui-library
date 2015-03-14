@@ -283,12 +283,27 @@
 	color: #5E90DB;
 }
 
+// For buttons in toolbars
+
+.toolbar .button-group {
+	float: right;
+	margin: 5px 12px 0 0;
+}
+
+.toolbar .button-group:first-child {
+	margin-right: 0;
+}
+
+// Button tabs
+
 .button-group.button-group-tabs {
 	border-bottom: 1px solid $color-gray-light;
 	overflow: visible;
 	display: table;
 	list-style: none;
 	padding: 0;
+	margin: 0;
+	width: 100%;
 
 	li {
 		float: left;
