@@ -16,17 +16,20 @@ pre {
 h1 {
 	@include type-largest;
 	font-weight: 600;
+	margin: 40px 0 10px;
 }
 
 h2 {
 	@include type-larger;
 	font-weight: 700;
+	margin: 40px 0 10px;
 }
 
 h3 {
 	@include type-large;
 	font-weight: 700;
 	font-style: italic;
+	margin: 40px 0 10px;
 }
 
 h4 {
@@ -34,6 +37,7 @@ h4 {
 	font-weight: 700;
 	font-style: italic;
 	letter-spacing: .5px;
+	margin: 40px 0 10px;
 }
 
 h5 {
@@ -41,6 +45,7 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: .25px;
+	margin: 40px 0 10px;
 }
 
 h6 {
@@ -48,11 +53,13 @@ h6 {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .5px;
+	margin: 40px 0 10px;
 }
 
 p {
 	@include type-base;
 	letter-spacing: 0.125px;
+	margin: 10px 0;
 }
 
 strong {
@@ -146,4 +153,9 @@ code {
 	background-color: rgba($color-bright, 0.5);
 	border-color: $color-gray-lightest;
 	color: $color-red-base;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid $color-gray-lighter;
 }

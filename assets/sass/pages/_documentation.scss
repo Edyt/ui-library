@@ -186,6 +186,7 @@ nav ul li {
 	float: right;
 	margin-right: 40px;
 	padding: 20px 40px;
+	margin-bottom: 60px;
 	box-sizing: border-box;
 	background-color: $color-white;
 
@@ -348,18 +349,88 @@ ul.font-weights li:nth-of-type(8) {
 
 
 // Testing Ground
-
 .testing-container {
 	display: table;
 	background-color: $color-white;
 	margin: 20px auto;
 	border: 1px solid $color-gray-lightest;
 	@include borders-round;
-	min-width: 20px;
 	min-height: 40px;
 	padding: 20px 10px;
+	box-sizing: border-box;
 }
 
+// Add your working component styling below
+
+.dossiertabs {
+	width: 100%;
+	max-width: 2000px;
+	display: block;
+}
+/*
+.dossiertabs ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 0 5px 0;
+	margin: 0;
+}
+
+.dossiertabs ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+	margin-right: -8px;
+	position: relative;
+}
+
+.dossiertabs ul li a {
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: desaturate( lighten( $color-cyan-lightest, 35% ), 50% );
+	color: $color-cyan-darker;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 1px solid $color-cyan-darker;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+}
+
+.dossiertabs ul li a:hover {
+	color: $color-cyan-darkest;
+	background-color: desaturate( lighten( $color-cyan-lightest, 30% ), 50% );
+}
+
+.dossiertabs ul li a.active-tab {
+		padding: 7px 10px 5px 10px;
+		z-index: 20;
+		background-color: desaturate( $color-cyan-base, 50% );
+		color: desaturate( lighten( $color-cyan-light, 50% ), 50% );
+		border: 1px solid $color-cyan-darkest;
+	}
+
+.dossiertabs ul li a.active-tab:hover {
+	color: $color-white;
+	background-color: desaturate( $color-cyan-darker, 20% );
+}
+*/
+.dossiertabs .content {
+	display: block;
+	margin-top: -20px;
+	width: 100%;
+	max-width: 750px;
+	min-width: 500px;
+	min-height: 10px;
+	padding: 0 40px 60px;
+	box-sizing: border-box;
+	background-color: $color-white;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border: 1px solid $color-gray-base;
+	position: relative;
+}
 
 @media (max-width : 1100px) {
 	.documentation-page {
