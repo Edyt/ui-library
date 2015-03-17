@@ -1,0 +1,8 @@
+{
+  "source": "src",
+  "destination": "public",
+  "plugins": {
+    "metalsmith-markdown": true,
+    "metalsmith-templates": "mustache"
+  }
+}
