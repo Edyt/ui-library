@@ -5,12 +5,12 @@
 		|_ (destination source files)	- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
 
 	|– docs
-		|– installation					- .html or .md
-		|– guidelines					- .html or .md
-		|– variables					- .html or .md
+		|– getting-started				- .html or .md
+		|– foundations					- .html or .md
 		|– components					- .html or .md
 		|– collections					- .html or .md
 		|_ pages						- .html or .md
+		|_ resources					- .html or .md
 
 	|– fonts
 		|– edyt-icons            		- cleaned up icon files for our use
