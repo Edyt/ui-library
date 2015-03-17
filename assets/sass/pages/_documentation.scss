@@ -19,7 +19,7 @@ nav {
 	box-sizing: border-box;
 	border-right: 2px solid $color-gray-lightest;
 }
- 
+
 nav h5 {
 	@include type-large;
 	margin-top: 6px;
@@ -190,8 +190,8 @@ nav ul li {
 	box-sizing: border-box;
 	background-color: $color-white;
 
-	// Page specific styles 
-	
+	// Page specific styles
+
 	.navigation, .dropdown {
 		width: 35%;
 	}
@@ -218,7 +218,7 @@ ul.color-mixins {
 
 ul.color-mixins li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 
@@ -232,75 +232,81 @@ ul.color-mixins li ul {
 	list-style-type: none;
 }
 
-ul.color-mixins li ul li {
-	@include type-base;
+ul.color-mixins li li {
+	@include type-small;
 	display: block;
 	margin: 0;
+	padding: 5px ;
+	width: 156px;
 }
 
-li.purple-example ul li:nth-of-type(1) {color: $color-purple-darkest;}
-li.purple-example ul li:nth-of-type(2) {color: $color-purple-darker;}
-li.purple-example ul li:nth-of-type(3) {color: $color-purple-dark;}
-li.purple-example ul li:nth-of-type(4) {color: $color-purple-base;}
-li.purple-example ul li:nth-of-type(5) {color: $color-purple-light;}
-li.purple-example ul li:nth-of-type(6) {color: $color-purple-lighter;}
-li.purple-example ul li:nth-of-type(7) {color: $color-purple-lightest;}
+.color-mixins ul li:nth-of-type(-n+3) {
+	color: $color-white;
+}
 
-li.blue-example ul li:nth-of-type(1) {color: $color-blue-darkest;}
-li.blue-example ul li:nth-of-type(2) {color: $color-blue-darker;}
-li.blue-example ul li:nth-of-type(3) {color: $color-blue-dark;}
-li.blue-example ul li:nth-of-type(4) {color: $color-blue-base;}
-li.blue-example ul li:nth-of-type(5) {color: $color-blue-light;}
-li.blue-example ul li:nth-of-type(6) {color: $color-blue-lighter;}
-li.blue-example ul li:nth-of-type(7) {color: $color-blue-lightest;}
+.purple-example li:nth-of-type(1) { background-color: $color-purple-darkest; }
+.purple-example li:nth-of-type(2) { background-color: $color-purple-darker; }
+.purple-example li:nth-of-type(3) { background-color: $color-purple-dark; }
+.purple-example li:nth-of-type(4) { background-color: $color-purple-base; }
+.purple-example li:nth-of-type(5) { background-color: $color-purple-light; }
+.purple-example li:nth-of-type(6) { background-color: $color-purple-lighter; }
+.purple-example li:nth-of-type(7) { background-color: $color-purple-lightest; }
 
-li.cyan-example ul li:nth-of-type(1) {color: $color-cyan-darkest;}
-li.cyan-example ul li:nth-of-type(2) {color: $color-cyan-darker;}
-li.cyan-example ul li:nth-of-type(3) {color: $color-cyan-dark;}
-li.cyan-example ul li:nth-of-type(4) {color: $color-cyan-base;}
-li.cyan-example ul li:nth-of-type(5) {color: $color-cyan-light;}
-li.cyan-example ul li:nth-of-type(6) {color: $color-cyan-lighter;}
-li.cyan-example ul li:nth-of-type(7) {color: $color-cyan-lightest;}
+.blue-example li:nth-of-type(1) { background-color: $color-blue-darkest; }
+.blue-example li:nth-of-type(2) { background-color: $color-blue-darker; }
+.blue-example li:nth-of-type(3) { background-color: $color-blue-dark; }
+.blue-example li:nth-of-type(4) { background-color: $color-blue-base; }
+.blue-example li:nth-of-type(5) { background-color: $color-blue-light; }
+.blue-example li:nth-of-type(6) { background-color: $color-blue-lighter; }
+.blue-example li:nth-of-type(7) { background-color: $color-blue-lightest; }
 
-li.green-example ul li:nth-of-type(1) {color: $color-green-darkest;}
-li.green-example ul li:nth-of-type(2) {color: $color-green-darker;}
-li.green-example ul li:nth-of-type(3) {color: $color-green-dark;}
-li.green-example ul li:nth-of-type(4) {color: $color-green-base;}
-li.green-example ul li:nth-of-type(5) {color: $color-green-light;}
-li.green-example ul li:nth-of-type(6) {color: $color-green-lighter;}
-li.green-example ul li:nth-of-type(7) {color: $color-green-lightest;}
+.cyan-example li:nth-of-type(1) { background-color: $color-cyan-darkest; }
+.cyan-example li:nth-of-type(2) { background-color: $color-cyan-darker; }
+.cyan-example li:nth-of-type(3) { background-color: $color-cyan-dark; }
+.cyan-example li:nth-of-type(4) { background-color: $color-cyan-base; }
+.cyan-example li:nth-of-type(5) { background-color: $color-cyan-light; }
+.cyan-example li:nth-of-type(6) { background-color: $color-cyan-lighter; }
+.cyan-example li:nth-of-type(7) { background-color: $color-cyan-lightest; }
 
-li.yellow-example ul li:nth-of-type(1) {color: $color-yellow-darkest;}
-li.yellow-example ul li:nth-of-type(2) {color: $color-yellow-darker;}
-li.yellow-example ul li:nth-of-type(3) {color: $color-yellow-dark;}
-li.yellow-example ul li:nth-of-type(4) {color: $color-yellow-base;}
-li.yellow-example ul li:nth-of-type(5) {color: $color-yellow-light;}
-li.yellow-example ul li:nth-of-type(6) {color: $color-yellow-lighter;}
-li.yellow-example ul li:nth-of-type(7) {color: $color-yellow-lightest;}
+.green-example li:nth-of-type(1) { background-color: $color-green-darkest; }
+.green-example li:nth-of-type(2) { background-color: $color-green-darker; }
+.green-example li:nth-of-type(3) { background-color: $color-green-dark; }
+.green-example li:nth-of-type(4) { background-color: $color-green-base; }
+.green-example li:nth-of-type(5) { background-color: $color-green-light; }
+.green-example li:nth-of-type(6) { background-color: $color-green-lighter; }
+.green-example li:nth-of-type(7) { background-color: $color-green-lightest; }
 
-li.orange-example ul li:nth-of-type(1) {color: $color-orange-darkest;}
-li.orange-example ul li:nth-of-type(2) {color: $color-orange-darker;}
-li.orange-example ul li:nth-of-type(3) {color: $color-orange-dark;}
-li.orange-example ul li:nth-of-type(4) {color: $color-orange-base;}
-li.orange-example ul li:nth-of-type(5) {color: $color-orange-light;}
-li.orange-example ul li:nth-of-type(6) {color: $color-orange-lighter;}
-li.orange-example ul li:nth-of-type(7) {color: $color-orange-lightest;}
+.yellow-example li:nth-of-type(1) { background-color: $color-yellow-darkest; }
+.yellow-example li:nth-of-type(2) { background-color: $color-yellow-darker; }
+.yellow-example li:nth-of-type(3) { background-color: $color-yellow-dark; }
+.yellow-example li:nth-of-type(4) { background-color: $color-yellow-base; }
+.yellow-example li:nth-of-type(5) { background-color: $color-yellow-light; }
+.yellow-example li:nth-of-type(6) { background-color: $color-yellow-lighter; }
+.yellow-example li:nth-of-type(7) { background-color: $color-yellow-lightest; }
 
-li.red-example ul li:nth-of-type(1) {color: $color-red-darkest;}
-li.red-example ul li:nth-of-type(2) {color: $color-red-darker;}
-li.red-example ul li:nth-of-type(3) {color: $color-red-dark;}
-li.red-example ul li:nth-of-type(4) {color: $color-red-base;}
-li.red-example ul li:nth-of-type(5) {color: $color-red-light;}
-li.red-example ul li:nth-of-type(6) {color: $color-red-lighter;}
-li.red-example ul li:nth-of-type(7) {color: $color-red-lightest;}
+.orange-example li:nth-of-type(1) { background-color: $color-orange-darkest; }
+.orange-example li:nth-of-type(2) { background-color: $color-orange-darker; }
+.orange-example li:nth-of-type(3) { background-color: $color-orange-dark; }
+.orange-example li:nth-of-type(4) { background-color: $color-orange-base; }
+.orange-example li:nth-of-type(5) { background-color: $color-orange-light; }
+.orange-example li:nth-of-type(6) { background-color: $color-orange-lighter; }
+.orange-example li:nth-of-type(7) { background-color: $color-orange-lightest; }
 
-li.gray-example ul li:nth-of-type(1) {color: $color-gray-darkest;}
-li.gray-example ul li:nth-of-type(2) {color: $color-gray-darker;}
-li.gray-example ul li:nth-of-type(3) {color: $color-gray-dark;}
-li.gray-example ul li:nth-of-type(4) {color: $color-gray-base;}
-li.gray-example ul li:nth-of-type(5) {color: $color-gray-light;}
-li.gray-example ul li:nth-of-type(6) {color: $color-gray-lighter;}
-li.gray-example ul li:nth-of-type(7) {color: $color-gray-lightest;}
+.red-example li:nth-of-type(1) { background-color: $color-red-darkest; }
+.red-example li:nth-of-type(2) { background-color: $color-red-darker; }
+.red-example li:nth-of-type(3) { background-color: $color-red-dark; }
+.red-example li:nth-of-type(4) { background-color: $color-red-base; }
+.red-example li:nth-of-type(5) { background-color: $color-red-light; }
+.red-example li:nth-of-type(6) { background-color: $color-red-lighter; }
+.red-example li:nth-of-type(7) { background-color: $color-red-lightest; }
+
+.gray-example li:nth-of-type(1) { background-color: $color-gray-darkest; }
+.gray-example li:nth-of-type(2) { background-color: $color-gray-darker; }
+.gray-example li:nth-of-type(3) { background-color: $color-gray-dark; }
+.gray-example li:nth-of-type(4) { background-color: $color-gray-base; }
+.gray-example li:nth-of-type(5) { background-color: $color-gray-light; }
+.gray-example li:nth-of-type(6) { background-color: $color-gray-lighter; }
+.gray-example li:nth-of-type(7) { background-color: $color-gray-lightest; }
 
 ul.font-weights {
 	list-style-type: none;
