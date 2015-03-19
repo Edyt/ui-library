@@ -10,6 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="assets/js/vendors/prettify/run_prettify.js"></script>
+
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     </head>
     <body>
@@ -41,6 +43,42 @@
     <div class="documentation-content">
         <h2>Forms</h2>
 
+        <p>Use the container div <code>input-group</code> for a group of radio or checkbox fields:</p>
+
+        <pre class="prettyprint lang-html">&lt;div class=&quot;form-control&quot;&gt;
+    &lt;label&gt;Which Dossier Version?&lt;/label&gt;
+
+    &lt;div class=&quot;input-group&quot;&gt;
+        &lt;input type=&quot;radio&quot; /&gt;
+        &lt;label&gt;Version 1&lt;/label&gt;
+
+        &lt;input type=&quot;radio&quot; /&gt;
+        &lt;label&gt;Version 2&lt;/label&gt;
+
+        &lt;input type=&quot;radio&quot; /&gt;
+        &lt;label&gt;Version 3&lt;/label&gt;
+
+        &lt;label class=&quot;error&quot;&gt;Radio input not selected&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <div class="form-control">
+                <label>Which Dossier Version?</label>
+
+                <div class="input-group error">
+                    <input type="radio" />
+                    <label>Version 1</label>
+
+                    <input type="radio" />
+                    <label>Version 2</label>
+
+                    <input type="radio" />
+                    <label>Version 3</label>
+
+                    <label class="error">Radio input not selected</label>
+                </div>
+            </div>
+
             <form>
                 <div class="form-control">
                     <label for="name">Examiner Name</label>
@@ -54,22 +92,29 @@
                 </div>
 
                 <div class="form-control">
-                    <input type="checkbox" />
-                    <label>Check me out</label>
-                    <label class="error">Wups!</label>
+                    <div class="input-group error">
+                        <input type="checkbox" />
+                        <label>Check me out</label>
+
+                        <label class="error">Checkbox input not selected</label>
+                    </div>
                 </div>
 
                 <div class="form-control">
                     <label>Which Dossier Version?</label>
 
-                    <input type="radio" />
-                    <label>Version 1</label>
+                    <div class="input-group error">
+                        <input type="radio" />
+                        <label>Version 1</label>
 
-                    <input type="radio" />
-                    <label>Version 2</label>
+                        <input type="radio" />
+                        <label>Version 2</label>
 
-                    <input type="radio" />
-                    <label>Version 3</label>
+                        <input type="radio" />
+                        <label>Version 3</label>
+
+                        <label class="error">Radio input not selected</label>
+                    </div>
                 </div>
 
                 <div class="form-control">

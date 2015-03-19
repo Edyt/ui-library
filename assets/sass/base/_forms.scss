@@ -52,4 +52,8 @@ input[type="text"].error {
 label.error {
 	border: none;
 	color: #f00;
+
+	.input-group & {
+		display: block;
+	}
 }
