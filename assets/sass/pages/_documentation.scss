@@ -263,7 +263,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-purple-darkest;
+		color: $color-purple-base;
 	}
 }
 
@@ -275,22 +275,28 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-purple-darker;
+		color: $color-purple-base;
 	}
  }
 
 .color-purple-dark {
 	background-color: $color-purple-dark;
 
+	div	{
+		border-color: $color-purple-dark;
+	}
 
 	h3 {
-		color: $color-purple-dark;
+		color: $color-purple-base;
 	}
 }
 
 .color-purple-base {
 	background-color: $color-purple-base;
 
+	div	{
+		border-color: $color-purple-base;
+	}
 
 	h3 {
 		color: $color-purple-base;
@@ -300,213 +306,665 @@ ul.color-mixins li li {
 .color-purple-light {
 	background-color: $color-purple-light;
 
+	div	{
+		border-color: $color-purple-light;
+	}
+
 	h3 {
-		color: $color-purple-light;
+		color: $color-purple-base;
 	}
 }
 
 .color-purple-lighter {
 	background-color: $color-purple-lighter;
+
+	div	{
+		border-color: $color-purple-lighter;
+	}
+
+	h3 {
+		color: $color-purple-base;
+	}
 }
 
 .color-purple-lightest {
 	background-color: $color-purple-lightest;
+
+	div	{
+		border-color: $color-purple-lightest;
+	}
+
+	h3 {
+		color: $color-purple-base;
+	}
 }
 
 .color-blue-darkest {
 		background-color: $color-blue-darkest;
+
+	div	{
+		border-color: $color-blue-darkest;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-blue-darker {
 	background-color: $color-blue-darker;
+
+	div	{
+		border-color: $color-blue-darker;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-blue-dark {
 	background-color: $color-blue-dark;
+
+	div	{
+		border-color: $color-blue-dark;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-blue-base {
 	background-color: $color-blue-base;
+
+	div	{
+		border-color: $color-blue-base;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
+
 }
 
 .color-blue-light {
 	background-color: $color-blue-light;
+
+	div	{
+		border-color: $color-blue-light;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-blue-lighter {
 	background-color: $color-blue-lighter;
+
+	div	{
+		border-color: $color-blue-lighter;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-blue-lightest {
 	background-color: $color-blue-lightest;
+
+	div	{
+		border-color: $color-blue-lightest;
+	}
+
+	h3 {
+		color: $color-blue-base;
+	}
 }
 
 .color-cyan-darkest {
 	background-color: $color-cyan-darkest;
+
+	div	{
+		border-color: $color-cyan-darkest;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-darker {
 	background-color: $color-cyan-darker;
+
+	div	{
+		border-color: $color-cyan-darker;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-dark {
 	background-color: $color-cyan-dark;
+
+	div	{
+		border-color: $color-cyan-dark;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-base {
 	background-color: $color-cyan-base;
+
+	div	{
+		border-color: $color-cyan-base;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-light {
 	background-color: $color-cyan-light;
+
+
+	div	{
+		border-color: $color-cyan-light;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-lighter {
 	background-color: $color-cyan-lighter;
+
+
+	div	{
+		border-color: $color-cyan-lighter;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-cyan-lightest {
 	background-color: $color-cyan-lightest;
+
+
+	div	{
+		border-color: $color-cyan-lightest;
+	}
+
+	h3 {
+		color: $color-cyan-base;
+	}
 }
 
 .color-green-darkest {
 	background-color: $color-green-darkest;
+
+
+	div	{
+		border-color: $color-green-darkest;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-darker {
 	background-color: $color-green-darker;
+
+
+	div	{
+		border-color: $color-green-darker;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-dark {
 	background-color: $color-green-dark;
+
+
+	div	{
+		border-color: $color-green-dark;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-base {
 	background-color: $color-green-base;
+
+
+	div	{
+		border-color: $color-green-base;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-light {
 	background-color: $color-green-light;
+
+
+	div	{
+		border-color: $color-green-light;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-lighter {
 	background-color: $color-green-lighter;
+
+
+	div	{
+		border-color: $color-green-lighter;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-green-lightest {
 	background-color: $color-green-lightest;
+
+
+	div	{
+		border-color: $color-green-lightest;
+	}
+
+	h3 {
+		color: $color-green-base;
+	}
 }
 
 .color-yellow-darkest {
 	background-color: $color-yellow-darkest;
+
+
+	div	{
+		border-color: $color-yellow-darkest;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-darker {
 	background-color: $color-yellow-darker;
+
+
+	div	{
+		border-color: $color-yellow-darker;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-dark {
 	background-color: $color-yellow-dark;
+
+
+	div	{
+		border-color: $color-yellow-dark;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-base {
 	background-color: $color-yellow-base;
+
+
+	div	{
+		border-color: $color-yellow-base;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-light {
 	background-color: $color-yellow-light;
+
+
+	div	{
+		border-color: $color-yellow-light;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-lighter {
 	background-color: $color-yellow-lighter;
+
+
+
+	div	{
+		border-color: $color-yellow-lighter;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-yellow-lightest {
 	background-color: $color-yellow-lightest;
+
+
+	div	{
+		border-color: $color-yellow-lightest;
+	}
+
+	h3 {
+		color: $color-yellow-base;
+	}
 }
 
 .color-orange-darkest {
 	background-color: $color-orange-darkest;
+
+
+	div	{
+		border-color: $color-orange-darkest;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-darker {
 	background-color: $color-orange-darker;
+
+
+	div	{
+		border-color: $color-orange-darker;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-dark {
 	background-color: $color-orange-dark;
+
+
+	div	{
+		border-color: $color-orange-dark;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-base {
 	background-color: $color-orange-base;
+
+
+	div	{
+		border-color: $color-orange-base;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-light {
 	background-color: $color-orange-light;
+
+
+	div	{
+		border-color: $color-orange-light;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-lighter {
 	background-color: $color-orange-lighter;
+
+
+	div	{
+		border-color: $color-orange-lighter;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-orange-lightest {
 	background-color: $color-orange-lightest;
+
+
+	div	{
+		border-color: $color-orange-lightest;
+	}
+
+	h3 {
+		color: $color-orange-base;
+	}
 }
 
 .color-red-darkest {
 	background-color: $color-red-darkest;
+
+
+	div	{
+		border-color: $color-red-darkest;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-darker {
 	background-color: $color-red-darker;
+
+
+	div	{
+		border-color: $color-red-darker;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-dark {
 	background-color: $color-red-dark;
+
+
+	div	{
+		border-color: $color-red-dark;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-base {
 	background-color: $color-red-base;
+
+
+	div	{
+		border-color: $color-red-base;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-light {
 	background-color: $color-red-light;
+
+
+	div	{
+		border-color: $color-red-light;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-lighter {
 	background-color: $color-red-lighter;
+
+
+	div	{
+		border-color: $color-red-lighter;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-red-lightest {
 	background-color: $color-red-lightest;
+
+
+	div	{
+		border-color: $color-red-lightest;
+	}
+
+	h3 {
+		color: $color-red-base;
+	}
 }
 
 .color-gray-darkest {
 	background-color: $color-gray-darkest;
+
+
+	div	{
+		border-color: $color-gray-darkest;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-darker {
 	background-color: $color-gray-darker;
+
+
+	div	{
+		border-color: $color-gray-darker;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-dark {
 	background-color: $color-gray-dark;
+
+
+	div	{
+		border-color: $color-gray-dark;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-base {
 	background-color: $color-gray-base;
+
+
+	div	{
+		border-color: $color-gray-base;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-light {
 	background-color: $color-gray-light;
+
+
+	div	{
+		border-color: $color-gray-light;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-lighter {
 	background-color: $color-gray-lighter;
+
+
+	div	{
+		border-color: $color-gray-lighter;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 .color-gray-lightest {
 	background-color: $color-gray-lightest;
+
+
+	div	{
+		border-color: $color-gray-lightest;
+	}
+
+	h3 {
+		color: $color-gray-base;
+	}
 }
 
 
