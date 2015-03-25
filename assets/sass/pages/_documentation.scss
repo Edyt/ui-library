@@ -1063,6 +1063,8 @@ ul.font-weights li:nth-of-type(8) {
 	font-weight: 700;
 }
 
+// Font Size Scale
+
 
 // Testing Ground
 .testing-container {
@@ -1083,6 +1085,25 @@ ul.font-weights li:nth-of-type(8) {
 	max-width: 2000px;
 	display: block;
 }
+
+
+.dossiertabs .content {
+	display: block;
+	margin-top: -20px;
+	width: 100%;
+	max-width: 750px;
+	min-width: 500px;
+	min-height: 10px;
+	padding: 0 40px 60px;
+	box-sizing: border-box;
+	background-color: $color-white;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border: 1px solid $color-gray-base;
+	position: relative;
+}
+
 /*
 .dossiertabs ul {
 	list-style-type: none;
@@ -1131,22 +1152,6 @@ ul.font-weights li:nth-of-type(8) {
 	background-color: desaturate( $color-cyan-darker, 20% );
 }
 */
-.dossiertabs .content {
-	display: block;
-	margin-top: -20px;
-	width: 100%;
-	max-width: 750px;
-	min-width: 500px;
-	min-height: 10px;
-	padding: 0 40px 60px;
-	box-sizing: border-box;
-	background-color: $color-white;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
-	border: 1px solid $color-gray-base;
-	position: relative;
-}
 
 @media (max-width : 1100px) {
 	.documentation-page {
