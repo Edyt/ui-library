@@ -6,6 +6,7 @@
 	@include shadow-base($color-gray-light);
 	display: inline-block;
 	padding: 5px 9px;
+	text-align: center;
 	text-decoration: none;
 	border: none;
 	background: $color-gray-lightest;
@@ -18,7 +19,7 @@
 	}
 
 	&:active {
-		@include shadow-none;
+		@include shadows-none;
 		position: relative;
 		top: 1px;
 	}
@@ -216,8 +217,7 @@
 
 
 // Button icons
-
-.tpIcon {
+.icon {
 	// icomoon default .icon properties
 
 	.button & {
@@ -234,14 +234,20 @@
 	}
 }
 
-// Hides label for icon-only buttons
+// Icon-only buttons hide label
+//
+// .button-icon-only 		for individual buttons
+// .icon-only .button		for a parent element (group, list, tabs)
 
-.button-icon-only {
+.button-icon-only,
+.icon-only .button {
 	padding: 5px 11px;
 }
 
-.button-icon-only span.button-label {
-	display: none;
+.button-icon-only .button-label,
+.icon-only .button-label {
+	position: absolute;
+	visibility: hidden;
 }
 
 // Button groups
@@ -249,7 +255,6 @@
 .button-group {
 	width: auto;
 	overflow: auto;
-	margin-bottom: 20px;
 }
 
 .button-group .button {
@@ -269,7 +274,7 @@
 }
 
 .button-group-clear, .button-group-tabs {
-	@include shadow-none;
+	@include shadows-none;
 	overflow: auto;
 }
 
@@ -315,7 +320,7 @@
 
 	.button {
 		@include borders-tab;
-		@include shadow-none;
+		@include shadows-none;
 		float: none;
 		display: block;
 		margin-right: 8px;
@@ -337,7 +342,21 @@
 	}
 }
 
+// Buttons in nav
+.nav-buttons {
 
+	.button {
+		@include borders-square;
+		@include shadows-none;
 
+		background: $color-gray-lighter;
+
+		&:focus,
+		&:hover {
+			background: $color-blue-light;
+			color: $color-white;
+		}
+	}
+}
 
 

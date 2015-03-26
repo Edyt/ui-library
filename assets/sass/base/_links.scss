@@ -1,0 +1,12 @@
+a {
+	color: $color-blue-base;
+
+	&:focus,
+	&:hover {
+		color: $color-blue-light;
+	}
+
+	&:active {
+		color: $color-blue-dark;
+	}
+}

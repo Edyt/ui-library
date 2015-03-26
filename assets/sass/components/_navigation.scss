@@ -21,8 +21,8 @@
 .navigation .button {
 	@include borders-square;
 	@include type-base;
-	@include shadow-none;
-	display: block;	
+	@include shadows-none;
+	display: block;
 	border-bottom: 1px solid #c8c8c8;
 	background: #fff;
 	position: relative;
@@ -67,7 +67,7 @@
 
 .navigation-primary .button {
 	@include borders-square;
-	display: block;	
+	display: block;
 	border-bottom: none;
 	background: #D5D8DD;
 	position: relative;
