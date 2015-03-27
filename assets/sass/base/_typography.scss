@@ -13,47 +13,70 @@ pre {
 	font: 15px / 1.33333333333 'Source Code Pro', Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
+// By default, headings have no margins
+// return margins to them by adding a parent container with the class "natural-type"
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
 h1 {
-	@include type-largest;
+	@include type-larger;
 	font-weight: 600;
-	margin: 40px 0 10px;
 }
 
 h2 {
-	@include type-larger;
+	@include type-large;
 	font-weight: 700;
-	margin: 40px 0 10px;
 }
 
 h3 {
-	@include type-large;
+	@include type-base;
 	font-weight: 700;
-	// font-style: italic;
-	margin: 40px 0 10px;
 }
 
 h4 {
-	@include type-base;
+	@include type-small;
 	font-weight: 700;
-	// font-style: italic;
-	letter-spacing: .5px;
-	margin: 40px 0 10px;
 }
 
 h5 {
-	@include type-small;
-	text-transform: uppercase;
+	@include type-smaller;
 	font-weight: 600;
-	letter-spacing: .25px;
-	margin: 40px 0 10px;
 }
 
 h6 {
-	@include type-smaller;
+	@include type-smallest;
 	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: .5px;
-	margin: 40px 0 10px;
+}
+
+.natural-type {
+	h1 {
+		margin: 32px 0 8px;
+	}
+	h2 {
+		margin: 24px 0 4px;
+	}
+	h3 {
+		font-style: italic;
+		margin: 16px 0 4px;
+	}
+	h4 {
+		font-style: italic;
+		letter-spacing: .5px;
+	}
+	h5 {
+		text-transform: uppercase;
+		letter-spacing: .25px;
+	}
+	h6 {
+		text-transform: uppercase;
+		letter-spacing: .5px;
+	}
 }
 
 p {

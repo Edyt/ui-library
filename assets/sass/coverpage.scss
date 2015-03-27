@@ -32,9 +32,11 @@ $color-gray-lightest:   #FCFCFC;
 
 
 // Variables
-$col-nav-primary:   64px;
-$col-nav-helper: 	64px;
-$gutter:            16px;
+$col-nav-primary:           64px;
+$col-nav-helper: 	        64px;
+$col-cover-page-main:       60%;
+$col-cover-page-secondary:  40%;
+$gutter:                    16px;
 
 
 // Ungrid
@@ -58,6 +60,22 @@ $gutter:            16px;
     }
 }
 
+
+// Cover page
+.col {
+    &.col-cover-page-main {
+        padding-right: $gutter;
+        width: $col-cover-page-main;
+    }
+    &.col-cover-page-secondary {
+        width: $col-cover-page-secondary;
+    }
+}
+.task-container {
+    time.col {
+        text-align: right;
+    }
+}
 
 
 
@@ -95,11 +113,12 @@ $gutter:            16px;
 
         .button-label {
             @include borders-rounder;
-            @include shadow-z-2($color-blue-base);
+            @include shadow-z-2;
+            @include type-base;
             font-weight: bold;
-            height: 1.75em;
+            height: $col-nav-primary / 3;
             left: $col-nav-primary + 5px;
-            line-height: 1.75em;
+            line-height: $col-nav-primary / 3;
             margin-top: -1 * ($col-nav-primary / 4);
             min-width: $col-nav-primary;
             padding: 0 5px;
