@@ -28,14 +28,14 @@ h2 {
 h3 {
 	@include type-large;
 	font-weight: 700;
-	font-style: italic;
+	// font-style: italic;
 	margin: 40px 0 10px;
 }
 
 h4 {
 	@include type-base;
 	font-weight: 700;
-	font-style: italic;
+	// font-style: italic;
 	letter-spacing: .5px;
 	margin: 40px 0 10px;
 }

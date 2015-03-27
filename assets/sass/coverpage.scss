@@ -1,7 +1,8 @@
-@import '../sass/base/normalize.css';
-@import '../fonts/fonts';
+@import 'vendors/normalize/normalize';
+@import 'vendors/icons/font-icons';
 
 @import 'helpers/color-scale';
+
 
 // overrides:
 $color-gray-lighter:    #CACDCF;
@@ -19,14 +20,21 @@ $color-gray-lightest:   #FCFCFC;
 @import 'base/labels';
 @import 'base/forms';
 @import 'base/tables';
-@import '../fonts/icomoon/icon-font.css';
+@import 'base/universal';
+// @import '../fonts/icomoon/icon-font.css';
 
 @import "components/buttons";
+@import 'components/panels';
+
+// Client specific items
+@import 'epo/variables';
+@import 'epo/classes';
 
 
 // Variables
 $col-nav-primary:   64px;
 $col-nav-helper: 	64px;
+$gutter:            16px;
 
 
 // Ungrid
@@ -36,19 +44,84 @@ $col-nav-helper: 	64px;
 }
 
 
+
+// Page layout
+.col {
+    vertical-align: top;
+    // anything for non-width:30em ?
+
+    &.col-primary-nav {
+        width: $col-nav-primary + $gutter;
+    }
+    &.col-helper {
+        width: $col-nav-helper;
+    }
+}
+
+
+
+
 // Navigation
 .nav {
+    height: 100%;
     vertical-align: top;
 }
 
 // Primary Nav
 .nav-primary {
-	background: $color-gray-lighter;
+    background: $color-gray-lighter;
 	width: $col-nav-primary;
 
     .button {
+        min-height: $col-nav-primary;
+        position: relative;
+        width: $col-nav-primary;
+
+
         .icon {
             @include type-larger;
+        }
+
+        &.is-active {
+            background: $color-gray-lightest;
+
+            &:focus,
+            &:hover {
+                color: $color-blue-base;
+            }
+        }
+
+        .button-label {
+            padding: 2px 5px;
+            top: $col-nav-primary / 2;
+            margin-top: -1 * ($col-nav-primary / 4);
+            line-height: $col-nav-primary;
+            left: $col-nav-primary;
+            white-space: nowrap;
+            width: auto;
+        }
+        &:focus,
+        &:hover {
+            .button-label {
+                background: $color-blue-light;
+                visibility: visible;
+            }
+        }
+    }
+
+    .dossier-info {
+        @include type-smallest;
+        color: $color-gray-darker;
+
+        span {
+            display: block;
+        }
+        .dossier-id {
+            font-weight: bold;
+        }
+        .role {
+            // @include type-smallest;
+            margin-top: .5em;
         }
     }
 }
@@ -65,7 +138,6 @@ ul.nav-buttons {
 // Helpers
 // General helpers
 .nav-helper {
-    width: $col-nav-helper;
 }
 
 

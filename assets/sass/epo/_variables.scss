@@ -1,0 +1,33 @@
+// EPO specific variables
+
+// Colors of dossiers (EP, PCT, nationals etc.)
+
+$epo-color-dossier-ep: 		#A1D5F7; // EP Direct
+$epo-color-dossier-europct: #E3DFCF; // Euro PCT
+$epo-color-dossier-pct: 	#F1B80C; // PCT
+$epo-color-dossier-bo:	 	#1244A5; // Belgium
+$epo-color-dossier-co:	 	#DDDDDD; // Cypress
+$epo-color-dossier-fa:	 	#96D2FC; // France
+$epo-color-dossier-go:	 	#F5E63D; // Greece
+$epo-color-dossier-io:	 	#B49F87; // Italy
+$epo-color-dossier-lo:	 	#57D4C4; // Luxembourg
+$epo-color-dossier-no:	 	#F06C1A; // Netherlands
+$epo-color-dossier-mo:	 	#745734; // Malta
+$epo-color-dossier-sn:	 	#0DB20D; // SN
+
+
+// Special cases
+
+$epo-color-dossier-fs:	 	#D44022; // France (red stripe)
+$epo-color-dossier-to:	 	#DF0808; // Turkey (red border only)
+$epo-color-dossier-lt:	 	#006A44; // Lithuania (green border only)
+
+
+
+// Phases
+
+$epo-color-phase-search: 		#BADDE8;
+$epo-color-phase-exam: 			#BADDE8;
+$epo-color-phase-opposition:	#9FCC6F;
+$epo-color-phase-appeal: 		#BA000D;
+$epo-color-phase-limitation: 	#B47038;

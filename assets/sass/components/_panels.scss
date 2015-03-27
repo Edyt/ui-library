@@ -3,6 +3,11 @@
 	border: 1px solid $color-gray-lightest;
 	background: $color-white;
 	padding: 15px;
+
+	&.no-border {
+		border: 0;
+		padding: 0;
+	}
 }
 
 .content {
