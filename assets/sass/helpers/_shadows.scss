@@ -1,7 +1,11 @@
 @mixin shadow-base($base-color) {
-	box-shadow: 0px 1px 0px 0px darken($base-color, 10%);
+	box-shadow: 0 1px 0 0 darken($base-color, 10%);
 }
 
 @mixin shadows-none {
 	box-shadow: none;
+}
+
+@mixin shadow-z-2($base-color) {
+	box-shadow: 0 2px 3px 0 darken($base-color, 10%);
 }

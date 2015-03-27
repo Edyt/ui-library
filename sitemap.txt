@@ -1,31 +1,34 @@
 |
-|– assets
-	|– css
-		|– (folders) 					- subdirectories TBD
-		|_ (destination source files)	- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
+|– src
 
-	|– docs
-		|– installation					- .html or .md
-		|– guidelines					- .html or .md
-		|– variables					- .html or .md
-		|– components					- .html or .md
-		|– collections					- .html or .md
-		|_ pages						- .html or .md
+	|– assets
+		|– css
+			|– (folders) 					- subdirectories TBD
+			|_ (destination source files)	- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
 
-	|– fonts
-		|– edyt-icons            		- cleaned up icon files for our use
-		|_ vendors
-			|– icomoon               	- raw dump of icomoon output
-			|- source-code-pro       	- raw dump of source code pro download
-			|_ source-sans-pro         	- raw dump of source sans pro download
+		|– fonts
+			|– edyt-icons            		- cleaned up icon files for our use
+			|_ vendors
+				|– icomoon               	- raw dump of icomoon output
+				|- source-code-pro       	- raw dump of source code pro download
+				|_ source-sans-pro         	- raw dump of source sans pro download
 
-	|– img
-	|_ js
-		|– vendors
-		|- internal              		- JS used _only_ for the UI Pattern Library itself
-		|_ (folders) 					- subdirectories TBD
+		|– img
+		|_ js
+			|– vendors
+			|- internal              		- JS used _only_ for the UI Pattern Library itself
+			|_ (folders) 					- subdirectories TBD
 
-|– public                     			- generated output; index.html at root is what people need to open for the static mini site
+	|_ docs
+		|– installation						- .html or .md
+		|– guidelines						- .html or .md
+		|– variables						- .html or .md
+		|– components						- .html or .md
+		|– collections						- .html or .md
+		|_ pages							- .html or .md
+
+
+|– public                     				- generated output; index.html at root is what people need to open for the static mini site
 	|– assets
 		|– css
 		|– fonts
@@ -33,6 +36,6 @@
 		|– js
 		|_ index.html
 
-|– config.json 							- Metalsmith.io configuration
+|– config.json 								- Metalsmith.io configuration
 |– index.js
 |_ package.json

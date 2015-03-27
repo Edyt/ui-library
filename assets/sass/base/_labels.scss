@@ -15,4 +15,28 @@
 		background: $color-white;
 		color: $color-black;
 	}
+
+	&.label-danger {
+		background: $color-red-base;
+		border: 1px solid $color-red-dark;
+		color: $color-white;
+	}
+
+	&.label-warning {
+		background: $color-orange-base;
+		border: 1px solid $color-orange-dark;
+		color: $color-white;
+	}
+
+	&.label-info {
+		background: $color-cyan-base;
+		border: 1px solid $color-cyan-dark;
+		color: $color-white;
+	}
+
+	&.label-success {
+		background: $color-green-base;
+		border: 1px solid $color-green-dark;
+		color: $color-white;
+	}
 }

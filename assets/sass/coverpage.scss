@@ -24,7 +24,7 @@ $color-gray-lightest:   #FCFCFC;
 // @import '../fonts/icomoon/icon-font.css';
 
 @import "components/buttons";
-@import 'components/panels';
+@import 'components/containers';
 
 // Client specific items
 @import 'epo/variables';
@@ -73,6 +73,7 @@ $gutter:            16px;
 	width: $col-nav-primary;
 
     .button {
+        // line-height: $col-nav-primary;
         min-height: $col-nav-primary;
         position: relative;
         width: $col-nav-primary;
@@ -80,6 +81,7 @@ $gutter:            16px;
 
         .icon {
             @include type-larger;
+            line-height: $col-nav-primary;
         }
 
         &.is-active {
@@ -92,11 +94,16 @@ $gutter:            16px;
         }
 
         .button-label {
-            padding: 2px 5px;
-            top: $col-nav-primary / 2;
+            @include borders-rounder;
+            @include shadow-z-2($color-blue-base);
+            font-weight: bold;
+            height: 1.75em;
+            left: $col-nav-primary + 5px;
+            line-height: 1.75em;
             margin-top: -1 * ($col-nav-primary / 4);
-            line-height: $col-nav-primary;
-            left: $col-nav-primary;
+            min-width: $col-nav-primary;
+            padding: 0 5px;
+            top: $col-nav-primary / 2;
             white-space: nowrap;
             width: auto;
         }
@@ -104,6 +111,7 @@ $gutter:            16px;
         &:hover {
             .button-label {
                 background: $color-blue-light;
+                color: $color-white;
                 visibility: visible;
             }
         }
@@ -113,16 +121,20 @@ $gutter:            16px;
         @include type-smallest;
         color: $color-gray-darker;
 
-        span {
-            display: block;
-        }
         .dossier-id {
+            display: block;
             font-weight: bold;
         }
         .role {
+            display: block;
             // @include type-smallest;
             margin-top: .5em;
         }
+    }
+
+    .divider {
+        background: $color-gray-400;
+        height: 1px;
     }
 }
 
