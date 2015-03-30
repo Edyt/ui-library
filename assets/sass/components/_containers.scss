@@ -4,6 +4,15 @@
 	border: 1px solid $color-gray-lighter;
 	margin: 8px 0 0;
 	padding: 8px;
+	position: relative;
+
+	&.with-header {
+		margin-top: 36px;
+	}
+	.container-header {
+		margin-top: -36px;
+		position: absolute;
+	}
 
 	&.no-border {
 		background: none;
@@ -11,10 +20,19 @@
 		padding: 0;
 	}
 
-
+	.row {
+		margin-bottom: 4px;
+	}
 	.with-bottom-divider {
 		border-bottom: 1px solid $color-gray-lighter;
-		margin-bottom: 1rem;
 		padding-bottom: 0.5rem;
+	}
+
+	&.table-container {
+		padding: 0;
+
+		table {
+			margin: 0;
+		}
 	}
 }

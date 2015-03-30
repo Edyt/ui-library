@@ -10,3 +10,15 @@ a {
 		color: $color-blue-dark;
 	}
 }
+
+a.unobtrusive {
+	color: $color-gray-light;
+
+	&:focus,
+	&:hover {
+		color: $color-blue-base;
+	}
+	&:active {
+		color: $color-gray-dark;
+	}
+}

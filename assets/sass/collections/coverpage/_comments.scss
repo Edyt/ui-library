@@ -1,0 +1,30 @@
+.comments {
+	h6 {
+		font-weight: bold;
+		margin: 0;
+		padding: 4px 0 0;
+	}
+	p {
+		margin: 0;
+	}
+	.comment {
+		clear: both;
+		margin: 8px 0;
+	}
+	.icon-comment {
+		@include type-base;
+		color: $color-gray-500;
+		float: left;
+		margin-right: 4px;
+	}
+}
+.add-comment {
+	label {
+		visibility: hidden;
+		position: absolute;
+	}
+	textarea {
+		resize: none;
+		width: 100%;
+	}
+}

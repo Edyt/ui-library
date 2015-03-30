@@ -8,10 +8,11 @@
 	cursor: pointer;
 	display: block;
 	opacity: 0;
+	height: 20px;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 2;
+	z-index: index($ui-levels, dropdowns);
 
 	@include borders-round;
 	overflow: hidden;
@@ -24,11 +25,19 @@
 }
 
 .ui-select-label {
+	@include borders-rounder;
+	@include shadows-none;
+	@include type-smallest;
+	background: $color-blue-lighter;
+	border: 1px solid $color-gray-base;
+	border-color: $color-gray-400 $color-gray-base $color-gray-base $color-gray-400;
 	display: block;
+	height: 20px;
+	line-height: 18px;
+	padding: 0 4px;
 	text-align: left;
-	top: 0;
 	transition: color .25s ease;
-	width: 95%;
+	width: 100%;
 
 	.selected-option {
 		display: inline-block;
@@ -38,12 +47,12 @@
 		width: 100%;
 	}
 
-	.tpIcon {
+	.icon-down {
 		color: inherit;
 		display: inline-block;
 		position: absolute;
-		right: 1.25rem;
+		right: 4px;
 		text-align: center;
-		top: 0.25rem;
+		top: .125em;
 	}
 }

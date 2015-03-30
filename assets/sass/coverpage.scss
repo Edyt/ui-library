@@ -25,10 +25,17 @@ $color-gray-lightest:   #FCFCFC;
 
 @import "components/buttons";
 @import 'components/containers';
+@import 'components/dropdowns';
+
+// Collections
+@import 'collections/coverpage/comments';
+@import 'collections/coverpage/metadata';
+@import 'collections/coverpage/tasks';
 
 // Client specific items
 @import 'epo/variables';
 @import 'epo/classes';
+@import 'epo/placeholders';
 
 
 // Variables
@@ -63,17 +70,23 @@ $gutter:                    16px;
 
 // Cover page
 .col {
-    &.col-cover-page-main {
-        padding-right: $gutter;
-        width: $col-cover-page-main;
-    }
-    &.col-cover-page-secondary {
-        width: $col-cover-page-secondary;
+    &.col-cover-page {
+        display: block;
     }
 }
-.task-container {
-    time.col {
-        text-align: right;
+
+@media (min-width: 80em) {
+    .col {
+        &.col-cover-page {
+            display: table-cell;
+        }
+        &.col-cover-page.col-main {
+            padding-right: $gutter;
+            width: $col-cover-page-main;
+        }
+        &.col-cover-page.col-secondary {
+            width: $col-cover-page-secondary;
+        }
     }
 }
 
@@ -88,7 +101,9 @@ $gutter:                    16px;
 // Primary Nav
 .nav-primary {
     background: $color-gray-lighter;
-	width: $col-nav-primary;
+    position: relative;
+    width: $col-nav-primary;
+    z-index: index($ui-levels, primary-nav);
 
     .button {
         // line-height: $col-nav-primary;
@@ -169,6 +184,9 @@ ul.nav-buttons {
 // Helpers
 // General helpers
 .nav-helper {
+    .button-label {
+        right: -999px;
+    }
 }
 
 

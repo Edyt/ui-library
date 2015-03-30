@@ -1,21 +1,32 @@
 table {
-	@include type-base;
-	border: 1px solid #cecece;
-	background: #fff;
+	@include type-smaller;
+	border: 1px solid $color-gray-lighter;
+	background: none;
 	overflow: auto;
 	width: 100%;
 	margin: 20px 0;
 }
 
 tr {
-	border-bottom: 1px solid #cecece;
+	// border-bottom: 1px solid $color-gray-light;
 }
 
+tr:nth-child(even) td {
+	background: rgba($color-gray-lighter, .5);
+}
+
+th,
 td {
-	padding: 0.5rem;
-	border-right: 1px solid #cecece;
+	padding: 2px 4px;
+	text-align: left;
+	// border-right: 1px solid $color-gray-lighter;
+
+	// &:last-child {
+	// 	border: 0;
+	// }
 }
 
-thead td {
-	background: #eee;
+thead th {
+	background: $color-gray-base;
+	color: $color-white;
 }

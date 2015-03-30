@@ -15,3 +15,8 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+input[placeholder],
+textarea[placeholder] {
+	font-style: italic;
+}

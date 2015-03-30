@@ -1,0 +1,40 @@
+.metadata-container {
+	@include type-smaller;
+
+	address {
+		color: $color-gray-700;
+		font-style: normal;
+	}
+
+	.icon {
+		color: $color-gray-500;
+	}
+
+	.row {
+		width: 100%;
+	}
+	.col {
+		// margin-right: 16px;
+		width: 100%;
+
+		// &:nth-child(1),
+		// &:nth-child(2) {
+		// 	width: 25%;
+		// }
+		// &:nth-child(3),
+		// &:nth-child(4) {
+		// 	width: 20%;
+		// }
+	}
+
+	.classification {
+		span {
+			display: block;
+		}
+	}
+	.associated-filings {
+		a {
+			display: block;
+		}
+	}
+}
