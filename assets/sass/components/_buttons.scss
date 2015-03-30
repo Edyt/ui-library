@@ -12,6 +12,8 @@
 	background: $color-gray-lightest;
 	color: $color-gray-darkest;
 
+    transition: background-color 20ms ease, color 20ms ease;
+
 	&:focus,
 	&:hover {
 		background: $color-bright;
@@ -44,10 +46,12 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:focus,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// 	color: $color-blue-base;
+		// }
 	}
 
 	// Success (green)
@@ -67,10 +71,11 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:focus,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// }
 	}
 
 	// Warning (orange)
@@ -90,10 +95,11 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:focus,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// }
 	}
 
 	// Danger (red)
@@ -113,10 +119,11 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:hover,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// }
 	}
 
 	// Info (cyan)
@@ -136,10 +143,10 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// }
 	}
 
 	// Inverse (black)
@@ -159,10 +166,10 @@
 			@extend .button:active;
 		}
 
-		&.is-active,
-		&.is-active:hover {
-			@extend .button.is-active;
-		}
+		// &.is-active,
+		// &.is-active:hover {
+		// 	@extend .button.is-active;
+		// }
 	}
 }
 

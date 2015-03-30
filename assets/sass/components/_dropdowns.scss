@@ -20,6 +20,9 @@
 	&:focus  ~ .ui-select-label,
 	&:hover  ~ .ui-select-label,
 	&:active ~ .ui-select-label {
+		background: $color-blue-light;
+		border: 1px solid $color-blue-light;
+		color: $color-white;
 		outline: none;
 	}
 }
@@ -36,7 +39,7 @@
 	line-height: 18px;
 	padding: 0 4px;
 	text-align: left;
-	transition: color .25s ease;
+	transition: background-color 20ms ease, color 20ms ease;
 	width: 100%;
 
 	.selected-option {

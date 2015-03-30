@@ -119,6 +119,7 @@ $gutter:                    16px;
 
         &.is-active {
             background: $color-gray-lightest;
+            color: $color-blue-light;
 
             &:focus,
             &:hover {
@@ -153,7 +154,9 @@ $gutter:                    16px;
 
     .dossier-info {
         @include type-smallest;
-        color: $color-gray-darker;
+        background-color: $color-gray-dark;
+        color: $color-white;
+        padding: 4px 8px;
 
         .dossier-id {
             display: block;
@@ -161,7 +164,6 @@ $gutter:                    16px;
         }
         .role {
             display: block;
-            // @include type-smallest;
             margin-top: .5em;
         }
     }
