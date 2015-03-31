@@ -3,21 +3,21 @@
 .button {
 	@include borders-round;
 	@include type-smaller;
-	@include shadow-base($color-gray-light);
+	@include shadow-base($color-gray-300);
 	display: inline-block;
 	padding: 5px 9px;
 	text-align: center;
 	text-decoration: none;
 	border: none;
-	background: $color-gray-lightest;
-	color: $color-gray-darkest;
+	background: $color-gray-100;
+	color: $color-gray-700;
 
     transition: background-color 20ms ease, color 20ms ease;
 
 	&:focus,
 	&:hover {
-		background: $color-bright;
-		color: $color-gray-darkest;
+		background: $color-white;
+		color: $color-gray-900;
 	}
 
 	&:active {
@@ -32,13 +32,13 @@
 .button {
 	// Primary button (blue)
 	&.button-primary {
-		@include shadow-base($color-blue-base);
-		background: $color-blue-base;
+		@include shadow-base($color-blue-600);
+		background: $color-blue-600;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-blue-light;
+			background: $color-blue-500;
 			color: $color-white;
 		}
 
@@ -50,20 +50,20 @@
 		// &.is-active:focus,
 		// &.is-active:hover {
 		// 	@extend .button.is-active;
-		// 	color: $color-blue-base;
+		// 	color: $color-blue-600;
 		// }
 	}
 
 	// Success (green)
 
 	&.button-success {
-		@include shadow-base($color-green-dark);
-		background: $color-green-base;
+		@include shadow-base($color-green-700);
+		background: $color-green-600;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-green-light;
+			background: $color-green-500;
 			color: $color-white
 		}
 
@@ -81,13 +81,13 @@
 	// Warning (orange)
 
 	&.button-warning {
-		@include shadow-base($color-orange-dark);
-		background: $color-orange-base;
+		@include shadow-base($color-orange-700);
+		background: $color-orange-600;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-orange-light;
+			background: $color-orange-500;
 			color: $color-white
 		}
 
@@ -105,13 +105,13 @@
 	// Danger (red)
 
 	&.button-danger {
-		@include shadow-base($color-red-dark);
-		background: $color-red-base;
+		@include shadow-base($color-red-700);
+		background: $color-red-600;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-red-light;
+			background: $color-red-500;
 			color: $color-white
 		}
 
@@ -129,13 +129,13 @@
 	// Info (cyan)
 
 	&.button-info {
-		@include shadow-base($color-cyan-dark);
-		background: $color-cyan-base;
+		@include shadow-base($color-cyan-700);
+		background: $color-cyan-600;
 		color: $color-white;
 
 		&:focus,
 		&:hover {
-			background: $color-cyan-light;
+			background: $color-cyan-700;
 			color: $color-white
 		}
 
@@ -198,8 +198,8 @@
 	// active state
 	&.is-active,
 	&.is-active:hover {
-		@include shadow-base($color-gray-darker);
-		background: $color-gray-darker;
+		@include shadow-base($color-gray-700);
+		background: $color-gray-700;
 		color: $color-white;
 
 		&:active {
@@ -212,11 +212,11 @@
 	&.is-disabled:hover,
 	&.is-disabled:active {
 		cursor: not-allowed;
-		background: $color-bright;
-		color: $color-gray-light;
+		background: $color-gray-100;
+		color: $color-gray-400;
 
 		&:active {
-			@include shadow-base($color-gray-lightest);
+			@include shadow-base($color-gray-200);
 			position: static;
 		}
 	}
@@ -267,7 +267,7 @@
 .button-group .button {
 	@include borders-square;
 	float: left;
-	border-right: 1px solid $color-gray-light;
+	border-right: 1px solid $color-gray-500;
 	margin-bottom: 1px;
 }
 
@@ -292,7 +292,7 @@
 }
 
 .button-group-clear .button-primary {
-	color: $color-blue-base;
+	color: $color-blue-600;
 }
 
 // For buttons in toolbars
@@ -309,7 +309,7 @@
 // Button tabs
 
 .button-group.button-group-tabs {
-	border-bottom: 1px solid $color-gray-light;
+	border-bottom: 1px solid $color-gray-400;
 	overflow: visible;
 	display: table;
 	list-style: none;
@@ -341,8 +341,8 @@
 		&.is-active,
 		&.is-active:hover {
 			background: $color-white;
-			color: $color-gray-darkest;
-			border: 1px solid $color-gray-base;
+			color: $color-gray-900;
+			border: 1px solid $color-gray-500;
 			border-bottom: 0;
 			margin-bottom: -1px;
 		}
@@ -356,11 +356,11 @@
 		@include borders-square;
 		@include shadows-none;
 
-		background: $color-gray-lighter;
+		background: $color-gray-300;
 
 		&:focus,
 		&:hover {
-			background: $color-blue-light;
+			background: $color-blue-500;
 			color: $color-white;
 		}
 	}

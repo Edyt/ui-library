@@ -1,24 +1,24 @@
 a {
-	color: $color-blue-base;
+	color: $color-blue-600;
 
 	&:focus,
 	&:hover {
-		color: $color-blue-light;
+		color: $color-blue-500;
 	}
 
 	&:active {
-		color: $color-blue-dark;
+		color: $color-blue-700;
 	}
 }
 
 a.unobtrusive {
-	color: $color-gray-light;
+	color: $color-gray-400;
 
 	&:focus,
 	&:hover {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 	&:active {
-		color: $color-gray-dark;
+		color: $color-gray-600;
 	}
 }

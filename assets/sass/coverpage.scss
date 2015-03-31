@@ -119,11 +119,11 @@ $gutter:                    16px;
 
         &.is-active {
             background: $color-gray-lightest;
-            color: $color-blue-light;
+            color: $color-blue-500;
 
             &:focus,
             &:hover {
-                color: $color-blue-base;
+                color: $color-blue-500;
             }
         }
 
@@ -145,7 +145,7 @@ $gutter:                    16px;
         &:focus,
         &:hover {
             .button-label {
-                background: $color-blue-light;
+                background: $color-blue-500;
                 color: $color-white;
                 visibility: visible;
             }
@@ -154,7 +154,7 @@ $gutter:                    16px;
 
     .dossier-info {
         @include type-smallest;
-        background-color: $color-gray-dark;
+        background-color: $color-gray-600;
         color: $color-white;
         padding: 4px 8px;
 

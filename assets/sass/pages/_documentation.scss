@@ -1,5 +1,5 @@
 body {
-	background-color: $color-bright;
+	background-color: $color-gray-100;
 }
 
 .documentation-page {
@@ -17,7 +17,7 @@ nav {
 	float: left;
 	margin-top: 16px;
 	box-sizing: border-box;
-	border-right: 2px solid $color-gray-lightest;
+	border-right: 2px solid $color-gray-200;
 }
 
 nav h5 {
@@ -34,11 +34,11 @@ nav h5 a {
 }
 
 nav h5 a:hover {
-	color: $color-gray-base;
+	color: $color-gray-500;
 }
 
 nav h5 a:active {
-	color: $color-gray-dark;
+	color: $color-gray-600;
 }
 
 nav ul {
@@ -57,8 +57,8 @@ nav ul li {
 		padding: 5px 20px 5px 0;
 		display: inline-block;
 		background: none;
-		border-right: 2px solid $color-gray-lightest;
-		color: rgba( $color-gray-base, .6 );
+		border-right: 2px solid $color-gray-200;
+		color: rgba( $color-gray-500, .6 );
 		text-decoration: none;
 		text-transform: uppercase;
 		@include type-base;
@@ -66,16 +66,16 @@ nav ul li {
 
 		&:focus,
 		&:hover {
-			color: $color-blue-base;
-			border-right-color: $color-blue-base;
+			color: $color-blue-600;
+			border-right-color: $color-blue-600;
 		}
 		&:active {
-			color: $color-blue-darker;
-			border-right-color: $color-blue-darker;
+			color: $color-blue-800;
+			border-right-color: $color-blue-800;
 		}
 	}
 	.divider {
-		background: $color-gray-lightest;
+		background: $color-gray-200;
 		height: 1px;
 		margin: 10px 20px 10px auto;
 		width: 150px;
@@ -87,78 +87,78 @@ nav ul li {
 	.color-blue {
 		&:focus,
 		&:hover {
-			color: $color-blue-base;
-			border-right-color: $color-blue-base;
+			color: $color-blue-600;
+			border-right-color: $color-blue-600;
 		}
 		&:active {
-			color: $color-blue-darker;
-			border-right-color: $color-blue-darker;
+			color: $color-blue-800;
+			border-right-color: $color-blue-800;
 		}
 	}
 	.color-cyan {
 		&:focus,
 		&:hover {
-			color: $color-cyan-base;
-			border-right-color: $color-cyan-base;
+			color: $color-cyan-600;
+			border-right-color: $color-cyan-600;
 		}
 		&:active {
-			color: $color-cyan-darker;
-			border-right-color: $color-cyan-darker;
+			color: $color-cyan-800;
+			border-right-color: $color-cyan-800;
 		}
 	}
 	.color-green {
 		&:focus,
 		&:hover {
-			color: $color-green-base;
-			border-right-color: $color-green-base;
+			color: $color-green-600;
+			border-right-color: $color-green-600;
 		}
 		&:active {
-			color: $color-green-darker;
-			border-right-color: $color-green-darker;
+			color: $color-green-800;
+			border-right-color: $color-green-800;
 		}
 	}
 	.color-yellow {
 		&:focus,
 		&:hover {
-			color: $color-yellow-dark;
-			border-right-color: $color-yellow-dark;
+			color: $color-yellow-700;
+			border-right-color: $color-yellow-700;
 		}
 		&:active {
-			color: $color-yellow-darkest;
-			border-right-color: $color-yellow-darkest;
+			color: $color-yellow-900;
+			border-right-color: $color-yellow-900;
 		}
 	}
 	.color-orange {
 		&:focus,
 		&:hover {
-			color: $color-orange-base;
-			border-right-color: $color-orange-base;
+			color: $color-orange-600;
+			border-right-color: $color-orange-600;
 		}
 		&:active {
-			color: $color-orange-darker;
-			border-right-color: $color-orange-darker;
+			color: $color-orange-800;
+			border-right-color: $color-orange-800;
 		}
 	}
 	.color-red {
 		&:focus,
 		&:hover {
-			color: $color-red-base;
-			border-right-color: $color-red-base;
+			color: $color-red-600;
+			border-right-color: $color-red-600;
 		}
 		&:active {
-			color: $color-red-darker;
-			border-right-color: $color-red-darker;
+			color: $color-red-800;
+			border-right-color: $color-red-800;
 		}
 	}
 	.color-purple {
 		&:focus,
 		&:hover {
-			color: $color-purple-base;
-			border-right-color: $color-purple-base;
+			color: $color-purple-600;
+			border-right-color: $color-purple-600;
 		}
 		&:active {
-			color: $color-purple-darker;
-			border-right-color: $color-purple-darker;
+			color: $color-purple-800;
+			border-right-color: $color-purple-800;
 		}
 	}
 }
@@ -231,7 +231,7 @@ ul.color-mixins > li {
 
 ul.color-mixins li h4 {
 	margin: 20px 0 4px 0;
-	color: $color-gray-darker;
+	color: $color-gray-700;
 }
 
 ul.color-mixins li ul {
@@ -256,623 +256,623 @@ ul.color-mixins li li {
 }
 
 .color-purple-900 {
-	background-color: $color-purple-darkest;
+	background-color: $color-purple-900;
 
 	div	{
-		border-color: $color-purple-darkest;
+		border-color: $color-purple-900;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-purple-800 {
- 	background-color: $color-purple-darker;
+ 	background-color: $color-purple-800;
 
 	div	{
-		border-color: $color-purple-darker;
+		border-color: $color-purple-800;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
  }
 
 .color-purple-700 {
-	background-color: $color-purple-dark;
+	background-color: $color-purple-700;
 
 	div	{
-		border-color: $color-purple-dark;
+		border-color: $color-purple-700;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-purple-600 {
-	background-color: $color-purple-base;
+	background-color: $color-purple-600;
 
 	div	{
-		border-color: $color-purple-base;
+		border-color: $color-purple-600;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-purple-500 {
-	background-color: $color-purple-light;
+	background-color: $color-purple-500;
 
 	div	{
-		border-color: $color-purple-light;
+		border-color: $color-purple-500;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-purple-400 {
-	background-color: $color-purple-lighter;
+	background-color: $color-purple-400;
 
 	div	{
-		border-color: $color-purple-lighter;
+		border-color: $color-purple-400;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-purple-100 {
-	background-color: $color-purple-lightest;
+	background-color: $color-purple-100;
 
 	div	{
-		border-color: $color-purple-lightest;
+		border-color: $color-purple-100;
 	}
 
 	h3 {
-		color: $color-purple-base;
+		color: $color-purple-600;
 	}
 }
 
 .color-blue-900 {
-		background-color: $color-blue-darkest;
+		background-color: $color-blue-900;
 
 	div	{
-		border-color: $color-blue-darkest;
+		border-color: $color-blue-900;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-blue-800 {
-	background-color: $color-blue-darker;
+	background-color: $color-blue-800;
 
 	div	{
-		border-color: $color-blue-darker;
+		border-color: $color-blue-800;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-blue-700 {
-	background-color: $color-blue-dark;
+	background-color: $color-blue-700;
 
 	div	{
-		border-color: $color-blue-dark;
+		border-color: $color-blue-700;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-blue-600 {
-	background-color: $color-blue-base;
+	background-color: $color-blue-600;
 
 	div	{
-		border-color: $color-blue-base;
+		border-color: $color-blue-600;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 
 }
 
 .color-blue-500 {
-	background-color: $color-blue-light;
+	background-color: $color-blue-500;
 
 	div	{
-		border-color: $color-blue-light;
+		border-color: $color-blue-500;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-blue-400 {
-	background-color: $color-blue-lighter;
+	background-color: $color-blue-400;
 
 	div	{
-		border-color: $color-blue-lighter;
+		border-color: $color-blue-400;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-blue-100 {
-	background-color: $color-blue-lightest;
+	background-color: $color-blue-100;
 
 	div	{
-		border-color: $color-blue-lightest;
+		border-color: $color-blue-100;
 	}
 
 	h3 {
-		color: $color-blue-base;
+		color: $color-blue-600;
 	}
 }
 
 .color-cyan-900 {
-	background-color: $color-cyan-darkest;
+	background-color: $color-cyan-900;
 
 	div	{
-		border-color: $color-cyan-darkest;
+		border-color: $color-cyan-900;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-800 {
-	background-color: $color-cyan-darker;
+	background-color: $color-cyan-800;
 
 	div	{
-		border-color: $color-cyan-darker;
+		border-color: $color-cyan-800;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-700 {
-	background-color: $color-cyan-dark;
+	background-color: $color-cyan-700;
 
 	div	{
-		border-color: $color-cyan-dark;
+		border-color: $color-cyan-700;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-600 {
-	background-color: $color-cyan-base;
+	background-color: $color-cyan-600;
 
 	div	{
-		border-color: $color-cyan-base;
+		border-color: $color-cyan-600;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-500 {
-	background-color: $color-cyan-light;
+	background-color: $color-cyan-500;
 
 
 	div	{
-		border-color: $color-cyan-light;
+		border-color: $color-cyan-500;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-400 {
-	background-color: $color-cyan-lighter;
+	background-color: $color-cyan-400;
 
 
 	div	{
-		border-color: $color-cyan-lighter;
+		border-color: $color-cyan-400;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-cyan-100 {
-	background-color: $color-cyan-lightest;
+	background-color: $color-cyan-100;
 
 
 	div	{
-		border-color: $color-cyan-lightest;
+		border-color: $color-cyan-100;
 	}
 
 	h3 {
-		color: $color-cyan-base;
+		color: $color-cyan-600;
 	}
 }
 
 .color-green-900 {
-	background-color: $color-green-darkest;
+	background-color: $color-green-900;
 
 
 	div	{
-		border-color: $color-green-darkest;
+		border-color: $color-green-900;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-800 {
-	background-color: $color-green-darker;
+	background-color: $color-green-800;
 
 
 	div	{
-		border-color: $color-green-darker;
+		border-color: $color-green-800;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-700 {
-	background-color: $color-green-dark;
+	background-color: $color-green-700;
 
 
 	div	{
-		border-color: $color-green-dark;
+		border-color: $color-green-700;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-600 {
-	background-color: $color-green-base;
+	background-color: $color-green-600;
 
 
 	div	{
-		border-color: $color-green-base;
+		border-color: $color-green-600;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-500 {
-	background-color: $color-green-light;
+	background-color: $color-green-500;
 
 
 	div	{
-		border-color: $color-green-light;
+		border-color: $color-green-500;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-400 {
-	background-color: $color-green-lighter;
+	background-color: $color-green-400;
 
 
 	div	{
-		border-color: $color-green-lighter;
+		border-color: $color-green-400;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-green-100 {
-	background-color: $color-green-lightest;
+	background-color: $color-green-100;
 
 
 	div	{
-		border-color: $color-green-lightest;
+		border-color: $color-green-100;
 	}
 
 	h3 {
-		color: $color-green-base;
+		color: $color-green-600;
 	}
 }
 
 .color-yellow-900 {
-	background-color: $color-yellow-darkest;
+	background-color: $color-yellow-900;
 
 
 	div	{
-		border-color: $color-yellow-darkest;
+		border-color: $color-yellow-900;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-800 {
-	background-color: $color-yellow-darker;
+	background-color: $color-yellow-800;
 
 
 	div	{
-		border-color: $color-yellow-darker;
+		border-color: $color-yellow-800;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-700 {
-	background-color: $color-yellow-dark;
+	background-color: $color-yellow-700;
 
 
 	div	{
-		border-color: $color-yellow-dark;
+		border-color: $color-yellow-700;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-600 {
-	background-color: $color-yellow-base;
+	background-color: $color-yellow-600;
 
 
 	div	{
-		border-color: $color-yellow-base;
+		border-color: $color-yellow-600;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-500 {
-	background-color: $color-yellow-light;
+	background-color: $color-yellow-500;
 
 
 	div	{
-		border-color: $color-yellow-light;
+		border-color: $color-yellow-500;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-400 {
-	background-color: $color-yellow-lighter;
+	background-color: $color-yellow-400;
 
 
 
 	div	{
-		border-color: $color-yellow-lighter;
+		border-color: $color-yellow-400;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-yellow-100 {
-	background-color: $color-yellow-lightest;
+	background-color: $color-yellow-100;
 
 
 	div	{
-		border-color: $color-yellow-lightest;
+		border-color: $color-yellow-100;
 	}
 
 	h3 {
-		color: $color-yellow-base;
+		color: $color-yellow-600;
 	}
 }
 
 .color-orange-900 {
-	background-color: $color-orange-darkest;
+	background-color: $color-orange-900;
 
 
 	div	{
-		border-color: $color-orange-darkest;
+		border-color: $color-orange-900;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-800 {
-	background-color: $color-orange-darker;
+	background-color: $color-orange-800;
 
 
 	div	{
-		border-color: $color-orange-darker;
+		border-color: $color-orange-800;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-700 {
-	background-color: $color-orange-dark;
+	background-color: $color-orange-700;
 
 
 	div	{
-		border-color: $color-orange-dark;
+		border-color: $color-orange-700;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-600 {
-	background-color: $color-orange-base;
+	background-color: $color-orange-600;
 
 
 	div	{
-		border-color: $color-orange-base;
+		border-color: $color-orange-600;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-500 {
-	background-color: $color-orange-light;
+	background-color: $color-orange-500;
 
 
 	div	{
-		border-color: $color-orange-light;
+		border-color: $color-orange-500;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-400 {
-	background-color: $color-orange-lighter;
+	background-color: $color-orange-400;
 
 
 	div	{
-		border-color: $color-orange-lighter;
+		border-color: $color-orange-400;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-orange-100 {
-	background-color: $color-orange-lightest;
+	background-color: $color-orange-100;
 
 
 	div	{
-		border-color: $color-orange-lightest;
+		border-color: $color-orange-100;
 	}
 
 	h3 {
-		color: $color-orange-base;
+		color: $color-orange-600;
 	}
 }
 
 .color-red-900 {
-	background-color: $color-red-darkest;
+	background-color: $color-red-900;
 
 
 	div	{
-		border-color: $color-red-darkest;
+		border-color: $color-red-900;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-800 {
-	background-color: $color-red-darker;
+	background-color: $color-red-800;
 
 
 	div	{
-		border-color: $color-red-darker;
+		border-color: $color-red-800;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-700 {
-	background-color: $color-red-dark;
+	background-color: $color-red-700;
 
 
 	div	{
-		border-color: $color-red-dark;
+		border-color: $color-red-700;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-600 {
-	background-color: $color-red-base;
+	background-color: $color-red-600;
 
 
 	div	{
-		border-color: $color-red-base;
+		border-color: $color-red-600;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-500 {
-	background-color: $color-red-light;
+	background-color: $color-red-500;
 
 
 	div	{
-		border-color: $color-red-light;
+		border-color: $color-red-500;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-400 {
-	background-color: $color-red-lighter;
+	background-color: $color-red-400;
 
 
 	div	{
-		border-color: $color-red-lighter;
+		border-color: $color-red-400;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
 .color-red-100 {
-	background-color: $color-red-lightest;
+	background-color: $color-red-100;
 
 
 	div	{
-		border-color: $color-red-lightest;
+		border-color: $color-red-100;
 	}
 
 	h3 {
-		color: $color-red-base;
+		color: $color-red-600;
 	}
 }
 
@@ -885,7 +885,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -898,7 +898,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -911,7 +911,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -924,7 +924,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -937,7 +937,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -950,7 +950,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -963,7 +963,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -976,7 +976,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -989,7 +989,7 @@ ul.color-mixins li li {
 	}
 
 	h3 {
-		color: $color-gray-base;
+		color: $color-gray-500;
 	}
 }
 
@@ -1097,7 +1097,7 @@ ul.font-weights li:nth-of-type(8) {
 	display: table;
 	background-color: $color-white;
 	margin: 20px auto;
-	border: 1px solid $color-gray-lightest;
+	border: 1px solid $color-gray-200;
 	@include borders-round;
 	min-height: 40px;
 	padding: 20px 10px;
@@ -1126,7 +1126,7 @@ ul.font-weights li:nth-of-type(8) {
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
-	border: 1px solid $color-gray-base;
+	border: 1px solid $color-gray-500;
 	position: relative;
 }
 
@@ -1168,14 +1168,14 @@ ul.font-weights li:nth-of-type(8) {
 .dossiertabs ul li a.active-tab {
 		padding: 7px 10px 5px 10px;
 		z-index: 20;
-		background-color: desaturate( $color-cyan-base, 50% );
-		color: desaturate( lighten( $color-cyan-light, 50% ), 50% );
-		border: 1px solid $color-cyan-darkest;
+		background-color: desaturate( $color-cyan-700, 50% );
+		color: desaturate( lighten( $color-cyan-500, 50% ), 50% );
+		border: 1px solid $color-cyan-900;
 	}
 
 .dossiertabs ul li a.active-tab:hover {
 	color: $color-white;
-	background-color: desaturate( $color-cyan-darker, 20% );
+	background-color: desaturate( $color-cyan-800, 20% );
 }
 */
 

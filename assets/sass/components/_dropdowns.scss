@@ -20,8 +20,8 @@
 	&:focus  ~ .ui-select-label,
 	&:hover  ~ .ui-select-label,
 	&:active ~ .ui-select-label {
-		background: $color-blue-light;
-		border: 1px solid $color-blue-light;
+		background: $color-blue-500;
+		border: 1px solid $color-blue-500;
 		color: $color-white;
 		outline: none;
 	}
@@ -31,9 +31,9 @@
 	@include borders-rounder;
 	@include shadows-none;
 	@include type-smallest;
-	background: $color-blue-lighter;
-	border: 1px solid $color-gray-base;
-	border-color: $color-gray-400 $color-gray-base $color-gray-base $color-gray-400;
+	background: $color-blue-400;
+	border: 1px solid $color-gray-500;
+	border-color: $color-gray-400 $color-gray-500 $color-gray-500 $color-gray-400;
 	display: block;
 	height: 20px;
 	line-height: 18px;

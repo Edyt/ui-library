@@ -111,23 +111,23 @@ u {
 
 p a {
 	@include type-base;
-	color: $color-blue-base;
+	color: $color-blue-600;
 	text-decoration: none;
 	background-image: linear-gradient(to top,
-    rgba( $color-blue-base, 0 ) 10%,
-    rgba( $color-blue-base, .4) 10%,
-    rgba( $color-blue-base, .4) 15%,
-    rgba( $color-blue-base, 0) 15%
+    rgba( $color-blue-600, 0 ) 10%,
+    rgba( $color-blue-600, .4) 10%,
+    rgba( $color-blue-600, .4) 15%,
+    rgba( $color-blue-600, 0) 15%
     );
 }
 
 p a:hover {
-	color: $color-blue-dark;
+	color: $color-blue-700;
 	background-image: linear-gradient(to top,
-    rgba( $color-blue-dark, 0) 10%,
-    rgba( $color-blue-dark, 1) 10%,
-    rgba( $color-blue-dark, 1) 15%,
-    rgba( $color-blue-dark, 0) 15%
+    rgba( $color-blue-700, 0) 10%,
+    rgba( $color-blue-700, 1) 10%,
+    rgba( $color-blue-700, 1) 15%,
+    rgba( $color-blue-700, 0) 15%
     );
 }
 
@@ -143,12 +143,12 @@ pre.prettyprint {
 	padding: 0.15rem 0.25rem;
 	margin: 2rem 0 1rem;
 	line-height: 1.6;
-	border: 1px solid $color-gray-lightest;
+	border: 1px solid $color-gray-200;
 	background: #fff;
 	var,
 	var span {
 		@include type-base;
-		color: $color-purple-dark;
+		color: $color-purple-700;
 	}
 
 	&:first-of-type {
@@ -157,28 +157,28 @@ pre.prettyprint {
 }
 
 pre.prettyprint .atv {
-	color: $color-red-base;
+	color: $color-red-600;
 }
 
 var,
 code {
 	@include borders-round;
 	font-size: inherit;
-	border: 1px solid $color-purple-light;
-	background-color: rgba($color-purple-lightest, .2);
-	color: $color-purple-dark;
+	border: 1px solid $color-purple-400;
+	background-color: rgba($color-purple-100, .2);
+	color: $color-purple-700;
 	display: inline-block;
 	padding: 0 5px;
 	margin: 0 2px;
 }
 
 code {
-	background-color: rgba($color-bright, 0.5);
-	border-color: $color-gray-lightest;
-	color: $color-red-base;
+	background-color: rgba($color-gray-100, 0.5);
+	border-color: $color-gray-200;
+	color: $color-red-600;
 }
 
 hr {
 	border: none;
-	border-bottom: 1px solid $color-gray-lighter;
+	border-bottom: 1px solid $color-gray-400;
 }

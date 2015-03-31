@@ -1,6 +1,6 @@
 table {
 	@include type-smaller;
-	border: 1px solid $color-gray-lighter;
+	border: 1px solid $color-gray-300;
 	background: none;
 	overflow: auto;
 	width: 100%;
@@ -8,18 +8,18 @@ table {
 }
 
 tr {
-	// border-bottom: 1px solid $color-gray-light;
+	// border-bottom: 1px solid $color-gray-400;
 }
 
 tr:nth-child(even) td {
-	background: rgba($color-gray-lighter, .5);
+	background: rgba($color-gray-300, .5);
 }
 
 th,
 td {
 	padding: 2px 4px;
 	text-align: left;
-	// border-right: 1px solid $color-gray-lighter;
+	// border-right: 1px solid $color-gray-300;
 
 	// &:last-child {
 	// 	border: 0;
@@ -27,6 +27,6 @@ td {
 }
 
 thead th {
-	background: $color-gray-base;
+	background: $color-gray-500;
 	color: $color-white;
 }

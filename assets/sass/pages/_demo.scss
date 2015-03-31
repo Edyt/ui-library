@@ -1,5 +1,5 @@
 body.page-demo {
-	background: $color-gray-lightest;
+	background: $color-gray-200;
 	
 	.container {
 		background: $color-white;
@@ -26,7 +26,7 @@ body.page-demo {
 	h2 {
 		margin: 2rem 0 2rem;
 		padding-top: 2rem;
-		border-top: 1px $color-gray-lightest solid;
+		border-top: 1px $color-gray-200 solid;
 	}
 
 	h3 {
@@ -62,7 +62,7 @@ body.page-demo {
 		@include type-smaller;
 		@include font-medium;
 		letter-spacing: .5px;
-		background-color: $color-green-darkest;
+		background-color: $color-green-900;
 	} */
 }
 

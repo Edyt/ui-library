@@ -5,7 +5,7 @@
 	&:after {
 		@include borders-round;
 		background: rgba($color-white, .9);
-		border: 1px solid $color-gray-lighter;
+		border: 1px solid $color-gray-300;
 		bottom: -1px;
 		content: '';
 		left: -1px;
@@ -15,7 +15,7 @@
 		z-index: index($ui-levels, placeholders);
 	}
 	&:before {
-		color: $color-gray-light;
+		color: $color-gray-400;
 		content: 'Click to preview panel';
 		padding: 6px 8px;
 		position: absolute;
@@ -33,7 +33,7 @@
 		}
 		&:after {
 			background: rgba($color-white, .8);
-			border: 1px solid rgba($color-orange-base, .2);
+			border: 1px solid rgba($color-orange-600, .2);
 			top: -4px;
 			left: -4px;
 			right: -4px;
@@ -47,11 +47,11 @@
 
 	&.placeholder-reveal {
 		&:after {
-			background: rgba($color-orange-base, .1);
-			border: 2px solid $color-orange-light;
+			background: rgba($color-orange-600, .1);
+			border: 2px solid $color-orange-500;
 		}
 		&:before {
-			background: $color-orange-base;
+			background: $color-orange-600;
 			color: $color-white;
 			content: none;
 		}

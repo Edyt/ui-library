@@ -1,13 +1,13 @@
 .label {
 	@include borders-round;
 	font-size: inherit;
-	border: 1px solid $color-gray-light;
+	border: 1px solid $color-gray-300;
 	display: inline-block;
 	padding: 0 5px;
 
 	&.label-bright {
-		background: $color-gray-lightest;
-		border-color: $color-gray-lightest;
+		background: $color-gray-200;
+		border-color: $color-gray-200;
 		color: $color-white;
 	}
 
@@ -17,26 +17,26 @@
 	}
 
 	&.label-danger {
-		background: $color-red-base;
-		border: 1px solid $color-red-dark;
+		background: $color-red-600;
+		border: 1px solid $color-red-700;
 		color: $color-white;
 	}
 
 	&.label-warning {
-		background: $color-orange-base;
-		border: 1px solid $color-orange-dark;
+		background: $color-orange-600;
+		border: 1px solid $color-orange-700;
 		color: $color-white;
 	}
 
 	&.label-info {
-		background: $color-cyan-base;
-		border: 1px solid $color-cyan-dark;
+		background: $color-cyan-600;
+		border: 1px solid $color-cyan-700;
 		color: $color-white;
 	}
 
 	&.label-success {
-		background: $color-green-base;
-		border: 1px solid $color-green-dark;
+		background: $color-green-600;
+		border: 1px solid $color-green-700;
 		color: $color-white;
 	}
 }
