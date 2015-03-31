@@ -1,4 +1,7 @@
 .comments {
+    height: calc(35vh - 80px);
+    overflow: hidden;
+
 	h6 {
 		font-weight: bold;
 		margin: 0;
@@ -17,6 +20,16 @@
 		float: left;
 		margin-right: 4px;
 	}
+
+	.add-comment {
+		height: 90px;
+	}
+
+    .comment-thread {
+      height: calc(35vh - 80px - 90px);
+      overflow: scroll;
+    }
+
 }
 .add-comment {
 	label {
@@ -24,6 +37,7 @@
 		position: absolute;
 	}
 	textarea {
+		height: 3em;
 		resize: none;
 		width: 100%;
 	}
