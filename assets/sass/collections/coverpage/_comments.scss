@@ -26,8 +26,12 @@
 	}
 
     .comment-thread {
-      height: calc(35vh - 80px - 90px);
-      overflow: scroll;
+      height: calc(35vh - 80px - 90px - 10px);
+      overflow: hidden;
+    }
+    .comment-thread-list {
+    	height: 100%;
+    	overflow: scroll;
     }
 
 }
