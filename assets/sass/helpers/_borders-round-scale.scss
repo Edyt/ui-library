@@ -1,28 +1,29 @@
 @mixin borders-round {
-	border-radius: .125em;
+	border-radius: .125rem; // 2px at regular zoom (16px rem)
 }
 
 @mixin borders-rounder {
-	border-radius: .3125em;
+	border-radius: .3125rem; // 5px
 }
 
+// Should this be .625? (10px)
 @mixin borders-roundest {
-	border-radius: 1.25em;
+	border-radius: 1.25rem; // 20px
 }
 
 @mixin borders-tab {
-	border-radius: .125em .125em 0 0;
-} 
+	border-radius: .125rem .125rem 0 0;
+}
 
 // used for elements that are part of a larger
 // element that needs to have round corners
 
 @mixin borders-end-cap {
-	border-radius: 0 .125em .125em 0;
+	border-radius: 0 .125rem .125rem 0;
 }
 
 @mixin borders-beginning-cap {
-	border-radius: .125em 0 0 .125em;
+	border-radius: .125rem 0 0 .125rem;
 }
 
 // resetting rounded borders
