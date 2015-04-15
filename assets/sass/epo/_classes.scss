@@ -9,246 +9,243 @@
 $epo-phase-width: 24px;
 
 .application-number {
-    @include type-smaller;
-    @include borders-round;
-    border: 1px solid transparent;
+  @include borders-round;
+  @include type-smaller;
+  background: rgba($epo-color-dossier-ep, .2);
+  border: 1px solid transparent;
+  border-color: $epo-color-dossier-ep;
+  display: inline-block;
+  height: 21px;
+  line-height: 18px;
+  margin: 0 .5em 0 0;
+  min-width: 150px;
+  overflow: visible;
+  position: relative;
+
+  // default colors
+  // background: linear-gradient(to right, #E9F5FE 0%, #E9F5FE 82%, #96D2FC 82%, #96D2FC 100%) repeat scroll 0% 0% transparent;
+
+  .phase {
+    @include borders-beginning-cap;
     display: inline-block;
+    font-weight: bold;
     height: 21px;
-    line-height: 18px;
-    margin: 0 .5em 0 0;
-    min-width: 150px;
-    overflow: visible;
+    left: -1 * $epo-phase-width;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    width: 20px;
+  }
+
+  .number {
+    background: rgba($color-white, .4);
+    color: $color-black;
+    display: inline-block;
+    font-weight: normal;
+    height: 100%;//calc(100% - 2px);
+    padding: 0 .5em;
+    width: calc(100% - 2.1em);
+  }
+
+  .language {
+    // @include borders-end-cap;
+    float: right;
+    // font-weight: normal;
+    height: 100%;
     position: relative;
-
-    // default colors
-    // background: linear-gradient(to right, #E9F5FE 0%, #E9F5FE 82%, #96D2FC 82%, #96D2FC 100%) repeat scroll 0% 0% transparent;
-    background: rgba($epo-color-dossier-ep, .2);
-    border-color: $epo-color-dossier-ep;
-
-    .phase {
-        display: inline-block;
-        font-weight: bold;
-        height: 21px;
-        line-height: 21px;
-        text-align: center;
-    }
-
-    .phase {
-        @include borders-beginning-cap;
-        left: -1 * $epo-phase-width;
-        position: absolute;
-        top: -1px;
-        width: 20px;
-    }
-
-    .number {
-        background: rgba($color-white, .4);
-        color: $color-black;
-        display: inline-block;
-        height: 100%;//calc(100% - 2px);
-        font-weight: normal;
-        padding: 0 .5em 0 .5em;
-        width: calc(100% - 2.1em);
-    }
-
-    .language {
-        // @include borders-end-cap;
-        float: right;
-        // font-weight: normal;
-        height: 100%;
-        position: relative;
-        text-align: center;
-        width: 2em;
-    }
+    text-align: center;
+    width: 2em;
+  }
 
 
-    // With phase included: adjust border radius
-    &.phase-search,
-    &.phase-exam,
-    &.phase-opposition,
-    &.phase-appeal,
-    &.phase-limitation {
-        @include borders-end-cap;
-        margin-left: $epo-phase-width;
-    }
-}
+  // With phase included: adjust border radius
+  &.phase-search,
+  &.phase-exam,
+  &.phase-opposition,
+  &.phase-appeal,
+  &.phase-limitation {
+    @include borders-end-cap;
+    margin-left: $epo-phase-width;
+  }
 
 
 // Application type/national variations:
 // INFO: Types for applications are correlated to their dossier codes (incl. nationals)
-.application-number {
 
-    &.type-ep {
-        background-color: rgba($epo-color-dossier-ep, .2);
-        background-color: rgba($epo-color-dossier-ep, 1);
-        border-color: $epo-color-dossier-ep;
+  &.type-ep {
+    // background-color: rgba($epo-color-dossier-ep, .2);
+    background-color: rgba($epo-color-dossier-ep, 1);
+    border-color: $epo-color-dossier-ep;
 
-        .language {
-            // background: $epo-color-dossier-ep;
-        }
+    .language {
+      // background: $epo-color-dossier-ep;
+    }
+  }
+
+  &.type-europct {
+    // background-color: rgba($epo-color-dossier-europct, .2);
+    background-color: rgba($epo-color-dossier-europct, 1);
+    border-color: $epo-color-dossier-europct;
+
+    .language {
+      // background: $epo-color-dossier-europct;
+    }
+  }
+
+  &.type-pct {
+    // background-color: rgba($epo-color-dossier-pct, .2);
+    background-color: rgba($epo-color-dossier-pct, 1);
+    border-color: $epo-color-dossier-pct;
+
+    .language {
+      // background: $epo-color-dossier-pct;
+    }
+  }
+
+  &.type-bo {
+    // background-color: rgba($epo-color-dossier-bo, .2);
+    background-color: rgba($epo-color-dossier-bo, 1);
+    border-color: $epo-color-dossier-bo;
+
+    .number {
+      background: rgba($color-white, .7);
     }
 
-    &.type-europct {
-        background-color: rgba($epo-color-dossier-europct, .2);
-        background-color: rgba($epo-color-dossier-europct, 1);
-        border-color: $epo-color-dossier-europct;
+    .language {
+      // background: $epo-color-dossier-bo;
+      color: $color-white;
+    }
+  }
 
-        .language {
-            // background: $epo-color-dossier-europct;
-        }
+  &.type-co {
+    // background-color: rgba($epo-color-dossier-co, .2);
+    background-color: rgba($epo-color-dossier-co, 1);
+    border-color: $epo-color-dossier-co;
+
+    .language {
+      // background: $epo-color-dossier-co;
+    }
+  }
+
+  &.type-fa {
+    // background-color: rgba($epo-color-dossier-fa, .2);
+    background-color: rgba($epo-color-dossier-fa, 1);
+    border-color: $epo-color-dossier-fa;
+
+    .language {
+      // background: $epo-color-dossier-fa;
+    }
+  }
+
+  &.type-go {
+    // background-color: rgba($epo-color-dossier-go, .2);
+    background-color: rgba($epo-color-dossier-go, 1);
+    border-color: $epo-color-dossier-go;
+
+    .language {
+      // background: $epo-color-dossier-go;
+    }
+  }
+
+  &.type-io {
+    // background-color: rgba($epo-color-dossier-io, .2);
+    background-color: rgba($epo-color-dossier-io, 1);
+    border-color: $epo-color-dossier-io;
+
+    .language {
+      // background: $epo-color-dossier-io;
+    }
+  }
+
+  &.type-lo {
+    // background-color: rgba($epo-color-dossier-lo, .2);
+    background-color: rgba($epo-color-dossier-lo, 1);
+    border-color: $epo-color-dossier-lo;
+
+    .language {
+      // background: $epo-color-dossier-lo;
+    }
+  }
+
+  &.type-no {
+    // background-color: rgba($epo-color-dossier-no, .2);
+    background-color: rgba($epo-color-dossier-no, 1);
+    border-color: $epo-color-dossier-no;
+
+    .language {
+      // background: $epo-color-dossier-no;
+      // color: $color-white;
+    }
+  }
+
+  &.type-mo {
+    // background-color: rgba($epo-color-dossier-mo, .2);
+    background-color: rgba($epo-color-dossier-mo, 1);
+    border-color: $epo-color-dossier-mo;
+
+    .number {
+      background: rgba($color-white, .6);
     }
 
-    &.type-pct {
-        background-color: rgba($epo-color-dossier-pct, .2);
-        background-color: rgba($epo-color-dossier-pct, 1);
-        border-color: $epo-color-dossier-pct;
-
-        .language {
-            // background: $epo-color-dossier-pct;
-        }
+    .language {
+      // background: $epo-color-dossier-mo;
+      color: $color-white;
     }
+  }
 
-    &.type-bo {
-        background-color: rgba($epo-color-dossier-bo, .2);
-        background-color: rgba($epo-color-dossier-bo, 1);
-        border-color: $epo-color-dossier-bo;
+  &.type-sn {
+    // background-color: rgba($epo-color-dossier-sn, .2);
+    background-color: rgba($epo-color-dossier-sn, 1);
+    border-color: $epo-color-dossier-sn;
 
-        .number {
-            background: rgba($color-white, .7);
-        }
-        .language {
-            // background: $epo-color-dossier-bo;
-            color: $color-white;
-        }
+    .language {
+      // background: $epo-color-dossier-sn;
+      color: $color-white;
     }
+  }
 
-    &.type-co {
-        background-color: rgba($epo-color-dossier-co, .2);
-        background-color: rgba($epo-color-dossier-co, 1);
-        border-color: $epo-color-dossier-co;
+  &.type-fs {
+    // background-color: rgba($epo-color-dossier-fa, .2);
+    background-color: rgba($epo-color-dossier-fa, 1);
+    border-color: $epo-color-dossier-fa;
 
-        .language {
-            // background: $epo-color-dossier-co;
-        }
+    .language {
+      // background: $epo-color-dossier-fa;
+      // padding: 0 .25em 0 calc(.25em + 2px);
+
+      &:after {
+        // @include borders-end-cap;
+        background: $epo-color-dossier-fs;
+        bottom: -1px;
+        content: ' ';
+        position: absolute;
+        right: 2em;
+        top: -1px;
+        width: 4px;
+      }
     }
+  }
 
-    &.type-fa {
-        background-color: rgba($epo-color-dossier-fa, .2);
-        background-color: rgba($epo-color-dossier-fa, 1);
-        border-color: $epo-color-dossier-fa;
+  &.type-to {
+    background: $color-white;
+    border-color: $epo-color-dossier-to;
 
-        .language {
-            // background: $epo-color-dossier-fa;
-        }
+    .language {
+      background: $epo-color-dossier-to;
+      color: $color-white;
     }
+  }
 
-    &.type-go {
-        background-color: rgba($epo-color-dossier-go, .2);
-        background-color: rgba($epo-color-dossier-go, 1);
-        border-color: $epo-color-dossier-go;
+  &.type-lt {
+    background: $color-white;
+    border-color: $epo-color-dossier-lt;
 
-        .language {
-            // background: $epo-color-dossier-go;
-        }
+    .language {
+      background: $epo-color-dossier-lt;
+      color: $color-white;
     }
-
-    &.type-io {
-        background-color: rgba($epo-color-dossier-io, .2);
-        background-color: rgba($epo-color-dossier-io, 1);
-        border-color: $epo-color-dossier-io;
-
-        .language {
-            // background: $epo-color-dossier-io;
-        }
-    }
-
-    &.type-lo {
-        background-color: rgba($epo-color-dossier-lo, .2);
-        background-color: rgba($epo-color-dossier-lo, 1);
-        border-color: $epo-color-dossier-lo;
-
-        .language {
-            // background: $epo-color-dossier-lo;
-        }
-    }
-
-    &.type-no {
-        background-color: rgba($epo-color-dossier-no, .2);
-        background-color: rgba($epo-color-dossier-no, 1);
-        border-color: $epo-color-dossier-no;
-
-        .language {
-            // background: $epo-color-dossier-no;
-            // color: $color-white;
-        }
-    }
-
-    &.type-mo {
-        background-color: rgba($epo-color-dossier-mo, .2);
-        background-color: rgba($epo-color-dossier-mo, 1);
-        border-color: $epo-color-dossier-mo;
-
-        .number {
-            background: rgba($color-white, .6);
-        }
-        .language {
-            // background: $epo-color-dossier-mo;
-            color: $color-white;
-        }
-    }
-
-    &.type-sn {
-        background-color: rgba($epo-color-dossier-sn, .2);
-        background-color: rgba($epo-color-dossier-sn, 1);
-        border-color: $epo-color-dossier-sn;
-
-        .language {
-            // background: $epo-color-dossier-sn;
-            color: $color-white;
-        }
-    }
-
-    &.type-fs {
-        background-color: rgba($epo-color-dossier-fa, .2);
-        background-color: rgba($epo-color-dossier-fa, 1);
-        border-color: $epo-color-dossier-fa;
-
-        .language {
-            // background: $epo-color-dossier-fa;
-            // padding: 0 .25em 0 calc(.25em + 2px);
-
-            &:after {
-                // @include borders-end-cap;
-                background: $epo-color-dossier-fs;
-                content: ' ';
-                bottom: -1px;
-                right: 2em;
-                position: absolute;
-                top: -1px;
-                width: 4px;
-            }
-        }
-    }
-
-    &.type-to {
-        background: $color-white;
-        border-color: $epo-color-dossier-to;
-
-        .language {
-            background: $epo-color-dossier-to;
-            color: $color-white;
-        }
-    }
-
-    &.type-lt {
-        background: $color-white;
-        border-color: $epo-color-dossier-lt;
-
-        .language {
-            background: $epo-color-dossier-lt;
-            color: $color-white;
-        }
-    }
+  }
 }
 
 
@@ -256,29 +253,33 @@ $epo-phase-width: 24px;
 // Phases
 // INFO: Phases come in the following five options
 .phase {
-    color: $color-white;
+  color: $color-white;
 
-    .phase-search & {
-        background: $epo-color-phase-search;
-        // color: $color-black;
-    }
-    .phase-exam & {
-        background: $epo-color-phase-exam;
-        // color: $color-black;
-    }
-    .phase-opposition & {
-        background: $epo-color-phase-opposition;
-    }
-    .phase-appeal & {
-        background: $epo-color-phase-appeal;
-    }
-    .phase-limitation & {
-        background: $epo-color-phase-limitation;
-    }
+  .phase-search & {
+    background: $epo-color-phase-search;
+    // color: $color-black;
+  }
+
+  .phase-exam & {
+    background: $epo-color-phase-exam;
+    // color: $color-black;
+  }
+
+  .phase-opposition & {
+    background: $epo-color-phase-opposition;
+  }
+
+  .phase-appeal & {
+    background: $epo-color-phase-appeal;
+  }
+
+  .phase-limitation & {
+    background: $epo-color-phase-limitation;
+  }
 }
 
 
 // Doccodes / indicators
 .doccode {
-    border: 1px dashed $epo-color-doccode;
+  border: 1px dashed $epo-color-doccode;
 }
