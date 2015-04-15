@@ -29,3 +29,14 @@ This section under heavy modification.
     * `"translate_tabs_to_spaces": true`
 1. Metalsmith
 	1. `npm install metalsmith`
+
+
+## Thoughts on the long-term version of the app and the UI Library
+
+* [Yeoman React Webpack to start?](https://github.com/newtriks/generator-react-webpack)
+* [Server-side rendering of React components](https://github.com/mhart/react-server-example) before sending them to the browser ([info](http://www.crmarsh.com/react-ssr/))
+* [React Router](https://github.com/rackt/react-router)
+* [docs.writethedocs.org](http://docs.writethedocs.org/) for reference on writing good documentation (should be linked in UI library)
+* [ghooks (for dev environments _only_)](https://www.npmjs.com/package/ghooks) 
+  * Also for running SCSS Lint on our source files before commit
+  * tests, etc.
