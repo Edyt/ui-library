@@ -1,46 +1,49 @@
-|
+
+
 |– src
 
 	|– assets
-		|– css
-			|– (folders) 									- subdirectories TBD
-			|_ (destination source files)	- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
+		|– scss
+			|– (folders TBD) 														- subdirectories' structure TBD
+			|- internal 																- (S)CSS used _only_ for UILib itself
+			|_ (destination source files)								- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
 
 		|– fonts
-			|– edyt-icons            			- cleaned up icon files for our use
+			|– edyt-icons            										- cleaned up icon files for our use
 			|_ vendors
-				|– icomoon               		- raw dump of icomoon output
-				|- source-code-pro       		- raw dump of source code pro download
-				|_ source-sans-pro         	- raw dump of source sans pro download
+				|– icomoon               									- raw dump of icomoon output
+				|- source-code-pro       									- raw dump of source code pro download
+				|_ source-sans-pro         								- raw dump of source sans pro download
 
 		|– img
 		|_ js
 			|– vendors
-			|- internal              			- JS used _only_ for UILib itself
-			|_ (folders) 									- subdirectories TBD
+			|- internal              										- JS used _only_ for UILib itself
+			|_ (folders TBD) 														- subdirectories' structure TBD
 
 	|– docs
-		|– getting-started							-
-			|– installation								-
-			|– guidelines									-
-		|– foundations									-
-			|– variables									-
-		|– components										-
-		|– collections									-
-		|_ pages												-
-		|_ resources										-
+		|– getting-started														-
+			|– installation															-
+			|– guidelines																-
+		|– foundations																-
+			|– variables																-
+		|– components																	-
+		|– collections																-
+		|_ pages																			-
+		|_ resources																	-
 
-		
 
-|– public          	- generated output
-											index.html at root is what people need to open for the static mini site
-	|– assets
+|– public          																- generated output
+
+	|- (folders) 																		- index.html at root to open the static mini site, then folder structure that matches the /docs source folder's structure
+
+	|– assets																				- generated asset files (.css, .js, all minified)
 		|– css
 		|– fonts
 		|– img
 		|– js
 		|_ index.html
 
-|– config.json 								- Metalsmith.io configuration
-|– index.js
-|_ package.json
+|– config.json 																		- Metalsmith.io configuration
+|– index.js 																			-
+|_ package.json 																	-
