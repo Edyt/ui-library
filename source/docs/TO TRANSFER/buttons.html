@@ -1,0 +1,305 @@
+---
+title: Component: Buttons
+template: page.mustache
+---
+
+# Buttons
+
+<h2>Standard Buttons</h2>
+
+<p>Buttons have a class of <code>.button</code> and are shown inline by default.</p>
+
+<p>All button labels are wrapped in a <code>&lt;span&gt;</code> tag, for accessibility and tooltip functionality.</p>
+
+<h3>Examples and Usage:</h3>
+
+<pre class="prettyprint lang-html">
+&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;
+&lt;span&gt;Button title&lt;/span&gt;
+&lt;/a&gt;</pre>
+
+<a class="button" href="#">
+  <span>Button title</span>
+</a>
+
+<pre class="prettyprint lang-html">
+&lt;a class=&quot;button button-primary button-large&quot; href=&quot;#&quot;&gt;
+&lt;span&gt;Save&lt;/span&gt;
+&lt;/a&gt;</pre>
+
+<a class="button button-primary button-large" href="#">
+  <span>Save</span>
+</a>
+
+<h3>List of variations</h3>
+
+<table>
+  <thead>
+    <tr>
+      <td>Button</td>
+      <td>class=""</td>
+      <td>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="#" class="button">Default</a>
+      </td>
+      <td><code>button</code></td>
+      <td>Standard grey button</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button button-primary">Primary</a>
+      </td>
+      <td>
+        <code>button button-primary</code>
+      </td>
+      <td>
+        Used for primary actions or to denote importance in a list of buttons
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button button-success">Success</a>
+      </td>
+      <td>
+        <code>button button-success</code>
+      </td>
+      <td>
+        For comunicating success or confirming an important action
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="#" class="button button-warning">Warning</a>
+      </td>
+      <td>
+        <code>button button-warning</code>
+      </td>
+      <td>
+        Indicates warning should be taken when pressed
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="#" class="button button-danger">Danger</a>
+      </td>
+      <td>
+        <code>button button-danger</code>
+      </td>
+      <td>
+        Indicates a dangerous action
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="#" class="button button-info">Info</a>
+      </td>
+      <td>
+        <code>button button-info</code>
+      </td>
+      <td>
+        An alternative button style
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="#" class="button button-inverse">Inverse</a>
+      </td>
+      <td>
+        <code>button button-inverse</code>
+      </td>
+      <td>
+        An alternative black button
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button button-large">Large</a>
+      </td>
+      <td>
+        <code>button button-large</code>
+      </td>
+      <td>
+        Large buttons for important and/or highly visible forms
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button button-small">Small</a>
+      </td>
+      <td>
+        <code>button button-small</code>
+      </td>
+      <td>
+        Smaller buttons for smaller interfaces
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button is-active">Active</a>
+      </td>
+      <td>
+        <code>button is-active</code>
+      </td>
+      <td>
+        A state for currently active/selected buttons
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" class="button is-disabled">Disabled</a>
+      </td>
+      <td>
+        <code>button button-disabled</code>
+      </td>
+      <td>
+        For when buttons aren't available
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Large Buttons</h2>
+
+<button class="button button-large">
+  <i class="tpIcon tpIconPhotoStacked"></i>
+  <span>Figures</span>
+</button>
+
+<button class="button button-large button-primary">
+  <span>Save</span>
+</button>
+
+
+<h2>Button Groups</h2>
+
+<div class="button-group">
+  <a class="button" href="#">
+    <span>Stop time</span>
+    <i class="tpIcon tpIconStopwatch"></i>
+  </a>
+
+  <a class="button" href="#">
+    <span>Options</span>
+    <i class="tpIcon tpIconEllipses"></i>
+  </a>
+
+  <a class="button" href="#">
+    <span>Save</span>
+    <i class="tpIcon tpIconCheck"></i>
+  </a>
+</div>
+
+<div class="button-group button-group-clear">
+  <a class="button button-icon-only" href="#">
+    <span>Stop time</span>
+    <i class="tpIcon tpIconStopwatch"></i>
+  </a>
+
+  <a class="button button-icon-only button-primary" href="#">
+    <span>Options</span>
+    <i class="tpIcon tpIconEllipses"></i>
+  </a>
+
+  <a class="button is-disabled button-icon-only" href="#">
+    <span>Save</span>
+    <i class="tpIcon tpIconCheck"></i>
+  </a>
+</div>
+
+<div class="button-group button-group-tabs">
+  <a class="button is-active button-large" href="#">
+    <span>Stop time</span>
+    <i class="tpIcon tpIconStopwatch"></i>
+  </a>
+
+  <a class="button button-large" href="#">
+    <span>Options</span>
+    <i class="tpIcon tpIconEllipses"></i>
+  </a>
+
+  <a class="button button-large" href="#">
+    <span>Save</span>
+    <i class="tpIcon tpIconCheck"></i>
+  </a>
+
+  <a class="button is-disabled button-large" href="#">
+    <span>Options</span>
+    <i class="tpIcon tpIconEllipses"></i>
+  </a>
+</div>
+
+<h2>Dropdowns</h2>
+
+<div class="dropdown">
+  <select id="" class="ui-select">
+    <option value="">&mdash;</option>
+    <option value="">Label</option>
+  </select>
+  <label for="" class="button ui-select-label" tabindex="auto">
+    <span class="text-label">Set language</span>
+    <i class="tpIcon tpIconDropdownArrow"></i>
+  </label>
+</div>
+
+
+<h2>Navigation</h2>
+
+<div class="navigation">
+  <h2>Work Manager</h2>
+  <a class="button" href="#">
+    <span>In Tray</span>
+    <em><u>3</u><b>20</b>/64</em>
+  </a>
+
+  <a class="button" href="#">
+    <span>All Stock</span>
+    <em><b>23</b>/72</em>
+  </a>
+
+
+  <h3>Role</h3>
+  <a class="button" href="#">
+    <span>1st Examiner</span>
+    <em><b>2</b>/8</em>
+  </a>
+
+  <a class="button" href="#">
+    <span>2nd Examiner</span>
+    <em><u>1</u><b>2</b>/2</em>
+  </a>
+
+  <a class="button" href="#">
+    <span>Chairman</span>
+    <em>8</em>
+  </a>
+</div>
+
+<div class="navigation navigation-primary">
+  <a class="button button-icon-only" href="#">
+    <span>Analyze</span>
+    <i class="tpIcon tpIconAnalyze"></i>
+  </a>
+
+  <a class="button is-active button-icon-only" href="#">
+    <span>Search</span>
+    <i class="tpIcon tpIconSearch"></i>
+  </a>
+
+  <a class="button button-icon-only" href="#">
+    <span>Research</span>
+    <i class="tpIcon tpIconResearch"></i>
+  </a>
+
+  <a class="button button-icon-only" href="#">
+    <span>Communication</span>
+    <i class="tpIcon tpIconCommunication"></i>
+  </a>
+</div>

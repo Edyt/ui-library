@@ -203,8 +203,8 @@ ul.nav-buttons {
     .button {
         @include borders-beginning-cap;
         @include type-large;
-        margin: .25em 0;
         height: 2em;
+        margin: .25em 0;
         width: 2em;
     }
 }
@@ -222,17 +222,17 @@ ul.nav-buttons {
         table-layout: fixed;
     }
     .table-scroller {
+        max-height: 100%;
         overflow: auto;
         padding: 25px 0 0;
-        max-height: 100%;
     }
     thead {
-        height: 25px;
         display: table;
-        position: absolute;
-        top: 0;
+        height: 25px;
         left: 0;
+        position: absolute;
         right: 0;
+        top: 0;
         width: 100%;
     }
     thead th,

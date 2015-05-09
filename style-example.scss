@@ -1,0 +1,80 @@
+// Variables (declared in separate files grouped by purpose)
+$type-smaller:            13px;
+
+$panel-padding:           4px;
+
+// Universal color vars prefixed with "color-"
+$color-selected:          #87cefa;
+$color-panel-background:  #eeedef;
+$color-panel-title-bg:    rgba(#aaa9ab, .5);
+
+// Component variables not prefixed, grouped by BEM/SMACSS notation
+$sidebar-width:           300px;
+$sidebar-expanded:        500px;
+
+$color-sidebar-panel-background:  $color-panel-background;
+$color-sidebar-panel-title-bg:    $color-panel-title-bg;
+
+// Base file (base.scss)
+html,
+body {
+  font: 14px/18px "Source Sans Pro", source-sans-pro, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// Sidebar page layout / bigger component (module) file
+.sidebar {
+  margin: 24px;
+  width: $sidebar-width;
+}
+
+
+// Components (or modules) styled in holistic SCSS (BEM+SMACSS+OOCSS)
+// Sidebar Panel example:
+.sidebar-panel {
+  background: $color-sidebar-panel-background;
+  margin: 0 0 12px;
+  width: $sidebar-width;
+  
+  // INHERITED:
+  // - font-family
+  // - color
+  // - font-size
+
+  // Panel title
+  &__title {
+    background: $color-sidebar-panel-title-bg;
+    margin: 0;
+    padding: $panel-padding;
+    
+    // INFO: Do NOT mark up e.g. selected states with "[selector] & {}". 
+    //       This method will inherit `aria-selected=true` from any higher-level parent.
+    //       Instead, use "&[selector] {}" as seen below.
+    //
+    // [aria-selected="true"] & {
+    //   background: $color-selected;
+    // }
+  }
+
+  // Panel body, smaller type
+  &__body {
+    font-size: $type-smaller;
+    margin: 0;
+    padding: $panel-padding;
+  }
+
+  // Under certain circumstances the panel is made wider
+  &--wider {
+    width: $sidebar-expanded;
+  }
+
+  // Panels can be selected
+  &[aria-selected="true"] {
+    background: $color-selected; // lightskyblue
+    
+    & > .sidebar-panel__title {
+      background: mix($color-selected, $color-sidebar-panel-title-bg, 60%);
+    }
+  }
+}

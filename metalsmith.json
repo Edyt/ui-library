@@ -1,8 +1,20 @@
 {
-  "source": "src",
+  "source": "source",
   "destination": "public",
   "plugins": {
     "metalsmith-markdown": true,
-    "metalsmith-templates": "mustache"
+    "metalsmith-metallic": true,
+    "metalsmith-templates": "mustache",
+    "metalsmith": true,
+    "metalsmith-templates": true,
+    "metalsmith-collections": true,
+    "metalsmith-permalinks": true,
+    "metalsmith-markdown": true,
+    "metalsmith-navigation": true,
+    "metalsmith-metallic": true,
+    "metalsmith-beautify": true,
+    "metalsmith-serve": true,
+    "metalsmith-sass": true,
+    "metalsmith-watch": true
   }
 }

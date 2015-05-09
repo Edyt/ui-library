@@ -3,7 +3,7 @@ title: Home
 template: page.mustache
 ---
 
-# UI Pattern Library
+# UI Library
 
 * Getting Started
 	* Installation

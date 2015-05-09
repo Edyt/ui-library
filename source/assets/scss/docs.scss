@@ -1,0 +1,10 @@
+@import 'main';
+
+.docs {
+  padding: 16px;
+
+  &__content {
+    background: $color-white;
+    padding: 24px;
+  }
+}

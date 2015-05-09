@@ -1,49 +1,153 @@
+# NEW STRUCTURE PLAN:
 
 
-|– src
 
-	|– assets
-		|– scss
-			|– (folders TBD) 														- subdirectories' structure TBD
-			|- internal 																- (S)CSS used _only_ for UILib itself
-			|_ (destination source files)								- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
+.
+├─ source
+│	│
+│	├─ docs
+│	│	│
+│	│	├─ getting-started
+│	│	│ 	├─ installation						- Setup & installation of the UI Library requirements (node, ST3, SCSSlint, etc) for Mac OS X, Windows, Linux
+│	│	│ 	├─ how-to-use 							- Instructions for Sublime Text 3, SCSSlint, where to find files you're looking for, etc.
+│	│	│ 	├─ support(?) 							- Overview of what technologies and browsers are currently supported by the UI Library (and the resulting product)
+│	│	│ 	└─ guidelines 							- (sections for: Designers, Front-end Developers, Back-end developers, QA / Testers) Best practices & required knowledge for editing
+│	│	│
+│	│	├─ foundations								- foundations/
+│	│	│	├─ base 									-   base.md  		(maybe; might also be done via assets/base/<something(s)>.md )
+│	│	│	├─ colors 								-   colors.md
+│	│	│	├─ typography 							-   typography.md
+│	│	│	├─ variables							-   variables.md
+│	│	│	└? effects								- ? effects.md
+│	│	│
+│	│	├─ components								- Text file with: folder contents compiled (via Metalsmith Collections) from `assets/components`
+│	│	├─ collections								- Text file with: folder contents compiled (via Metalsmith Collections) from `assets/collections`
+│	│	├─ pages										- Text file with: folder contents compiled (via Metalsmith Collections) from `assets/pages`
+│	│	│
+│	│	└─ resources								- resources.md
+│	│
+│	├─ assets
+│	│	├─ base 										- only CSS and .md in here, probably?
+│	│	│
+│	│	├─ components
+│	│	├─ collections
+│	│	├─ pages
+│	│	│
+│	│	└─ shared
+│	│		│
+│	│		├─ css 									
+│	│		│	└─ vendors 							- Normalize, etc.
+│	│		│
+│	│		└─ js
+│	│			└─ vendors 							- React, etc.
+│	│
+│	├─ internal 									-
+│	│		├─ css 									- SCSS used _only_ for the UI library itself
+│	│		└─ js 									- JS used _only_ for the UI library itself
+│	│
+│	├─ static
+│	│	│
+│	│	├─ fonts
+│	│	│	│
+│	│	│	├─ uil-icons       					- default icons for the UI Library
+│	│	│	│	└─ icomoon               		- raw dump of icomoon output
+│	│	│	│
+│	│	│	└─ typefaces
+│	│	│		├─ source-code-pro       		- raw dump of source code pro files
+│	│	│		└─ source-sans-pro         	- raw dump of source sans pro files
+│	│	│
+│	│	└─ js
+│	│		└─ vendors
+│	│
+│	└─ templates 									- templates are used internally for the UI library itself, not assets
+│	 	└─ partials 								- partials for the template system
+│
+├─ public          								- generated output
 
-		|– fonts
-			|– edyt-icons            										- cleaned up icon files for our use
-			|_ vendors
-				|– icomoon               									- raw dump of icomoon output
-				|- source-code-pro       									- raw dump of source code pro download
-				|_ source-sans-pro         								- raw dump of source sans pro download
+						INCOMPLETE
+│
+│
 
-		|– img
-		|_ js
-			|– vendors
-			|- internal              										- JS used _only_ for UILib itself
-			|_ (folders TBD) 														- subdirectories' structure TBD
-
-	|– docs
-		|– getting-started														-
-			|– installation															-
-			|– guidelines																-
-		|– foundations																-
-			|– variables																-
-		|– components																	-
-		|– collections																-
-		|_ pages																			-
-		|_ resources																	-
+├─ build.js 										- main build script (run with `node build`)
+├─ metalsmith-config.json 						- Metalsmith.io configuration
+├─ package.json 									- npm project config
+├─ README.md 										- project Readme with instructions and setup explanations for the build system
+├─ server.js 										- file watcher & file + BrowserSync server script (run with `node server`)
+├─ sitemap.txt 									- this file
+├─ style-example.scss							- style guide example for our SCSS
+└─ style-example-output.scss					- style guide example output (in sass:expanded mode CSS)
 
 
-|– public          																- generated output
 
-	|- (folders) 																		- index.html at root to open the static mini site, then folder structure that matches the /docs source folder's structure
 
-	|– assets																				- generated asset files (.css, .js, all minified)
-		|– css
-		|– fonts
-		|– img
-		|– js
-		|_ index.html
 
-|– config.json 																		- Metalsmith.io configuration
-|– index.js 																			-
-|_ package.json 																	-
+
+
+
+
+
+# PREVIOUS PLAN:
+
+.
+├─ source 											- source files for the everything
+│	│
+│	├─ assets
+│	│	│
+│	│	├─ scss
+│	│	│	├─ (folders TBD) 						- subdirectories' structure TBD
+│	│	│	├─ internal 							- (S)CSS used _only_ for the UI library itself
+│	│	│	└─ (destination source files)		- colors.scss, colors-high-contrast.scss, colors-cb-red-blue.scss, etc.
+│	│	│
+│	│	├─ fonts
+│	│	│	├─ icons-edyt       					- cleaned up icon files for our use; syntax of "icons-<project or company name>" to differentiate
+│	│	│	└─ vendors
+│	│	│		├─ icomoon               		- raw dump of icomoon output
+│	│	│		├─ source-code-pro       		- raw dump of source code pro files
+│	│	│		└─ source-sans-pro         	- raw dump of source sans pro files
+│	│	│
+│	│	├─ img
+│	│	│
+│	│	└─ js
+│	│		├─ vendors
+│	│		├─ internal              			- JS used _only_ for the UI library itself
+│	│		└─ (folders TBD) 						- subdirectories' structure TBD
+│	│
+│	├─ templates 									- templates are used internally for the UI library itself, not assets
+│	│	└─ partials 								- partials for the template system
+│	│
+│	└─ docs 											- Markdown contents
+│		│
+│		├─ getting-started						- getting-started/
+│		│	├─ installation						-   installation.md
+│		│	└─ guidelines							-   guidelines.md
+│		│
+│		├─ foundations								- foundations/
+│		│	├─ colors 								-   colors.md
+│		│	└─ variables							-   variables.md
+│		│
+│		├─ components								- (sourced via Metalsmith Collections from the `components`  folder and subfolders)
+│		├─ collections								- (sourced via Metalsmith Collections from the `collections` folder and subfolders)
+│		├─ pages										- (sourced via Metalsmith Collections from the `pages`       folder and subfolders)
+│		│
+│		└─ resources								- resources.md
+│
+│
+├─ public          								- generated output
+│	│
+│	├─ (folders) 									- index.html at root to open the static mini site, then folder structure that matches the /docs source folder's structure
+│	│
+│	├─ assets										- generated asset files (.css, .js, all minified)
+│	│	├─ css
+│	│	├─ fonts
+│	│	├─ img
+│	│	└─ js
+│	│
+│	└─ index.html 									- start of the site
+│
+├─ build.js 										- main build script (run with `node build`)
+├─ metalsmith-config.json 						- Metalsmith.io configuration
+├─ package.json 									- npm project config
+├─ README.md 										- project Readme with instructions and setup explanations for the build system
+├─ sitemap.txt 									- this file
+├─ style-example.scss							- style guide example for our SCSS
+└─ style-example-output.scss					- style guide example output (CSS)

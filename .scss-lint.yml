@@ -2,10 +2,14 @@ linters:
   Indentation:
     exclude:
       - 'src/assets/css/vendors/**'
-    allow_non_nested_indentation: true
+    # Disabled because we'll use parent selectors for BEM indentation
+    # allow_non_nested_indentation: true
 
   NestingDepth:
     max_depth: 4
+
+  SelectorFormat:
+    # convention: 'hyphenated_BEM'
 
   # This is already done automatically:
   # VendorPrefix:

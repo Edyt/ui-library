@@ -1,0 +1,15 @@
+.sidebar-panel {
+  background: #ccc;
+  width: 200px; }
+  .sidebar-panel[aria-selected="true"] {
+    background: #87cefa; }
+  .sidebar-panel__title {
+    background: #ababab; }
+    .sidebar-panel__title[aria-selected="true"] {
+      background: #99bcd2; }
+  .sidebar-panel__body {
+    font-size: 14px; }
+  .sidebar-panel--wider {
+    width: 300px; }
+
+/*# sourceMappingURL=output.css.map */
