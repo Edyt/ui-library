@@ -74,7 +74,7 @@ body {
     background: $color-selected; // lightskyblue
     
     & > .sidebar-panel__title {
-      background: mix($color-selected, $color-sidebar-panel-title-bg, 60%);
+      background: mix($color-sidebar-panel-title-bg, darken($color-selected, 20%), 60%);
     }
   }
 }
