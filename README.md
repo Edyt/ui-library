@@ -200,6 +200,40 @@ Sass structure guidelines: [sitepoint.com/architecture-sass-project](http://www.
 
 
 
+
+
+# Codepens
+
+For inclusion in Codepen CSS sections:
+
+<pre>/*  IMPORTED CSS RESOURCES
+
+Variables:
+http://codepen.io/KuraFire/pen/e6e36d4916b79f559256542532600598.scss
+
+Icons:
+http://codepen.io/KuraFire/pen/4d83a72e5d03e312f344303c00402bb3.scss
+
+UI Basics:
+http://codepen.io/KuraFire/pen/1674368f914031a51a18967d896cbb00.scss
+
+UI List:
+http://codepen.io/KuraFire/pen/f9a35acc0b7a5aaca36aa2658afed805.scss
+
+Buttons:
+http://codepen.io/KuraFire/pen/c22c98ed2bac76aedc2372041bf4752b.scss
+
+Demo purposes:
+http://codepen.io/KuraFire/pen/f8a81b4b3b7047afc1db0d4a5a2f6dd9.scss
+
+*/</pre>
+
+
+Dossier Badges:
+http://codepen.io/KuraFire/pen/2cc2cd5c1abfbd6994cacaf3bc8ac2f7/
+
+
+
 # Template for UI asset files:
 
 ---
