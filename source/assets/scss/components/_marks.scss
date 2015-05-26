@@ -1,0 +1,10 @@
+// variables declaring marking styles -- TODO: abstract this out into database-driven solution
+$mark--relevant: #ffffad;
+
+.mark {
+  // display: inline-block; // Might not be necessary
+  
+  &--relevant {
+    background-color: $mark--relevant;
+  }
+}

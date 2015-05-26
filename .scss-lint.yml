@@ -1,16 +1,23 @@
 linters:
+  ColorVariable:
+    enabled: true
+  Comment:
+    enabled: true
+  BorderZero:
+    enable: true
   Indentation:
+    enabled: true
     exclude:
       - 'src/assets/css/vendors/**'
-    # Disabled because we'll use parent selectors for BEM indentation
-    # allow_non_nested_indentation: true
+      # Disabled because we'll use parent selectors for BEM indentation:
+      # allow_non_nested_indentation: true
 
   NestingDepth:
     max_depth: 4
 
-  SelectorFormat:
+  # SelectorFormat:
     # convention: 'hyphenated_BEM'
 
-  # This is already done automatically:
-  # VendorPrefix:
-    # excluded_identifiers: [appearance]
+# This is already done automatically:
+# VendorPrefix:
+# excluded_identifiers: [appearance]

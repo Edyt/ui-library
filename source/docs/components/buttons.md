@@ -14,13 +14,13 @@ All buttons **must** either contain a `.button__label` element inside it, _or_ c
 ```html
 <!-- Link button -->
 <a href="/dossiers/:id/contents/" class="button">
-  <i class="icon icon-dossier-files"></i>
+  <i class="button__icon icon icon-dossier-files"></i>
   <span class="button__label" data-text="dossiers__dossier-contents">Dossier Contents</span>
 </a>
 
 <!-- Action button -->
 <button class="button">
-  <i class="icon icon-forward"></i>
+  <i class="button__icon icon icon-forward"></i>
   <span class="button__label" data-text="dossiers__forward-dossier">Forward dossier</span>
 </button>
 ```
@@ -31,3 +31,21 @@ Button controls **should** have declared and identifiable `:focus` and `:hover` 
 
 The `:active` state is useful for both link and action buttons, but depending on implementation and use case, _may not_ need to be very distinctive.
 
+
+
+```html
+<button class="button button--clear button--icon-only button--label-on-hover button--label-on-right">
+    <i class="icon icon-add-comment"></i>
+    <span class="button__label">Add comment</span>
+</button>
+```
+
+# Button Class, Elements and Modifiers:
+
+* button
+  * button__icon 
+  * button__label
+* button--clear
+* button--icon-only
+* button--label-on-hover
+* button--label-right | left | above | below

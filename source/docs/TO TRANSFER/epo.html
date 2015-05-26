@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <title>EPO Specific UI - Edyt UI Library</title>
       <meta name="description" content="">
-      <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/coverpage.css">
+      <link rel="stylesheet" type="text/css" href="../../../public/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../../../public/assets/css/coverpage.css">
   </head>
   <body>
     <div class="documentation-page">
@@ -34,174 +34,199 @@
       </nav>
       <div class="documentation-content">
 
-
+        <h2>EPO Dossier Badges</h2>
         <div class="epo-dossier-samples">
-          <p>Dossier badges. The first set is EP dossiers in different phases &amp; different primary languages:</p>
+          <p>Dossier badges can be made either as a link <code>a</code> (if they’re standalone and meant to be clickable), as a <code>div</code> (standalone but not clickable) or <code>span</code> (used inside a bigger link):</p>
+          <pre><code>&lt;<b title="">a/div/span</b> <i>[ href="#"]</i> class="application-number type-ep phase-search"&gt;
+  &lt;b class="phase" title="Search"&gt;S&lt;/b&gt;
+  &lt;span class="number"&gt;EP 1234 567 89&lt;/span&gt;
+  &lt;i class="language"&gt;EN&lt;/i&gt;
+&lt;/<b title="">a/div/span</b>&gt;</code></pre>
+          <p>The first set is EP dossiers in different phases &amp; different primary languages. They have class <code>.type-ep</code>, and the following phase-specific classes:<br>
+          <code>.phase-search</code>,
+          <code>.phase-examination</code>,
+          <code>.phase-opposition</code>,
+          <code>.phase-appeal</code>,
+          <code>.phase-limitation </code></p>
 
-          <div class="application-number type-ep phase-search">
-            <span class="phase" title="Search">S</span>
+          <a href="#" class="application-number type-ep phase-search">
+            <b class="phase" title="Search">S</b>
             <span class="number">EP 1234 567 89</span>
-            <span class="language">EN</span>
-          </div>
-          <div class="application-number type-ep phase-exam">
-            <span class="phase" title="Examination">E</span>
+            <i class="language">EN</i>
+          </a>
+          <div class="application-number type-ep phase-examination">
+            <b class="phase" title="Examination">E</b>
             <span class="number">EP 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-ep phase-opposition">
-            <span class="phase" title="Opposition">O</span>
+            <b class="phase" title="Opposition">O</b>
             <span class="number">EP 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-ep phase-appeal">
-            <span class="phase" title="Appeal">A</span>
+            <b class="phase" title="Appeal">A</b>
             <span class="number">EP 1234 567 89</span>
-            <span class="language">FR</span>
+            <i class="language">FR</i>
           </div>
           <div class="application-number type-ep phase-limitation">
-            <span class="phase" title="Limitation">L</span>
+            <b class="phase" title="Limitation">L</b>
             <span class="number">EP 1234 567 89</span>
-            <span class="language">DE</span>
+            <i class="language">DE</i>
           </div>
 
-          <p>Euro PCT and PCT:</p>
+          <p>Euro PCT and PCT classes: <code>.type-europct</code>, <code>.type-pct</code></p>
 
           <div class="application-number type-europct phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">RO PCT 1234 567</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-pct phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">PCT 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
 
-          <p>Nationals in Search phase:</p>
+          <p>Nationals in Search phase. Classes:<br>
+            <code>.type-bo</code>, 
+            <code>.type-co</code>, 
+            <code>.type-fa</code>, 
+            <code>.type-go</code>, 
+            <code>.type-io</code>, 
+            <code>.type-lo</code>, 
+            <code>.type-no</code>, 
+            <code>.type-mo</code>, 
+            <code>.type-sn</code>, 
+            <code>.type-fs</code>, 
+            <code>.type-to</code>, 
+            <code>.type-lt</code>
+          </p>
 
           <div class="application-number type-bo phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">BO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-co phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">CO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-fa phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">FA 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-go phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">GO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-io phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">IO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-no phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">NO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-mo phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">MO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-sn phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">SN 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-fs phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">FS 1234 567 89</span>
-            <span class="language">FR</span>
+            <i class="language">FR</i>
           </div>
           <div class="application-number type-to phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">TO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-lt phase-search">
-            <span class="phase" title="Search">S</span>
+            <b class="phase" title="Search">S</b>
             <span class="number">LT 1234 567 89</span>
-            <span class="language">DE</span>
+            <i class="language">DE</i>
           </div>
 
-          <p>These are without phases:</p>
+          <p>These are without phases. That means: 1) no phase class, and 2) no <code>&lt;b class="phase"&gt;</code> element inside.</p>
 
           <div class="application-number type-ep">
             <span class="number">EP 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-ep">
             <span class="number">EP 1234 567 89</span>
-            <span class="language">FR</span>
+            <i class="language">FR</i>
           </div>
           <div class="application-number type-ep">
             <span class="number">EP 1234 567 89</span>
-            <span class="language">DE</span>
+            <i class="language">DE</i>
           </div>
           <div class="application-number type-europct">
             <span class="number">EU 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-pct">
             <span class="number">PCT 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-bo">
             <span class="number">BO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-co">
             <span class="number">CO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-fa">
             <span class="number">FA 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-go">
             <span class="number">GO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-io">
             <span class="number">IO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-no">
             <span class="number">NO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-mo">
             <span class="number">MO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-sn">
             <span class="number">SN 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-fs">
             <span class="number">FS 1234 567 89</span>
-            <span class="language">FR</span>
+            <i class="language">FR</i>
           </div>
           <div class="application-number type-to">
             <span class="number">TO 1234 567 89</span>
-            <span class="language">EN</span>
+            <i class="language">EN</i>
           </div>
           <div class="application-number type-lt">
             <span class="number">LT 1234 567 89</span>
-            <span class="language">DE</span>
+            <i class="language">DE</i>
           </div>
         </div>
+
       </div>
     </div>
   </body>

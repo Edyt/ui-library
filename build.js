@@ -27,9 +27,9 @@ Metalsmith(__dirname)
     livereload: true
   }))
 
-  // Use Sass
+  // // Use Sass
   .use(sass({
-    outputDir: 'css/'
+    outputDir: 'assets/css/'
   }))
 
   // Add syntax highlighting to code snippets
@@ -38,34 +38,34 @@ Metalsmith(__dirname)
   // Convert markdown files to HTML
   .use(markdown())
 
-  // .use(collections({
-  //   pages: {
-  //     pattern: 'docs/*/*.md'
-  //   },
-  //   home: {
-  //     pattern: 'docs/*.md'
+  // // .use(collections({
+  // //   pages: {
+  // //     pattern: 'docs/*/*.md'
+  // //   },
+  // //   home: {
+  // //     pattern: 'docs/*.md'
+  // //   }
+  // // }))
+  // // .use(permalinks({
+  // //   pattern: ':collection/:title'
+  // // }))
+
+  // // Use mustache template and partial(s)
+  // .use(templates({
+  //   engine: 'mustache',
+  //   partials: {
+  //     menu: 'partials/menu'
   //   }
   // }))
-  // .use(permalinks({
-  //   pattern: ':collection/:title'
+
+  // // For production use we would minify (note: uncomment require() at the top)
+  // // .use(htmlMinifier())
+
+  // // For development use, we ensure pretty output and simple 2-space tabs
+  // .use(beautify({
+  //   "indent_size": 2,
+  //   "indent_char": " "
   // }))
-
-  // Use mustache template and partial(s)
-  .use(templates({
-    engine: 'mustache',
-    partials: {
-      menu: 'partials/menu'
-    }
-  }))
-
-  // For production use we would minify (note: uncomment require() at the top)
-  // .use(htmlMinifier())
-
-  // For development use, we ensure pretty output and simple 2-space tabs
-  .use(beautify({
-    "indent_size": 2,
-    "indent_char": " "
-  }))
 
   // Build it!
   .build(function(err) {

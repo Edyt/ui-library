@@ -158,6 +158,8 @@ This section under heavy modification.
 Sass structure guidelines: [sitepoint.com/architecture-sass-project](http://www.sitepoint.com/architecture-sass-project/)
 
 
+ARIA and keyboard navigation guidelines should be written in similar way as seen here:
+https://www.marcozehe.de/2013/02/02/advanced-aria-tip-1-tabs-in-web-apps/
 
 
 # Possible resources:

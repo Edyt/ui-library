@@ -6,29 +6,26 @@
 // - Shows the App. number
 // - Shows the primary language of the application
 
-$epo-phase-width: 24px;
+$epo-phase-width: 22px;
 
 .application-number {
-  @include borders-round;
-  @include type-smaller;
   background: rgba($epo-color-dossier-ep, .2);
-  border: 1px solid transparent;
-  border-color: $epo-color-dossier-ep;
+  border: 1px solid $epo-color-dossier-ep;
+  border-radius: .125rem;
+  cursor: pointer;
   display: inline-block;
+  font-size: 14px;
   height: 21px;
   line-height: 18px;
   margin: 0 .5em 0 0;
   min-width: 150px;
   overflow: visible;
   position: relative;
-
-  // default colors
-  // background: linear-gradient(to right, #E9F5FE 0%, #E9F5FE 82%, #96D2FC 82%, #96D2FC 100%) repeat scroll 0% 0% transparent;
+  text-decoration: none;
 
   .phase {
-    @include borders-beginning-cap;
+    border-radius: .125rem 0 0 .125rem;
     display: inline-block;
-    font-weight: bold;
     height: 21px;
     left: -1 * $epo-phase-width;
     line-height: 21px;
@@ -43,29 +40,34 @@ $epo-phase-width: 24px;
     color: $color-black;
     display: inline-block;
     font-weight: normal;
-    height: 100%;//calc(100% - 2px);
+    height: 100%;
     padding: 0 .5em;
     width: calc(100% - 2.1em);
   }
 
   .language {
     // @include borders-end-cap;
+    color: $color-black;
     float: right;
-    // font-weight: normal;
+    font-style: normal;
     height: 100%;
     position: relative;
     text-align: center;
     width: 2em;
   }
+  
+  span {
+    cursor: pointer;
+  }
 
 
   // With phase included: adjust border radius
   &.phase-search,
-  &.phase-exam,
+  &.phase-examination,
   &.phase-opposition,
   &.phase-appeal,
   &.phase-limitation {
-    @include borders-end-cap;
+    border-radius: 0 .125rem .125rem 0;
     margin-left: $epo-phase-width;
   }
 
@@ -74,37 +76,21 @@ $epo-phase-width: 24px;
 // INFO: Types for applications are correlated to their dossier codes (incl. nationals)
 
   &.type-ep {
-    // background-color: rgba($epo-color-dossier-ep, .2);
     background-color: rgba($epo-color-dossier-ep, 1);
     border-color: $epo-color-dossier-ep;
-
-    .language {
-      // background: $epo-color-dossier-ep;
-    }
   }
 
   &.type-europct {
-    // background-color: rgba($epo-color-dossier-europct, .2);
     background-color: rgba($epo-color-dossier-europct, 1);
     border-color: $epo-color-dossier-europct;
-
-    .language {
-      // background: $epo-color-dossier-europct;
-    }
   }
 
   &.type-pct {
-    // background-color: rgba($epo-color-dossier-pct, .2);
     background-color: rgba($epo-color-dossier-pct, 1);
     border-color: $epo-color-dossier-pct;
-
-    .language {
-      // background: $epo-color-dossier-pct;
-    }
   }
 
   &.type-bo {
-    // background-color: rgba($epo-color-dossier-bo, .2);
     background-color: rgba($epo-color-dossier-bo, 1);
     border-color: $epo-color-dossier-bo;
 
@@ -113,74 +99,41 @@ $epo-phase-width: 24px;
     }
 
     .language {
-      // background: $epo-color-dossier-bo;
       color: $color-white;
     }
   }
 
   &.type-co {
-    // background-color: rgba($epo-color-dossier-co, .2);
     background-color: rgba($epo-color-dossier-co, 1);
     border-color: $epo-color-dossier-co;
-
-    .language {
-      // background: $epo-color-dossier-co;
-    }
   }
 
   &.type-fa {
-    // background-color: rgba($epo-color-dossier-fa, .2);
     background-color: rgba($epo-color-dossier-fa, 1);
     border-color: $epo-color-dossier-fa;
-
-    .language {
-      // background: $epo-color-dossier-fa;
-    }
   }
 
   &.type-go {
-    // background-color: rgba($epo-color-dossier-go, .2);
     background-color: rgba($epo-color-dossier-go, 1);
     border-color: $epo-color-dossier-go;
-
-    .language {
-      // background: $epo-color-dossier-go;
-    }
   }
 
   &.type-io {
-    // background-color: rgba($epo-color-dossier-io, .2);
     background-color: rgba($epo-color-dossier-io, 1);
     border-color: $epo-color-dossier-io;
-
-    .language {
-      // background: $epo-color-dossier-io;
-    }
   }
 
   &.type-lo {
-    // background-color: rgba($epo-color-dossier-lo, .2);
     background-color: rgba($epo-color-dossier-lo, 1);
     border-color: $epo-color-dossier-lo;
-
-    .language {
-      // background: $epo-color-dossier-lo;
-    }
   }
 
   &.type-no {
-    // background-color: rgba($epo-color-dossier-no, .2);
     background-color: rgba($epo-color-dossier-no, 1);
     border-color: $epo-color-dossier-no;
-
-    .language {
-      // background: $epo-color-dossier-no;
-      // color: $color-white;
-    }
   }
 
   &.type-mo {
-    // background-color: rgba($epo-color-dossier-mo, .2);
     background-color: rgba($epo-color-dossier-mo, 1);
     border-color: $epo-color-dossier-mo;
 
@@ -189,33 +142,26 @@ $epo-phase-width: 24px;
     }
 
     .language {
-      // background: $epo-color-dossier-mo;
       color: $color-white;
     }
   }
 
   &.type-sn {
-    // background-color: rgba($epo-color-dossier-sn, .2);
     background-color: rgba($epo-color-dossier-sn, 1);
     border-color: $epo-color-dossier-sn;
 
     .language {
-      // background: $epo-color-dossier-sn;
       color: $color-white;
     }
   }
 
   &.type-fs {
-    // background-color: rgba($epo-color-dossier-fa, .2);
     background-color: rgba($epo-color-dossier-fa, 1);
     border-color: $epo-color-dossier-fa;
 
     .language {
-      // background: $epo-color-dossier-fa;
-      // padding: 0 .25em 0 calc(.25em + 2px);
 
       &:after {
-        // @include borders-end-cap;
         background: $epo-color-dossier-fs;
         bottom: -1px;
         content: ' ';
@@ -247,7 +193,21 @@ $epo-phase-width: 24px;
     }
   }
 }
+// This is only for <a> versions:
+// scss-lint:disable QualifyingElement
+a.application-number {
 
+  &:focus,
+  &:hover {
+    outline: none;
+
+    .number,
+    .language {
+      text-decoration: underline;
+    }
+  }
+}
+// scss-lint:enable QualifyingElement
 
 
 // Phases
@@ -257,12 +217,10 @@ $epo-phase-width: 24px;
 
   .phase-search & {
     background: $epo-color-phase-search;
-    // color: $color-black;
   }
 
-  .phase-exam & {
-    background: $epo-color-phase-exam;
-    // color: $color-black;
+  .phase-examination & {
+    background: $epo-color-phase-examination;
   }
 
   .phase-opposition & {
@@ -276,10 +234,4 @@ $epo-phase-width: 24px;
   .phase-limitation & {
     background: $epo-color-phase-limitation;
   }
-}
-
-
-// Doccodes / indicators
-.doccode {
-  border: 1px dashed $epo-color-doccode;
 }
