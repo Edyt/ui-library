@@ -1,0 +1,56 @@
+
+.indicator {
+  border: 2px dotted;
+  border-color: $epo-color-indicator-null;
+  border-radius: 3px;
+  color: $color-gray-900;
+  display: inline-block;
+  font-weight: 600;
+  margin: .5em .5em 0 0;
+  padding: 0 6px;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    background-color: rgba($epo-color-indicator-null, .2);
+    color: $color-black;
+  }
+
+  &--abex {
+    border-color: $epo-color-indicator-abex;
+
+    &:focus,
+    &:hover {
+      background-color: rgba($epo-color-indicator-abex, .2);
+    }
+  }
+
+  &--clms {
+    border-color: $epo-color-indicator-clms;
+
+    &:focus,
+    &:hover {
+      background-color: rgba($epo-color-indicator-clms, .2);
+    }
+  }
+
+  &--seca {
+    border-color: $epo-color-indicator-seca;
+
+    &:focus,
+    &:hover {
+      background-color: rgba($epo-color-indicator-seca, .2);
+    }
+  }
+
+  &--doublure {
+    border-color: $epo-color-indicator-doublure;
+
+    &:focus,
+    &:hover {
+      background-color: rgba($epo-color-indicator-doublure, .2);
+    }
+  }
+
+  // &--abex { border-color: $epo-color-indicator-abex; }
+}

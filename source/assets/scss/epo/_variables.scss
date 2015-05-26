@@ -2,36 +2,40 @@
 
 // Colors of dossiers (EP, PCT, nationals etc.)
 
-$epo-color-dossier-ep: 		#A1D5F7; // EP Direct
-$epo-color-dossier-europct: #E3DFCF; // Euro PCT
-$epo-color-dossier-pct: 	#F1B80C; // PCT
-$epo-color-dossier-bo:	 	#0076d1; // Belgium (WAS: #1244A5)
-$epo-color-dossier-co:	 	#DDDDDD; // Cypress
-$epo-color-dossier-fa:	 	#96D2FC; // France
-$epo-color-dossier-go:	 	#F5E63D; // Greece
-$epo-color-dossier-io:	 	#B49F87; // Italy
-$epo-color-dossier-lo:	 	#57D4C4; // Luxembourg
-$epo-color-dossier-no:	 	#F06C1A; // Netherlands
-$epo-color-dossier-mo:	 	#6e5231; // Malta (WAS: #745734)
-$epo-color-dossier-sn:	 	#0DB20D; // SN
+$epo-color-dossier-ep: 		  #a1d5f7; // EP Direct
+$epo-color-dossier-europct: #e3dfcf; // Euro PCT
+$epo-color-dossier-pct: 	  #f1b80c; // PCT
+$epo-color-dossier-bo:	 	  #0076d1; // Belgium (WAS: #1244A5)
+$epo-color-dossier-co:	 	  #ddd;    // Cypress
+$epo-color-dossier-fa:	 	  #96d2fc; // France
+$epo-color-dossier-go:	 	  #f5e63d; // Greece
+$epo-color-dossier-io:	 	  #b49f87; // Italy
+$epo-color-dossier-lo:	 	  #57d4c4; // Luxembourg
+$epo-color-dossier-no:	 	  #f06c1a; // Netherlands
+$epo-color-dossier-mo:	 	  #6e5231; // Malta (WAS: #745734)
+$epo-color-dossier-sn:	 	  #0db20d; // SN
 
 
 // Special cases
 
-$epo-color-dossier-fs:	 	#D44022; // France (red stripe)
-$epo-color-dossier-to:	 	#DF0808; // Turkey (red border only)
-$epo-color-dossier-lt:	 	#006A44; // Lithuania (green border only)
+$epo-color-dossier-fs:	 	#d44022; // France (red stripe)
+$epo-color-dossier-to:	 	#df0808; // Turkey (red border only)
+$epo-color-dossier-lt:	 	#006a44; // Lithuania (green border only)
 
 
 
 // Phases
 
-$epo-color-phase-search: 		$epo-color-dossier-bo; // WAS: #BADDE8;
-$epo-color-phase-exam:			$epo-color-dossier-bo; // WAS: #BADDE8;
+$epo-color-phase-search: 		  $epo-color-dossier-bo; // WAS: #BADDE8;
+$epo-color-phase-examination: $epo-color-dossier-bo; // WAS: #BADDE8;
 $epo-color-phase-opposition:	$epo-color-dossier-sn; // WAS: #9FCC6F;
-$epo-color-phase-appeal: 		$epo-color-dossier-to; // WAS: #BA000D;
-$epo-color-phase-limitation: 	$epo-color-dossier-mo; // WAS: #B47038;
+$epo-color-phase-appeal: 		  $epo-color-dossier-to; // WAS: #BA000D;
+$epo-color-phase-limitation:  $epo-color-dossier-mo; // WAS: #B47038;
 
 
 // Doccodes (indicators)
-$epo-color-doccode: 			#26B224;
+$epo-color-indicator-null:      $color-blue-500;
+$epo-color-indicator-abex:      $color-purple-500;
+$epo-color-indicator-seca:      $color-orange-500;
+$epo-color-indicator-doublure:  $color-yellow-500;
+$epo-color-indicator-clms: 			$color-blue-500;

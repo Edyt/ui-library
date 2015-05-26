@@ -1,0 +1,21 @@
+// Copyright:  Edyt, Inc. (c) 2015
+//
+
+// BEM: Block
+.button {
+
+  // BEM: Elements
+  &__icon  {}
+  &__label {}
+
+  // BEM: Modifiers (variations)
+
+  &--primary {}
+  &--clear {}
+  &--icon-only {}
+  &--label-on-hover {}
+  &--label-right {}
+  &--label-left {}
+  &--label-above {}
+  &--label-below {}
+}

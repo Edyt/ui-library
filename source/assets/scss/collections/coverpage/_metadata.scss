@@ -37,4 +37,20 @@
 			display: block;
 		}
 	}
+
+	.metadata-set {
+		position: relative;
+	}
+
+	.indicators {
+		margin-top: -3em;
+		position: absolute;
+		right: 0;
+		text-align: right;
+		width: 50%;
+
+		li {
+			float: left;
+		}
+	}
 }
