@@ -144,6 +144,7 @@ This section under heavy modification.
 1. [Screenfly](http://quirktools.com/screenfly/)
 1. [BrowserSync](http://www.browsersync.io/)
 
+
 ## Thoughts on the long-term version of the app and the UI Library
 
 * [Yeoman React Webpack to start?](https://github.com/newtriks/generator-react-webpack)
@@ -154,6 +155,16 @@ This section under heavy modification.
   * Also for running SCSS Lint on our source files before commit
   * tests, etc.
 
+* We'll be using Susy for grids; resources:
+  * [Susy](http://susy.oddbird.net/) ([Demos/tutorials](http://susy.oddbird.net/demos/))
+  * [Susy Docs](http://susydocs.oddbird.net/en/latest/)
+  * [Sitepoint: Bootstrap vs Susy comparison](http://www.sitepoint.com/bootstraps-grid-system-vs-susy-comparison/)
+  * [Susy tutorial by book author](http://www.zell-weekeat.com/susy2-tutorial) + [Part 2](http://www.zell-weekeat.com/susy2-tutorial-2/)
+  * [Susy principles](http://www.zell-weekeat.com/context-with-susy/)
+  * [Susy CSS Tricks tutorials](https://css-tricks.com/build-web-layouts-easily-susy/)
+  * [Breakpoint for Media Queries](http://breakpoint-sass.com/)
+  * [Basic Media Queries](https://github.com/at-import/breakpoint/wiki/Basic-Media-Queries)
+  * [No Query Fallbacks](https://github.com/at-import/breakpoint/wiki/No-Query-Fallbacks)
 
 Sass structure guidelines: [sitepoint.com/architecture-sass-project](http://www.sitepoint.com/architecture-sass-project/)
 
@@ -208,32 +219,33 @@ https://www.marcozehe.de/2013/02/02/advanced-aria-tip-1-tabs-in-web-apps/
 
 For inclusion in Codepen CSS sections:
 
-<pre>/*  IMPORTED CSS RESOURCES
 
-Variables:
-http://codepen.io/KuraFire/pen/e6e36d4916b79f559256542532600598.scss
+// STARTING POINT TO FORK FROM:
+http://codepen.io/team/edyt/pen/bd01b13facc314ac1bbad41176d4abef?editors=110
 
-Icons:
-http://codepen.io/KuraFire/pen/4d83a72e5d03e312f344303c00402bb3.scss
 
-UI Basics:
-http://codepen.io/KuraFire/pen/1674368f914031a51a18967d896cbb00.scss
 
-UI List:
-http://codepen.io/KuraFire/pen/f9a35acc0b7a5aaca36aa2658afed805.scss
 
-Buttons:
-http://codepen.io/KuraFire/pen/c22c98ed2bac76aedc2372041bf4752b.scss
-
-Demo purposes:
-http://codepen.io/KuraFire/pen/f8a81b4b3b7047afc1db0d4a5a2f6dd9.scss
-
-*/</pre>
 
 
 Dossier Badges:
 http://codepen.io/KuraFire/pen/2cc2cd5c1abfbd6994cacaf3bc8ac2f7/
 
+
+
+Example of a learning opportunity:
+
+```
+/* Tray Header */
+.tray-group-title,
+.tray-group-title--estore,
+.tray-group-title--stock-manager,
+.tray-group-title--director,
+.tray-group-title--work-manager {
+  // Faruk note: don't do variations at the root BLOCK level of a selector
+  //             and try to avoid ever using more than one (i.e. no commas) as well
+  //             because they ALL get included for each nested selector!
+```
 
 
 # Template for UI asset files:

@@ -45,7 +45,9 @@ The `:active` state is useful for both link and action buttons, but depending on
 * button
   * button__icon 
   * button__label
+* button--link
 * button--clear
 * button--icon-only
+* button--icon-right
 * button--label-on-hover
 * button--label-right | left | above | below
