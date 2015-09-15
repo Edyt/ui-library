@@ -1,3 +1,9 @@
+# THIS IS THE OLD MASTER BRANCH
+
+Everything in this branch (`old-master`) is what this repository used to be. As of September 15, 2015, all of that has been blown away from the main `master` branch in favor of a new Webpack, React and CSS Modules repository.
+
+---
+
 # ui-library
 
 Sass structure guidelines: http://www.sitepoint.com/architecture-sass-project/
@@ -37,6 +43,6 @@ This section under heavy modification.
 * [Server-side rendering of React components](https://github.com/mhart/react-server-example) before sending them to the browser ([info](http://www.crmarsh.com/react-ssr/))
 * [React Router](https://github.com/rackt/react-router)
 * [docs.writethedocs.org](http://docs.writethedocs.org/) for reference on writing good documentation (should be linked in UI library)
-* [ghooks (for dev environments _only_)](https://www.npmjs.com/package/ghooks) 
+* [ghooks (for dev environments _only_)](https://www.npmjs.com/package/ghooks)
   * Also for running SCSS Lint on our source files before commit
   * tests, etc.
