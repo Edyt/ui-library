@@ -6,7 +6,6 @@ let AboutPage = require('./About.md');
 let About = React.createClass({
 
   render() {
-    // var AboutPage = require('./About.md');
 
     return(
       <section id="about">
