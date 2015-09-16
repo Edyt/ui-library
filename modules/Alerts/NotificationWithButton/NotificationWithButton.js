@@ -2,19 +2,21 @@ import styles from './NotificationWithButton.css';
 
 import React, { Component } from 'react';
 
-import Icon from '/components/Icon/Icon';
+import Icon from '../../../components/Icon/Icon';
+import Button from '../../../components/Button/Button';
 
-let Button = React.createClass({
+let NotificationWithButton = React.createClass({
 
   render() {
     return (
-      <button className={ styles.btn }>
-        <Icon className={ styles.icon} icon={this.props.icon} />
-        <span className={ styles.label }>{this.props.label}</span>
-      </button>
+      <div className={ styles.Notification }>
+        <Icon className={ styles.Icon } icon={this.props.icon} />
+        <h3 className={ styles.Text }>{this.props.children}</h3>
+        <Button className={ styles.Button } label={this.props.buttonLabel} />
+      </div>
     );
   }
 
 });
 
-export default Button;
+export default NotificationWithButton;
