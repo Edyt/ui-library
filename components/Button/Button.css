@@ -1,0 +1,29 @@
+.btn {
+  appearance: none;
+  background: #ccc;
+  border: 1px solid #bbb;
+  border-bottom-color: #aaa;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  height: 26px;
+  line-height: 16px;
+  padding: 4px 8px;
+  margin: 0 4px 0 0;
+  position: relative;
+  transition: color 60ms ease;
+  transition-property: background-color, color;
+  user-select: none;
+}
+
+  .icon {
+    color: red;
+    font-size: 16px;
+    margin: 0 6px 0 0;
+    vertical-align: -2px;
+  }
+
+  .label {
+    color: #888;
+    font-weight: bold;
+  }
