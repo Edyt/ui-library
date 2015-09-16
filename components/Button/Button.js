@@ -2,7 +2,7 @@ import styles from './Button.css';
 
 import React, { Component } from 'react';
 
-import Icon from '../Icon/Icon';
+import Icon from 'Icon/Icon';
 
 let Button = React.createClass({
 

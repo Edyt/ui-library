@@ -2,8 +2,8 @@ import styles from './NotificationWithButton.css';
 
 import React, { Component } from 'react';
 
-import Icon from '../../../components/Icon/Icon';
-import Button from '../../../components/Button/Button';
+import Icon from 'Icon/Icon';
+import Button from 'Button/Button';
 
 let NotificationWithButton = React.createClass({
 
