@@ -1,4 +1,4 @@
-.Application-number {
+.ApplicationNumber {
   background: #a1d5f7;
   border: 1px solid #a1d5f7;
   border-radius: .125rem;
@@ -14,12 +14,12 @@
   white-space: nowrap;
 }
 
-.Application-number[class^="phase-"],
-.Application-number[class*=" phase-"], {
+.ApplicationNumber[class^="phase-"],
+.ApplicationNumber[class*=" phase-"], {
   min-width: 150px;
 }
 
-.Application-number .Phase {
+.ApplicationNumber .Phase {
   border-radius: .125rem 0 0 .125rem;
   display: inline-block;
   height: 21px;
@@ -32,16 +32,16 @@
 }
 
 // With phase included: adjust border radius
-.Application-number .Phase-search,
-.Application-number .Phase-examination,
-.Application-number .Phase-opposition,
-.Application-number .Phase-appeal,
-.Application-number .Phase-limitation {
+.ApplicationNumber .Phase-search,
+.ApplicationNumber .Phase-examination,
+.ApplicationNumber .Phase-opposition,
+.ApplicationNumber .Phase-appeal,
+.ApplicationNumber .Phase-limitation {
   border-radius: 0 .125rem .125rem 0;
   margin-left: 23px;
 }
 
-.Application-number .Language {
+.ApplicationNumber .Language {
   color: black;
   float: right;
   font-style: normal;
@@ -51,92 +51,92 @@
   width: 2em;
 }
 
-.Application-number.Type-ep {
+.ApplicationNumber.Type-ep {
   background-color: #a1d5f7;
   border-color: #a1d5f7;
 }
 
-.Application-number.Type-europct {
+.ApplicationNumber.Type-europct {
   background-color: #e3dfcf;
   border-color: #e3dfcf;
 }
 
-.Application-number.Type-pct {
+.ApplicationNumber.Type-pct {
   background-color: #f1b80c;
   border-color: #f1b80c;
 }
 
-.Application-number.Type-bo {
+.ApplicationNumber.Type-bo {
   background-color: #0076d1;
   border-color: #0076d1;
 }
 
-.Application-number.Type-bo .number {
+.ApplicationNumber.Type-bo .number {
   background: #fff;
 }
 
-.Application-number.Type-bo .Language {
+.ApplicationNumber.Type-bo .Language {
   color: #fff;
 }
 
-.Application-number.Type-co {
+.ApplicationNumber.Type-co {
   background-color: #ddd;
   border-color: #ddd;
 }
 
-.Application-number.Type-fa {
+.ApplicationNumber.Type-fa {
   background-color: #96d2fc;
   border-color: #96d2fc;
 }
 
-.Application-number.Type-go {
+.ApplicationNumber.Type-go {
   background-color: #f5e63d;
   border-color: #f5e63d;
 }
 
-.Application-number.Type-io {
+.ApplicationNumber.Type-io {
   background-color: #b49f87;
   border-color: #b49f87;
 }
 
-.Application-number.Type-lo {
+.ApplicationNumber.Type-lo {
   background-color: #57d4c4;
   border-color: #57d4c4;
 }
 
-.Application-number.Type-no {
+.ApplicationNumber.Type-no {
   background-color: #f06c1a;
   border-color: #f06c1a;
 }
 
-.Application-number.Type-mo {
+.ApplicationNumber.Type-mo {
   background-color: #6e5231;
   border-color: #6e5231;
 }
 
-.Application-number.Type-mo .number {
+.ApplicationNumber.Type-mo .number {
   background: #fff;
 }
 
-.Application-number.Type-mo .Language {
+.ApplicationNumber.Type-mo .Language {
   color: #fff;
 }
 
-.Application-number.Type-sn {
+.ApplicationNumber.Type-sn {
   background-color: #0db20d;
   border-color: #0db20d;
 }
 
-.Application-number.Type-sn .Language {
+.ApplicationNumber.Type-sn .Language {
   color: #fff;
 }
 
-.Application-number.Type-fs {
+.ApplicationNumber.Type-fs {
   background-color: #96d2fc;
   border-color: #96d2fc;
 }
 
-.Application-number.Type-fs .Language:after {
+.ApplicationNumber.Type-fs .Language:after {
   background: #d44022;
   bottom: -1px;
   content: ' ';
@@ -146,36 +146,36 @@
   width: 4px;
 }
 
-.Application-number.Type-to {
+.ApplicationNumber.Type-to {
   background: $color-white;
   border-color: #df0808;
 }
 
-.Application-number.Type-to .Language {
+.ApplicationNumber.Type-to .Language {
   background: #df0808;
   color: #fff;
 }
 
-.Application-number.Type-lt {
+.ApplicationNumber.Type-lt {
   background: #fff;
   border-color: #006a44;
 }
 
-.Application-number.Type-lt .Language {
+.ApplicationNumber.Type-lt .Language {
   background: #006a44;
   color: #fff;
 }
 
 // This is only for <a> versions
-a.Application-number:focus,
-a.Application-number:hover, {
+a.ApplicationNumber:focus,
+a.ApplicationNumber:hover, {
   ouline: none;
 }
 
-a.Application-number:focus .number,
-a.Application-number:hover .number,
-a.Application-number:focus .Language,
-a.Application-number:hover .Language, {
+a.ApplicationNumber:focus .number,
+a.ApplicationNumber:hover .number,
+a.ApplicationNumber:focus .Language,
+a.ApplicationNumber:hover .Language, {
   text-decoration: underline;
 }
 

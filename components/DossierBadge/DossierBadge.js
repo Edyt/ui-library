@@ -2,13 +2,11 @@ import styles from './DossierBadge.css';
 
 import React, { Component } from 'react';
 
-import Icon from 'Icon/Icon';
-
 let DossierBadge = React.createClass({
 
   render() {
     return (
-      <div className={ styles.Application-number }>
+      <div className={ styles.ApplicationNumber }>
         <b className= {styles.Phase } title={this.props.phase}>S</b>
         <span className={ styles.Number }>{this.props.children}</span>
         <i className={ styles.Language }>EN</i>
