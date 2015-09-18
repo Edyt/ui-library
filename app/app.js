@@ -4,7 +4,7 @@ import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 
 import AboutHandler from './About.js';
 import Button from '../components/Button/Button';
-import DosssierBadge from '../components/DossierBadge/DossierBadge';
+import DossierBadge from '../components/DossierBadge/DossierBadge';
 import NotificationWithButton from '../modules/Alerts/NotificationWithButton/NotificationWithButton';
 
 let App = React.createClass({
