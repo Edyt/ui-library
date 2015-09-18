@@ -1,5 +1,5 @@
-.application-number {
-  background: rgba{#a1d5f7, .2);
+.Application-number {
+  background: #a1d5f7;
   border: 1px solid #a1d5f7;
   border-radius: .125rem;
   display: inline-block;
@@ -14,12 +14,12 @@
   white-space: nowrap;
 }
 
-.application-number[class^="phase-"],
-.application-number[class*=" phase-"], {
+.Application-number[class^="phase-"],
+.Application-number[class*=" phase-"], {
   min-width: 150px;
 }
 
-.application-number .phase {
+.Application-number .Phase {
   border-radius: .125rem 0 0 .125rem;
   display: inline-block;
   height: 21px;
@@ -31,16 +31,17 @@
   width: 20px;
 }
 
-.application-number .phase-search,
-.application-number .phase-examination,
-.application-number .phase-opposition,
-.application-number .phase-appeal,
-.application-number .phase-limitation {
+// With phase included: adjust border radius
+.Application-number .Phase-search,
+.Application-number .Phase-examination,
+.Application-number .Phase-opposition,
+.Application-number .Phase-appeal,
+.Application-number .Phase-limitation {
   border-radius: 0 .125rem .125rem 0;
-  margin-left: $epo-phase-width;
+  margin-left: 23px;
 }
 
-.application-number .language {
+.Application-number .Language {
   color: black;
   float: right;
   font-style: normal;
@@ -48,4 +49,159 @@
   position: relative;
   text-align: center;
   width: 2em;
+}
+
+.Application-number.Type-ep {
+  background-color: #a1d5f7;
+  border-color: #a1d5f7;
+}
+
+.Application-number.Type-europct {
+  background-color: #e3dfcf;
+  border-color: #e3dfcf;
+}
+
+.Application-number.Type-pct {
+  background-color: #f1b80c;
+  border-color: #f1b80c;
+}
+
+.Application-number.Type-bo {
+  background-color: #0076d1;
+  border-color: #0076d1;
+}
+
+.Application-number.Type-bo .number {
+  background: #fff;
+}
+
+.Application-number.Type-bo .Language {
+  color: #fff;
+}
+
+.Application-number.Type-co {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.Application-number.Type-fa {
+  background-color: #96d2fc;
+  border-color: #96d2fc;
+}
+
+.Application-number.Type-go {
+  background-color: #f5e63d;
+  border-color: #f5e63d;
+}
+
+.Application-number.Type-io {
+  background-color: #b49f87;
+  border-color: #b49f87;
+}
+
+.Application-number.Type-lo {
+  background-color: #57d4c4;
+  border-color: #57d4c4;
+}
+
+.Application-number.Type-no {
+  background-color: #f06c1a;
+  border-color: #f06c1a;
+}
+
+.Application-number.Type-mo {
+  background-color: #6e5231;
+  border-color: #6e5231;
+}
+
+.Application-number.Type-mo .number {
+  background: #fff;
+}
+
+.Application-number.Type-mo .Language {
+  color: #fff;
+}
+
+.Application-number.Type-sn {
+  background-color: #0db20d;
+  border-color: #0db20d;
+}
+
+.Application-number.Type-sn .Language {
+  color: #fff;
+}
+
+.Application-number.Type-fs {
+  background-color: #96d2fc;
+  border-color: #96d2fc;
+}
+
+.Application-number.Type-fs .Language:after {
+  background: #d44022;
+  bottom: -1px;
+  content: ' ';
+  position: absolute;
+  right: 2em;
+  top: -1px;
+  width: 4px;
+}
+
+.Application-number.Type-to {
+  background: $color-white;
+  border-color: #df0808;
+}
+
+.Application-number.Type-to .Language {
+  background: #df0808;
+  color: #fff;
+}
+
+.Application-number.Type-lt {
+  background: #fff;
+  border-color: #006a44;
+}
+
+.Application-number.Type-lt .Language {
+  background: #006a44;
+  color: #fff;
+}
+
+// This is only for <a> versions
+a.Application-number:focus,
+a.Application-number:hover, {
+  ouline: none;
+}
+
+a.Application-number:focus .number,
+a.Application-number:hover .number,
+a.Application-number:focus .Language,
+a.Application-number:hover .Language, {
+  text-decoration: underline;
+}
+
+// Phases
+// INFO: Phases come in the following five options
+
+.Phase {
+  color: #fff;
+}
+
+.Phase-search .Phase {
+  background: #0076d1;
+}
+
+.Phase-examination .Phase {
+  background: #0076d1;
+}
+
+.Phase-opposition .Phase {
+  background: #0db20d;
+}
+
+.Phase-appeal .Phase {
+  background: #df0808;
+}
+
+.Phase-limitation .Phase {
+  background: #6e5231;
 }

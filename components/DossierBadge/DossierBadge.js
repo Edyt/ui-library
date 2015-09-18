@@ -8,17 +8,11 @@ let DossierBadge = React.createClass({
 
   render() {
     return (
-      <div className={styles.application-number}>
-        <b class="phase" title="{this.props.phase}">S</b>
-        <span className={styles.number}>{this.props.children}</span>
-        <i class={styles.language}>XX</i>
+      <div className={ styles.Application-number }>
+        <b className= {styles.Phase } title={this.props.phase}>S</b>
+        <span className={ styles.Number }>{this.props.children}</span>
+        <i className={ styles.Language }>EN</i>
       </div>
-
-
-      <button className={ styles.button }>
-        <Icon className={ styles.icon} icon={this.props.icon} />
-        <span className={ styles.label }>{this.props.label}</span>
-      </button>
     );
   }
 
