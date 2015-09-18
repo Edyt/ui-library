@@ -1,0 +1,51 @@
+.application-number {
+  background: rgba{#a1d5f7, .2);
+  border: 1px solid #a1d5f7;
+  border-radius: .125rem;
+  display: inline-block;
+  font-size: 14px;
+  height: 21px;
+  line-height: 18px;
+  margin: 0 .5em 0 0;
+  /* min-width: 150px; */
+  overflow: visible;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.application-number[class^="phase-"],
+.application-number[class*=" phase-"], {
+  min-width: 150px;
+}
+
+.application-number .phase {
+  border-radius: .125rem 0 0 .125rem;
+  display: inline-block;
+  height: 21px;
+  left: -1 * $epo-phase-width;
+  line-height: 21px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 20px;
+}
+
+.application-number .phase-search,
+.application-number .phase-examination,
+.application-number .phase-opposition,
+.application-number .phase-appeal,
+.application-number .phase-limitation {
+  border-radius: 0 .125rem .125rem 0;
+  margin-left: $epo-phase-width;
+}
+
+.application-number .language {
+  color: black;
+  float: right;
+  font-style: normal;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 2em;
+}
