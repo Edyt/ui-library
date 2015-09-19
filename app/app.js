@@ -8,17 +8,17 @@ import DossierBadge from '../components/DossierBadge/DossierBadge';
 import NotificationWithButton from '../modules/Alerts/NotificationWithButton/NotificationWithButton';
 
 
-let links = ['Sample'];
-
-var fs = require('fs');
-
-console.log(fs);
-
-fs.readdirSync('./*.md', function (err, files) {
-  links.push(files);
-});
-
-console.log("hello", links);
+// let links = ['Sample'];
+//
+// var fs = require('fs');
+//
+// console.log(fs);
+//
+// fs.readdirSync('./*.md', function (err, files) {
+//   links.push(files);
+// });
+//
+// console.log("hello", links);
 
 
 let App = React.createClass({
