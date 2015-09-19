@@ -29,4 +29,5 @@ npm install --save-dev css-loader style-loader postcss-loader
 npm install --save-dev html-loader markdown-loader
 npm install --save-dev react-markdown
 npm install --save-dev path
+npm install --save-dev classnames blacklist
 ```

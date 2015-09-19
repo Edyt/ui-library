@@ -11,3 +11,16 @@ Markdownified Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
   Test
 </blockquote>
 ```
+
+# Goal:
+
+Desired result is to generate a nested list structure of the `components` and `modules` directories' Markdown contents (inside their subdirectories), creating a React Router destination page for each found .md file:
+
+Result example, where each of these is a page the user can go to:
+
+- components
+  - Button
+  - Icon
+- modules
+  - Alerts
+    - NotificationWithButton
